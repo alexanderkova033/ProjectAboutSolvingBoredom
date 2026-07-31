@@ -4,7 +4,9 @@
 
 **Turn unused time into proof of what you can do.**
 
-A 30-day project sprint. You pick one real project. Each day it gives you a single mission sized to the time you actually have — five minutes or an hour — with one clear definition of done. You do the work, record the evidence, show it to a crew of four to six people doing the same. At the end you have a finished, shareable proof-of-work page: the artifact, how you made it, what broke, what you learned.
+You pick one real project, and you set the finish line. Each day it gives you a single mission sized to the time you actually have — five minutes or an hour — with one clear definition of done. You do the work, record the evidence, show it to a crew of four to six people doing the same. At the end you have a finished, shareable proof-of-work page: the artifact, how you made it, what broke, what you learned.
+
+It doesn't hand you a curriculum or a countdown. Boredom is a signal to go after a *different* goal — a product that prescribes the plan reproduces the thing that makes courses feel inert. You choose the work; it supplies the next action.
 
 No feed. No follower counts. No streak guilt. No AI writing your project for you.
 

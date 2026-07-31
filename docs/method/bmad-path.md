@@ -34,11 +34,11 @@ docs/qa/                                              ← assessments and gates
 
 ## 3. Sequence
 
-Delivery phases in [initial design](../product/initial-design.md) §19 remain the product plan; BMAD is how Phase 1 onward gets built.
+Delivery phases in [initial design](../product/initial-design.md) §17 remain the product plan; BMAD is how Phase 1 onward gets built.
 
 **Step 0 — Evidence. No BMAD, no code.**
 
-- **Five hiring-manager conversations first.** Does a 30-day project change how they read a candidate? This is the cheapest de-risking available, because everything downstream terminates in the artifact being worth something to someone who hires. Currently asserted, never tested.
+- **Five hiring-manager conversations first.** Does a self-directed project of this kind change how they read a candidate? This is the cheapest de-risking available, because everything downstream terminates in the artifact being worth something to someone who hires. Currently asserted, never tested.
 - **Then a paid concierge cohort of 20–30.** Forms, a spreadsheet, hand-written missions. **Hand-pick the crews** — matching is an algorithm for a liquidity problem we don't have yet, and manual assembly must become the obvious bottleneck before it's worth building.
 - **Interview the people who didn't finish.** They are the real product risk and the group it will be tempting to skip. Someone who doesn't finish has paid to be reminded they don't finish; whether that lands as a bad week or a betrayal decides whether this is a business.
 
@@ -46,11 +46,11 @@ Do this before installing BMAD: the planning phase converts assumptions into a s
 
 *Exit: demand §9 Phase 2 thresholds met, or the offer revised and retested.*
 
-**Step 1 — Planning phase.** Analyst → PM → UX Expert → Architect → PO, on concierge data. Scope the PRD to the **solo MVP only** ([requirements](../product/requirements.md) §14 first release); crews are a later increment. The Architect challenges initial-design §5–17 rather than ratifying it.
+**Step 1 — Planning phase.** Analyst → PM → UX Expert → Architect → PO, on concierge data. Scope the PRD to the **solo MVP only** ([requirements](../product/requirements.md) §14 first release); crews are a later increment. The Architect challenges initial-design §5–15 rather than ratifying it.
 
 *Exit: sharded PRD and architecture, plus a decision-log entry for every departure from the initial design.*
 
-**Step 2 — Development cycle.** SM → Dev → QA until design §20 priorities 1–6 ship: templates and mission library, data model, onboarding through first mission, completion loop, proof-of-work output, analytics.
+**Step 2 — Development cycle.** SM → Dev → QA until design §18 priorities 1–6 ship: templates and mission library, data model, onboarding through first mission, completion loop, proof-of-work output, analytics.
 
 *Exit: requirements §10 thresholds measurable against real users.*
 

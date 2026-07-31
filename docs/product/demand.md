@@ -3,290 +3,75 @@
 **Product:** ForgePath *(placeholder name — to be replaced)*  
 **Document status:** Market hypothesis and validation plan  
 **BMAD stage:** Pre-BMAD input, feeds the Analyst brief  
-**Superseded by:** nothing yet — this remains the demand reference  
 **Research snapshot:** 31 July 2026
 
 > **Related:** [Requirements](requirements.md) · [Initial design](initial-design.md) · [BMAD path](../method/bmad-path.md) · [Future plans](../roadmap/future-plans.md) · [Decision log](../log/decision-log.md)
 
-> **How to read this:** every number below is either a cited external source (Section 12) or an explicitly labelled founder hypothesis. Scores in Section 7 and the models in Section 8 are assumptions, not measurements. Nothing here is validated until Section 9 has been run.
+> Every number here is either a cited source (§12) or a labelled founder hypothesis. §7 scores and §8 models are assumptions. Nothing is validated until §9 has been run.
 
 ## 1. Executive judgment
 
-There is credible demand for products that help people regain attention, overcome procrastination, build employable skills, reduce isolation, and finish meaningful work. There is not yet enough evidence to claim that a broad “purpose app” or “confidence app” will sell reliably.
+There is credible demand for helping people regain attention, build employable skills, and finish meaningful work. There is no evidence that a broad "purpose app" or "confidence app" sells.
 
-The strongest initial opportunity is the intersection of four pains:
+The opportunity is the intersection of four pains: unstructured time and passive consumption; fear of publishing imperfect work; weak portfolio evidence during a difficult transition into work; too little productive social connection.
 
-1. unstructured time and passive consumption;
-2. fear of making or publishing imperfect work;
-3. weak portfolio evidence during a difficult transition into work;
-4. insufficient productive social connection.
+> **The offer:** a paid, socially supported project sprint that turns idle time into a finished proof-of-work artifact — on a finish line the user sets.
 
-The recommended initial offer is therefore:
-
-> A paid, 30-day, socially supported project sprint that turns idle time into a finished proof-of-work artifact.
-
-The customer is not purchasing “purpose” directly. The customer is purchasing completion, portfolio evidence, momentum, and access to a small productive group. Purpose and confidence are expected benefits that emerge from the process.
+The customer is not buying purpose. They are buying completion, portfolio evidence, momentum, and a small productive group. Purpose and confidence emerge from the process; they are not the product.
 
 ## 2. Market problem
 
-### 2.1 Boredom is not simply a shortage of entertainment
+**Boredom is not a shortage of entertainment.** Research characterises it as failed engagement — a signal to pursue a different goal, and in some accounts a crisis of attention or meaning. Critically, rapidly switching between online videos to escape boredom makes viewers *more* bored and less satisfied than staying with one. More stimulation does not resolve disengagement. So "more content" is a weak solution, and blocking solves only the removal step. The differentiating move is supplying a small meaningful action at the exact moment the user would otherwise scroll.
 
-Research characterizes boredom as a state of failed engagement, a signal to pursue an alternative goal, and in some accounts a crisis of meaning or attention. Recent experimental work also suggests that boredom can increase desire for challenge.
+**Youth employment gives a concrete reason to act.** The ILO reported global unemployment near 4.9% in 2024 against youth unemployment near 12%, and estimated in 2025 that roughly 262 million people aged 15–24 — about one in four — were not in employment, education, or training. This does not prove demand. It shows a large population facing weak structure and hard transitions. The product should not claim to solve unemployment; it addresses a narrower problem inside the transition: producing demonstrable work and being able to explain it.
 
-A particularly relevant finding is that rapidly switching among online videos to escape boredom can make viewers more bored and less satisfied than staying with one video. This supports a core product assumption: greater digital stimulation does not necessarily resolve disengagement.
+**Skills are changing fast.** The WEF *Future of Jobs Report 2025*, covering 1,000+ employers and over 14 million workers, found 39% of existing skill sets are expected to change or become outdated between 2025 and 2030, with analytical thinking, resilience, creative thinking, and lifelong learning ranked as rising. AI makes raw production cheap but does not remove the need for people who can choose worthwhile problems, persist, exercise judgment, and finish. Emphasise those behaviours rather than adding another generator.
 
-Commercial implication:
+**Loneliness makes small-group design valuable.** The WHO's 2025 Commission on Social Connection reported roughly one in six people experience loneliness, around 21% among adolescents and young people. Users will not pay for a generic loneliness cure, but this supports making production social: recurring small crews, mutual accountability, repeated interaction, no popularity contest. Connection built around a shared task gives people a reason to interact and removes the pressure of purely social conversation.
 
-- “More content” is a weak solution.
-- Blocking content solves only the removal step.
-- A product can differentiate by supplying a small, meaningful action at the exact moment the user would otherwise switch or scroll.
+## 3. Competitive landscape
 
-### 2.2 Youth employment creates a concrete economic reason to act
+Fragmentation across adjacent categories is the opportunity.
 
-The International Labour Organization reported that global unemployment was about 4.9% in 2024 while youth unemployment was roughly 12%. It also estimated in 2025 that around 262 million people aged 15–24—approximately one in four—were not in employment, education, or training.
+| Category | Examples | Strength | Gap |
+|---|---|---|---|
+| Attention and screen-time tools | Opal, ScreenZen, Brick, OS controls | Clear pain, frequent trigger, measurable, proven willingness to install | After the block, the user still needs a meaningful alternative. Success is measured as reduced use, not accumulated creation. No portfolio, relationship, or skill artifact results. |
+| Accountability and coworking | Focusmate | Immediate behavioural intervention, session structure, accountability without a public feed | The user must already know what task to do. No project decomposition, no portfolio narrative, task-agnostic partners. |
+| Courses, bootcamps, cohorts | Many | Understood category, institutional budgets, packageable | Completion often means content consumed. The learner may finish without a personally meaningful artifact. Expensive and facilitator-heavy. |
+| Project-building communities | Buildspace (closed) | Validated interest in structured project-building | Its closure warns that community enthusiasm does not equal a sustainable business. |
+| Generic AI coaches | Many | Good onboarding and personalisation | RevenueCat's 2026 analysis of 115,000+ subscription apps found AI apps monetise better early (41% median year-one revenue-per-payer premium) but retain materially worse at 12 months with higher refunds. "AI coach" is not durable positioning. |
 
-These figures do not prove demand for this product. They do show a large population facing weak structure, difficult transitions, and a need for credible pathways into work.
+Two implications. Integrate with blockers rather than competing on blocking. Make the lasting value the real project, the relationship, and the accumulated evidence — things that exist outside the chat.
 
-The product should not claim to solve unemployment. It can address a narrower problem inside the transition:
+## 4. Where the market is moving
 
-> Young people need a low-friction way to produce demonstrable work, practise execution, and explain what they can do.
+- **Restriction → substitution.** The first wave asks users to stop. The opportunity is replacing the behaviour with an immediately available, meaningful one. When the user has 15 idle minutes, show one production action, not a dashboard about last week's screen time.
+- **Information → execution.** AI made explanations and first drafts abundant. Execution, judgment, and completion remain scarce. Charge for a completed outcome; measure actions and artifacts; make the AI ask for user decisions rather than silently producing.
+- **Credentials → proof of work.** Employers increasingly need evidence of what a person produces and how they work. Every project should end in a shareable artifact including revisions, tests, and feedback — an interview-ready narrative, not a badge.
+- **Public feeds → bounded groups.** Feeds create comparison and performance pressure. Crews of four to six, chronological updates, structured feedback, no follower counts.
+- **Indefinite subscriptions → bounded outcomes.** RevenueCat reports more than half of three-day-trial cancellations happen on day one; users need immediate proof of value. Bound the purchase by **outcome** — one finished project — rather than by a fixed calendar. Membership becomes an expansion after the first completed project, not the entry point.
 
-### 2.3 Skills are changing quickly
+## 5. Beachhead
 
-The World Economic Forum’s *Future of Jobs Report 2025*, based on more than 1,000 employers representing over 14 million workers, reported that 39% of workers’ existing skill sets are expected to change or become outdated between 2025 and 2030. Employers ranked analytical thinking, resilience, flexibility, agility, leadership, social influence, creative thinking, and lifelong learning among important or rising skills.
+English-speaking, roughly 18–26: recent graduates, unemployed or underemployed, students approaching the transition to work, self-taught aspiring creators. Capable of working independently but unable to finish. Actively worried about portfolio or direction.
 
-AI can increasingly generate drafts, code, images, and analysis. This makes raw production cheaper, but it does not remove the need for people who can choose worthwhile problems, persist, exercise judgment, collaborate, revise, and finish. A proof-of-work product should emphasize those human behaviors rather than merely adding another AI generator.
+**Excluded for first launch:** "everyone who is bored" — too broad, mostly people without a purchase reason. Clinical populations — some users will have ADHD, anxiety, or depression, but the product makes no clinical claims and depends on no diagnosis.
 
-### 2.4 Loneliness increases the value of small-group design
+**Users and payers differ.** Users are young adults, students, job seekers, aspiring creators. Payers may be the user, a parent, a university career centre, a workforce-development organisation, a bootcamp, a youth organisation, or an employer running an early-career programme. Institutional demand may be stronger, since those buyers already pay to improve retention, employability, and belonging — but see the payer-mismatch risk in the [decision log](../log/decision-log.md).
 
-The World Health Organization’s 2025 Commission on Social Connection reported that about one in six people globally experience loneliness, with young people reporting especially high rates; WHO’s summary lists approximately 21% among adolescents and young people.
+## 6. Value propositions to test
 
-This does not mean users will pay for a generic “loneliness cure.” Consumer social products often face difficult retention and trust problems. It does support designing production as a social process:
+Do not choose positioning by opinion. Test three messages:
 
-- recurring small crews;
-- mutual accountability;
-- contribution to another person’s work;
-- repeated interaction rather than anonymous matching;
-- no public popularity contest.
+- **A, employment:** *Build a portfolio project you can discuss in interviews.* → job seekers, parents, universities, workforce programmes.
+- **B, completion:** *Stop collecting ideas. Finish and publish one project with a small crew.* → aspiring creators and builders.
+- **C, productive belonging:** *Meet people who make things and finish a real project together.* → students, recent movers, university programmes.
 
-Connection should be built around a shared task. This gives members a reason to interact and reduces the pressure of purely social conversation.
-
-## 3. Current competitive landscape
-
-The market is fragmented across adjacent categories. That fragmentation is the opportunity.
-
-### 3.1 Attention and screen-time tools
-
-Examples include Opal, ScreenZen, Clearspace, Brick, and operating-system screen-time controls.
-
-They generally provide:
-
-- application blocking;
-- time limits;
-- friction before opening a distracting app;
-- usage reports;
-- focus sessions;
-- accountability or streaks.
-
-Strength:
-
-- clear pain;
-- frequent trigger;
-- measurable usage reduction;
-- established willingness to install and sometimes pay.
-
-Gap:
-
-- after access is blocked, the user still needs a meaningful alternative;
-- success is measured mainly as reduced use, not accumulated creation;
-- many users bypass blockers when motivation is weak;
-- blocking does not produce a portfolio, relationship, or skill artifact.
-
-ForgePath should integrate with or complement blockers rather than compete on blocking technology first.
-
-### 3.2 Accountability and coworking
-
-Focusmate pairs users for scheduled virtual coworking. Its current product demonstrates demand for human presence and accountability during focused work.
-
-Strength:
-
-- immediate behavioral intervention;
-- clear session structure;
-- social accountability without a public feed.
-
-Gap:
-
-- users must already know what task to perform;
-- the service does not necessarily decompose a project or produce a portfolio narrative;
-- partner interaction is brief and task-agnostic.
-
-ForgePath can borrow the principle of recurring presence while adding project direction, graded missions, evidence, and completion.
-
-### 3.3 Courses, bootcamps, and cohort learning
-
-Courses provide knowledge, credentials, and structure. Cohort programs add deadlines and peers.
-
-Strength:
-
-- buyers understand the category;
-- institutions have budgets;
-- learning goals can be packaged.
-
-Gap:
-
-- completion is often based on content consumption;
-- the learner may finish without a personally meaningful artifact;
-- programs can be expensive and facilitator-heavy;
-- users may become dependent on prescribed curricula.
-
-ForgePath should be a “learn by making” system, not another content library.
-
-### 3.4 Project-building communities
-
-Buildspace previously operated a large community for people working on their own ideas. Its current website states that it has closed. Its existence validates interest in structured project-building communities; its closure is also a warning not to assume that strong community enthusiasm automatically creates a sustainable business.
-
-The design implication is to test:
-
-- willingness to pay;
-- facilitator cost;
-- crew quality;
-- completion outcomes;
-- repeat use;
-- institution-backed distribution.
-
-Do not copy a community model without proving unit economics and retention.
-
-### 3.5 Generic AI coaches
-
-The subscription-app market is rapidly filling with AI assistants and coaches. RevenueCat’s 2026 analysis of more than 115,000 subscription apps found that AI apps monetized better early but retained subscribers worse than non-AI apps. Its category analysis reports a 41% median year-one revenue-per-payer premium for AI apps, alongside materially lower 12-month retention and higher refunds.
-
-Implication:
-
-- AI can improve onboarding and personalization.
-- “AI coach” is not a durable positioning by itself.
-- The lasting value must be the real project, social relationship, and accumulated evidence outside the chat.
-
-## 4. Where the market appears to be moving
-
-### 4.1 From restriction to substitution
-
-The first wave of digital-wellbeing products asks users to stop. The next opportunity is to replace the unwanted behavior with an immediately available, intrinsically or economically meaningful behavior.
-
-Product direction:
-
-> When the user has 15 idle minutes, show one production action rather than a dashboard about past screen time.
-
-### 4.2 From information to execution
-
-AI has reduced the scarcity of explanations, templates, and first drafts. Execution, judgment, selection, feedback, and completion remain scarce.
-
-Product direction:
-
-- charge for a completed outcome;
-- measure actions and artifacts;
-- minimize passive educational content;
-- make the AI ask for user decisions and work rather than silently producing everything.
-
-### 4.3 From credentials to proof of work
-
-Credentials remain useful, but employers and collaborators increasingly need concrete evidence of what a person can produce and how they work.
-
-Product direction:
-
-- every project ends in a shareable artifact;
-- evidence includes revisions, tests, feedback, and contribution;
-- users receive an interview-ready project narrative, not only a badge.
-
-### 4.4 From public feeds to bounded groups
-
-Large feeds create comparison and performance pressure. Small recurring groups create familiarity and accountability.
-
-Product direction:
-
-- crews of four to six;
-- chronological updates;
-- structured feedback;
-- no follower counts or public rankings;
-- group success based on completion and mutual contribution.
-
-### 4.5 From indefinite subscriptions to bounded outcomes
-
-Subscription apps are highly competitive, and RevenueCat reports that more than half of cancellations for three-day trials occur on the first day. Users need immediate proof of value.
-
-Product direction:
-
-- begin with a 30-day purchase;
-- generate a valuable first mission during onboarding;
-- let membership become an expansion after the first completed project;
-- avoid relying on novelty or an open-ended promise of self-improvement.
-
-## 5. Recommended beachhead market
-
-### Primary segment
-
-English-speaking people aged approximately 18–26 who are:
-
-- recent graduates;
-- unemployed or underemployed;
-- students approaching the transition to work;
-- self-taught aspiring creators or technologists;
-- capable of working independently but unable to finish projects;
-- actively concerned about their portfolio or direction.
-
-### Exclusion for first launch
-
-Do not target “everyone who is bored.” This is too broad and includes many people without a strong purchase reason.
-
-Do not initially center clinical populations. Some users may have ADHD, anxiety, depression, or other conditions, but the first product should not make clinical claims or depend on diagnosis.
-
-### Buyer and user distinction
-
-Possible users:
-
-- young adults;
-- students;
-- job seekers;
-- aspiring creators.
-
-Possible payers:
-
-- the user;
-- a parent;
-- a university career center;
-- a workforce-development organization;
-- a bootcamp;
-- a youth organization;
-- an employer running an early-career program.
-
-Institutional demand may be stronger because the buyer already pays to improve retention, engagement, employability, and belonging.
-
-## 6. Initial value propositions to test
-
-Do not choose the final positioning through opinion. Test three concrete messages.
-
-### Message A: Employment
-
-> Build a portfolio project you can discuss in interviews—in 30 days.
-
-Expected strongest payer: job seeker, parent, university, workforce program.
-
-### Message B: Completion
-
-> Stop collecting ideas. Finish and publish one project with a small crew.
-
-Expected strongest payer: aspiring creator or builder.
-
-### Message C: Productive belonging
-
-> Meet people who make things and complete a real project together.
-
-Expected strongest payer: student, recent mover, community or university program.
-
-“Beat boredom” can be a hook in advertising or onboarding, but it should not be the only value proposition.
+"Beat boredom" can be an advertising hook. It cannot be the only value proposition.
 
 ## 7. Demand scoring
 
-The following scores are founder hypotheses, not published market measurements.
+Founder hypotheses, not measurements.
 
 | Opportunity | Pain frequency | Urgency | Willingness to pay | Measurability | Competition | Overall |
 |---|---:|---:|---:|---:|---:|---:|
@@ -297,212 +82,78 @@ The following scores are founder hypotheses, not published market measurements.
 | Youth portfolio sprint | 4 | 5 | 4 | 5 | 3 | 4.2/5 |
 | Social project community | 4 | 3 | 3 | 4 | 4 | 3.4/5 |
 
-The recommended beachhead is **youth portfolio sprint**, with project completion and productive belonging as supporting benefits.
+Beachhead: **youth portfolio sprint**, with completion and productive belonging as supporting benefits.
 
-## 8. Bottom-up market model
+## 8. Market model
 
-A top-down “global self-improvement market” number would be misleading. Use a bottom-up model tied to distribution.
-
-### B2C formula
+A top-down "global self-improvement market" figure would be misleading. Use bottom-up models tied to distribution:
 
 ```text
-annual revenue =
-reachable qualified audience
-× paid conversion
-× average annual spend
+B2C:           reachable qualified audience × paid conversion × average annual spend
+Institutional: partner organisations × average active seats × price per seat
 ```
 
-Illustrative scenarios:
+Distribution is the dominant variable in both, and it is the one we have no evidence about. Any scenario table built on invented conversion rates would be arithmetic dressed as forecasting — don't build one until §9 produces real conversion and completion numbers to substitute in.
 
-| Scenario | Qualified people reached/year | Paid conversion | Average spend | Revenue |
-|---|---:|---:|---:|---:|
-| Pilot business | 10,000 | 3% | $49 | $14,700 |
-| Early product | 100,000 | 4% | $59 | $236,000 |
-| Strong niche | 1,000,000 | 5% | $69 | $3,450,000 |
+## 9. Validation plan
 
-These are assumptions, not forecasts. Distribution is the dominant variable.
+### Phase 1 — Problem interviews
 
-### Institutional formula
+At least 30 in the beachhead. Never ask "would you use this?" Ask: tell me about the last project you wanted to make and didn't finish; what did you do instead; what made starting or publishing hard; what have you paid for to solve this; what portfolio evidence do you lack; who notices whether you progress.
 
-```text
-annual revenue =
-number of partner organizations
-× average active seats
-× price per seat
-```
+**Threshold:** 15+ describe the problem as weekly; 10+ use a workaround; 5+ have paid for something adjacent; language converges on one concrete outcome.
 
-Illustrative scenarios:
+### Phase 2 — Concierge paid cohort
 
-| Scenario | Partners | Seats/partner | Price/seat | Revenue |
-|---|---:|---:|---:|---:|
-| Pilot | 5 | 100 | $35 | $17,500 |
-| Early program | 25 | 250 | $50 | $312,500 |
-| Scaled niche | 100 | 500 | $60 | $3,000,000 |
+20–30 users, run manually. Scoped project, daily mission, crew of four to six, two weekly check-ins, evidence log, final proof-of-work page. The cohort runs on a fixed window for operational reasons; **each user still sets their own finish line inside it.** Charge from the start — test USD 29 and USD 59, or a refundable completion deposit where direct payment is impractical.
 
-The institutional model can support facilitated cohorts and lower acquisition cost, but sales cycles will be longer.
+**Proceed if:** 15+ pay or place a meaningful deposit; 60% complete the first mission within 24 hours; 50% complete three missions in week one; 30% complete their project; 5+ ask to continue or refer someone; users describe the *artifact*, not the motivation, as the main value.
 
-## 9. Demand-validation plan
+### Phase 3 — Message test
 
-### Phase 1: Problem interviews
+Three landing pages using §6, with design, traffic source, and price held constant. Measure qualified visitor→application, application→deposit, project start, first-week completion, refunds, referral intent. Do not optimise for email signups.
 
-Conduct at least 30 interviews with the primary segment.
+### Phase 4 — Institutional discovery
 
-Do not ask “Would you use this?” Ask:
+Interview university career centres, workforce organisations, youth organisations, bootcamps, and employer graduate programmes. Ask for a pilot budget or letter of intent. A positive interview without a buyer, a procurement path, and an outcome definition is not validation.
 
-- Tell me about the last project you wanted to make but did not finish.
-- What did you do instead?
-- What made starting or publishing difficult?
-- What have you paid for to solve this?
-- What portfolio evidence do you currently lack?
-- Who notices whether you make progress?
-- What would make a finished project valuable next month?
+## 10. Risks
 
-Evidence threshold:
+| Risk | Mitigation |
+|---|---|
+| Boredom is common but not monetisable | Sell portfolio completion and accountability; use boredom as the trigger only |
+| Users need too much human facilitation | Measure facilitator minutes per completed project; standardise templates and rituals before automating |
+| AI does the work instead of the user | Require user decisions, process evidence, external testing, reflection, and attribution |
+| Community quality collapses | Small cohorts, explicit norms, inactivity replacement, reporting, moderation, no public feed |
+| Users start but do not finish | Reduce scope aggressively; give a useful first-session output; optimise for completion over ambition |
+| Portfolio artifacts are not credible | Include problem definition, process evidence, tests, revisions, peer feedback, clear AI attribution |
+| Drift into mental-health claims | Describe behavioural outcomes; avoid diagnostic language; refer to qualified support when appropriate |
 
-- at least 15 interviewees describe the problem as weekly;
-- at least 10 currently use a workaround;
-- at least five have paid for an adjacent solution;
-- language converges around one concrete outcome.
+The load-bearing untested assumptions are tracked in the [decision log](../log/decision-log.md).
 
-### Phase 2: Concierge paid cohort
+## 11. Recommendation
 
-Run a manual 30-day cohort with 20–30 users.
+Build neither a broad confidence app nor a broad purpose app. Build a **project-completion and proof-of-work system for young adults in an unstructured transition**, layered as:
 
-Minimum offer:
-
-- scoped project;
-- daily mission;
-- crew of four to six;
-- two weekly check-ins;
-- evidence log;
-- final proof-of-work page.
-
-Charge from the start. Test USD 29 and USD 59, or request a refundable completion deposit where direct payment is impractical.
-
-Proceed if:
-
-- at least 15 people pay or place a meaningful deposit;
-- 60% complete the first mission within 24 hours;
-- 50% complete three missions during week one;
-- 30% complete the final project;
-- at least five users ask to continue or refer someone;
-- users describe the artifact—not only motivation—as the main value.
-
-### Phase 3: Message test
-
-Create three landing pages using the value propositions in Section 6. Keep design, traffic source, and price consistent.
-
-Primary measures:
-
-- qualified visitor-to-application rate;
-- application-to-deposit rate;
-- project-start rate;
-- first-week completion;
-- refund request;
-- referral intent.
-
-Do not optimize for email signups alone.
-
-### Phase 4: Institutional discovery
-
-Interview:
-
-- university career centers;
-- workforce-development organizations;
-- youth organizations;
-- bootcamps;
-- employer graduate programs.
-
-Ask for an actual pilot budget or letter of intent. A positive interview without a buyer, procurement path, and outcome definition is not validation.
-
-## 10. Primary market risks
-
-### Risk 1: Boredom is common but not monetizable
-
-Mitigation: sell portfolio completion and social accountability, using boredom as the trigger.
-
-### Risk 2: Users need too much human facilitation
-
-Mitigation: measure facilitator minutes per completed project. Standardize templates, crew rituals, and escalation rules before automating.
-
-### Risk 3: AI completes the work instead of the user
-
-Mitigation: require user choices, evidence of process, external testing, reflection, and attribution. AI may decompose and critique but should not silently replace the user’s contribution.
-
-### Risk 4: Community quality collapses
-
-Mitigation: small cohorts, explicit norms, matching, inactivity replacement, reporting, moderation, and no public feed.
-
-### Risk 5: Users start but do not finish
-
-Mitigation: reduce scope aggressively, provide a useful first-session output, and optimize for completion rather than project ambition.
-
-### Risk 6: Portfolio artifacts are not credible
-
-Mitigation: include problem definition, process evidence, tests, revisions, peer feedback, and clear attribution of AI assistance.
-
-### Risk 7: The product drifts into mental-health claims
-
-Mitigation: describe behavioral outcomes, avoid diagnostic language, and refer users to qualified support when appropriate.
-
-## 11. Strategic recommendation
-
-Build neither a broad confidence app nor a broad purpose app.
-
-Build:
-
-> A project-completion and proof-of-work system for young adults in an unstructured transition.
-
-Use these concepts as layers:
-
-- **Acquisition hook:** “Turn scrolling time into something you made.”
-- **Purchase reason:** “Finish a portfolio-worthy project in 30 days.”
-- **Retention mechanism:** appropriate next missions, small crews, and visible evidence.
+- **Acquisition hook:** turn scrolling time into something you made.
+- **Purchase reason:** finish a portfolio-worthy project you chose.
+- **Retention:** appropriate next missions, small crews, visible evidence.
 - **Emotional benefit:** confidence from mastery.
 - **Long-term mission:** help people construct purpose through contribution and production.
 
 ## 12. Sources
 
-1. World Health Organization, *WHO Commission on Social Connection* and 2025 flagship report:  
-   https://www.who.int/groups/commission-on-social-connection  
-   https://www.who.int/publications/i/item/978240112360
-
-2. World Health Organization, *Social connection: questions and answers* (young people and global loneliness estimates):  
-   https://www.who.int/news-room/questions-and-answers/item/social-connection
-
-3. International Labour Organization, *World Employment and Social Outlook: Trends 2025 in figures*:  
-   https://www.ilo.org/resource/other/world-employment-and-social-outlook-trends-2025-figures
-
-4. International Labour Organization, *Measuring what matters: NEET vs youth unemployment* (12 August 2025):  
-   https://www.ilo.org/resource/article/measuring-what-matters-neet-vs-youth-unemployment
-
-5. International Labour Organization, *Global Employment Trends for Youth 2024: In figures*:  
-   https://www.ilo.org/resource/article/global-employment-trends-youth-2024-figures
-
-6. World Economic Forum, *The Future of Jobs Report 2025*:  
-   https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/
-
-7. American Psychological Association, *Swiping through online videos increases boredom, study finds* (2024):  
-   https://www.apa.org/news/press/releases/2024/08/online-videos-boredom
-
-8. PubMed, *In search of boredom: beyond a functional account* (2023):  
-   https://pubmed.ncbi.nlm.nih.gov/36922277/
-
-9. PubMed, *The motivational consequences of boredom* (2025):  
-   https://pubmed.ncbi.nlm.nih.gov/41071937/
-
-10. Focusmate, current product description:  
-    https://www.focusmate.com/about/
-
-11. ScreenZen, current product description:  
-    https://screenzen.co/
-
-12. Opal, current product description:  
-    https://www.opal.so/
-
-13. Buildspace, current closure page:  
-    https://buildspace.so/
-
-14. RevenueCat, *State of Subscription Apps 2026*:  
-    https://www.revenuecat.com/blog/growth/subscription-app-trends-benchmarks-2026  
-    https://www.revenuecat.com/state-of-subscription-apps-2026-utilities
+1. WHO, *Commission on Social Connection* and 2025 flagship report — https://www.who.int/groups/commission-on-social-connection · https://www.who.int/publications/i/item/978240112360
+2. WHO, *Social connection: questions and answers* — https://www.who.int/news-room/questions-and-answers/item/social-connection
+3. ILO, *World Employment and Social Outlook: Trends 2025 in figures* — https://www.ilo.org/resource/other/world-employment-and-social-outlook-trends-2025-figures
+4. ILO, *Measuring what matters: NEET vs youth unemployment* (12 Aug 2025) — https://www.ilo.org/resource/article/measuring-what-matters-neet-vs-youth-unemployment
+5. ILO, *Global Employment Trends for Youth 2024: In figures* — https://www.ilo.org/resource/article/global-employment-trends-youth-2024-figures
+6. WEF, *The Future of Jobs Report 2025* — https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/
+7. APA, *Swiping through online videos increases boredom* (2024) — https://www.apa.org/news/press/releases/2024/08/online-videos-boredom
+8. *In search of boredom: beyond a functional account* (2023) — https://pubmed.ncbi.nlm.nih.gov/36922277/
+9. *The motivational consequences of boredom* (2025) — https://pubmed.ncbi.nlm.nih.gov/41071937/
+10. Focusmate — https://www.focusmate.com/about/
+11. ScreenZen — https://screenzen.co/
+12. Opal — https://www.opal.so/
+13. Buildspace, closure page — https://buildspace.so/
+14. RevenueCat, *State of Subscription Apps 2026* — https://www.revenuecat.com/blog/growth/subscription-app-trends-benchmarks-2026 · https://www.revenuecat.com/state-of-subscription-apps-2026-utilities

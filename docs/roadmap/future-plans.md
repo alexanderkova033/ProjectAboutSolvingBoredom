@@ -8,7 +8,7 @@ Where good ideas go so they stop competing with the current step. Each carries t
 
 ## Planned — after the solo MVP
 
-Sequenced in [initial design](../product/initial-design.md) §19 as Phases 2–4: crews with feedback and moderation; weekly review generation; institutional cohort codes and facilitator tools; adaptive difficulty and blocker detection.
+Sequenced in [initial design](../product/initial-design.md) §17 as Phases 2–4: crews with feedback and moderation; weekly review generation; institutional cohort codes and facilitator tools; adaptive difficulty and blocker detection.
 
 Crews are the next release, but **crew matching is not** — hand-pick until manual assembly is obviously the bottleneck ([D-014](../log/decision-log.md)). Institutional tooling waits on a signed paid pilot, not on interest.
 

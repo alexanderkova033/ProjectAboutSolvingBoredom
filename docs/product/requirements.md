@@ -4,435 +4,188 @@
 **Document status:** MVP specification  
 **BMAD stage:** Pre-BMAD input, feeds the PM PRD  
 **Superseded by:** `docs/product/prd.md` once the BMAD PM run produces it  
-**Research snapshot:** 31 July 2026  
-**Primary audience:** Product, engineering, design, research, and pilot partners
+**Research snapshot:** 31 July 2026
 
 > **Related:** [Demand](demand.md) · [Initial design](initial-design.md) · [BMAD path](../method/bmad-path.md) · [Future plans](../roadmap/future-plans.md) · [Decision log](../log/decision-log.md)
 
-> **How to read this:** the `FR-` and `NFR-` identifiers in Sections 8 and 13 are the stable handles for this project. When the BMAD PM produces `prd.md`, its epics and stories should trace back to these identifiers rather than renumbering them.
+> `FR-`/`NFR-` identifiers are the stable handles for this project. PRD epics and stories should trace back to them rather than renumbering.
 
 ## 1. Product summary
 
-ForgePath helps young adults convert idle, low-purpose screen time into small acts of production that accumulate into a finished, shareable project.
+Helps young adults convert idle screen time into small acts of production that accumulate into a finished, shareable project.
 
-The product is not positioned as a generic confidence app, therapy product, social network, course platform, or screen blocker. Its first promise is concrete:
+> **The promise:** finish a real project you chose, build proof of skill, and work alongside a small crew.
 
-> Complete a real project in 30 days, build proof of skill, and work alongside a small crew.
-
-Confidence is treated as an outcome of repeated action and recorded evidence. Purpose is treated as something that can emerge from chosen work, growing competence, contribution, and relationships.
+Not a confidence app, therapy product, social network, course platform, or screen blocker. Confidence is an outcome of repeated action and recorded evidence. Purpose emerges from chosen work, growing competence, contribution, and relationships.
 
 ## 2. Problem statement
 
-The initial target user often has unstructured time, wants to become more capable, and knows that passive consumption is not helping. However, the user:
+The target user has unstructured time, wants to become more capable, and knows passive consumption isn't helping — but doesn't know what to make, can't reduce a project to a next action, fears producing something bad, has no external accountability, sees no objective evidence of progress, feels isolated from productive peers, and can't translate learning into portfolio evidence.
 
-- does not know what to make;
-- cannot reduce a project to a manageable next action;
-- fears producing something bad or being judged;
-- has weak external accountability;
-- does not see objective evidence of progress;
-- may feel isolated from productive peers;
-- struggles to translate learning into portfolio evidence.
-
-Existing tools usually solve only one part of this problem:
-
-- screen blockers remove a distraction but do not supply a meaningful alternative;
-- task managers assume the user already knows what to do;
-- courses supply more content to consume;
-- public social platforms optimize comparison and attention;
-- generic AI assistants generate ideas or outputs without ensuring that the user acts, learns, or finishes.
+Existing tools each solve one part: blockers remove a distraction without supplying an alternative; task managers assume you know what to do; courses supply more content; public platforms optimise comparison; AI assistants generate output without ensuring the user acts, learns, or finishes.
 
 ## 3. Product thesis
 
-When a person receives one appropriately sized production mission, completes it, records evidence, and is seen by a consistent small group, the person is more likely to continue producing and to build confidence through mastery.
+When a person receives one appropriately sized mission, completes it, records evidence, and is seen by a consistent small group, they are more likely to keep producing and to build confidence through mastery.
 
-The product loop is:
+**Autonomy is a mechanism, not a courtesy.** Boredom is failed engagement — a signal to pursue a *different* goal. A product that hands the user someone else's plan reproduces exactly the failure that makes courses feel inert. So the user chooses the project, the scope, and the finish line; the product supplies the next action, the evidence trail, and the crew. Where the product must choose for the user, it offers a default and makes overriding it obvious ([D-016](../log/decision-log.md)).
 
-1. Choose a meaningful project.
-2. Receive one small next mission.
-3. Produce something observable.
-4. Record evidence and compare feared versus actual outcomes.
-5. Share progress with a small crew.
-6. Increase difficulty gradually.
-7. Finish and publish a proof-of-work artifact.
+The loop: choose a meaningful project → receive one small next mission → produce something observable → record evidence and compare feared versus actual outcomes → share progress with a crew → increase difficulty gradually → finish and publish a proof-of-work artifact.
 
-## 4. Goals
+## 4. Goals and non-goals
 
-### 4.1 MVP goals
+**MVP goals.** Begin a first mission within ten minutes of onboarding. Complete a project the user scoped themselves, by a finish line they set. Generate visible evidence of skill, persistence, and contribution. Reduce friction between an idle moment and a meaningful next action. Create recurring low-pressure crew interaction. Measure behaviour rather than one subjective confidence score. Test whether users or institutions will pay.
 
-1. Help users begin a first production mission within ten minutes of onboarding.
-2. Help users complete a bounded project within 30 days.
-3. Generate visible evidence of skill, persistence, and contribution.
-4. Reduce the friction between an idle moment and a meaningful next action.
-5. Create recurring, low-pressure interaction within a crew of four to six users.
-6. Measure behavior rather than relying on a single subjective confidence score.
-7. Test whether users or institutions will pay for the outcome.
+**Non-goals.** Diagnose or treat any condition. Promise life purpose. Operate as a general social network or infinite public feed. Provide job placement or employment guarantees. Support users under 18. Block third-party mobile apps. Generate a finished project on the user's behalf. Include creator monetisation, tokens, or cash prizes. Support organisation administration beyond a basic pilot dashboard.
 
-### 4.2 Non-goals for MVP
+## 5. Users
 
-The MVP will not:
+| Persona | Age | Situation | Pain | Desired outcome |
+|---|---|---|---|---|
+| **A — Directionless graduate** | 21–26 | Recently graduated or between jobs | Time without structure, portfolio evidence, or confidence | A credible project to show in applications and interviews |
+| **B — Creator who never publishes** | 18–30 | Many ideas, many unfinished drafts | Perfectionism, fear of judgment, inconsistent execution | One imperfect but complete published project, and a repeatable habit |
+| **C — Student with unstructured time** | 18–24 | Studying, much free time on short-form content | Boredom, weak direction, few peers who make things | A demonstrable skill and productive peers |
 
-- diagnose or treat depression, anxiety, ADHD, addiction, or other conditions;
-- promise to give users a life purpose;
-- operate as a general-purpose social network;
-- include an infinite public feed;
-- provide job placement or guarantee employment;
-- support users under 18;
-- automatically block third-party mobile applications;
-- generate an entire finished project on behalf of the user;
-- include creator monetization, token rewards, or cash prizes;
-- support complex organization administration beyond a basic pilot dashboard.
-
-## 5. Target users
-
-### Persona A: Directionless graduate
-
-- Age: 21–26
-- Situation: Recently graduated or between jobs
-- Pain: Has time but lacks structure, portfolio evidence, and confidence
-- Desired outcome: Finish a credible project that can be shown in applications or interviews
-
-### Persona B: Aspiring creator who never publishes
-
-- Age: 18–30
-- Situation: Has many ideas and unfinished drafts
-- Pain: Perfectionism, fear of judgment, inconsistent execution
-- Desired outcome: Publish one imperfect but complete project and develop a repeatable production habit
-
-### Persona C: Student with unstructured time
-
-- Age: 18–24
-- Situation: Studies but spends substantial free time consuming short-form content
-- Pain: Boredom, weak direction, few peers who make things
-- Desired outcome: Use spare time to develop a demonstrable skill and meet productive peers
-
-### Secondary buyer: Institution
-
-Universities, workforce programs, bootcamps, community organizations, and employers may purchase a cohort-based version to improve engagement, portfolio production, belonging, and transition-to-work outcomes.
+**Secondary buyer:** universities, workforce programmes, bootcamps, community organisations, and employers, purchasing a cohort version to improve engagement, portfolio production, belonging, and transition-to-work outcomes.
 
 ## 6. Jobs to be done
 
-### Primary job
+**Primary:** when I feel bored, directionless, or tempted to scroll, help me start one meaningful action that contributes to a finished project.
 
-> When I feel bored, directionless, or tempted to scroll, help me start one meaningful action that contributes to a finished project.
+**Supporting:** help me choose something challenging but achievable · tell me exactly what to do next · make it safe to show unfinished work · show me that feared outcomes beat actual ones · let a small group notice whether I showed up · turn completed work into proof · help me identify what work I want to continue.
 
-### Supporting jobs
+## 7. Core experience
 
-- Help me choose a project that is challenging but achievable.
-- Tell me exactly what to do next.
-- Make it safe to show unfinished work.
-- Help me see that feared outcomes are often worse than actual outcomes.
-- Let a small group notice whether I showed up.
-- Turn completed work into proof I can show other people.
-- Help me identify what type of work I want to continue.
+**Onboarding.** Create an account, confirm 18+, choose a desired outcome (portfolio, published creative work, evidence of a skill, momentum, career exploration), select or define a project, **set their own target finish date**, state available days and session length, complete a baseline under three minutes, join a crew, receive the first mission immediately. Never ask abstract questions like "what is your life purpose?" — ask for concrete interests, constraints, and outputs.
 
-## 7. Core user experience
+**Daily production.** The home screen foregrounds one action: *I have 5 / 15 / 30 / 60 minutes.* The system then presents one mission that begins with a clear verb, has one definition of done, fits the time, creates or improves an artifact, suits the project stage, and is never merely "research" or "think" without tangible output. The user can accept, simplify, replace, or report a blocker.
 
-### 7.1 Onboarding
+**Evidence.** Before a difficult mission, optionally record expected difficulty (1–5), expected discomfort (0–10), the feared outcome in one sentence, and completion confidence (0–100%). Afterwards record attempted, completed, actual discomfort, actual outcome, evidence attachment or link, what was learned, and whether to repeat, increase, or reduce difficulty.
 
-The user must be able to:
+**Crew.** Four to six active members. See each member's project and recent completed mission, post a short daily proof, react with bounded signals ("seen", "useful", "keep going"), request or give specific feedback, attend optional co-working, report content. No follower counts, popularity rankings, public like counts, or infinite feed.
 
-1. Create an account.
-2. Confirm that they are at least 18.
-3. Select a primary desired outcome:
-   - build a portfolio;
-   - publish a creative project;
-   - learn by making;
-   - regain productive momentum;
-   - explore a career direction.
-4. Select or define a 30-day project.
-5. Set available days, preferred session length, and current experience.
-6. Complete a short baseline assessment.
-7. Join or be assigned to a crew.
-8. Receive the first mission immediately.
+**Weekly review.** Summarise missions planned and completed, production minutes, artifacts created or changed, predicted versus actual discomfort, repeated avoidance points, crew contributions, and progress against the user's own finish line. Then ask for one decision: continue at this level, increase challenge, or reduce scope to protect completion.
 
-The onboarding must avoid abstract questions such as “What is your life purpose?” It should ask for concrete interests, constraints, and desired outputs.
-
-### 7.2 Daily production flow
-
-The home screen must foreground a single action:
-
-> I have 5 / 15 / 30 / 60 minutes.
-
-After selecting a duration, the system presents one mission that:
-
-- begins with a clear verb;
-- has one definition of done;
-- fits the available time;
-- creates or improves an artifact;
-- is appropriate to the user’s project stage;
-- is not merely “research,” “think,” or “plan” without a tangible output.
-
-The user can accept, request an easier mission, request a different mission, or report a blocker.
-
-### 7.3 Evidence flow
-
-Before a difficult mission, the user may record:
-
-- expected difficulty, 1–5;
-- expected discomfort, 0–10;
-- feared outcome in one sentence;
-- confidence that the mission will be completed, 0–100%.
-
-After the attempt, the user records:
-
-- attempted: yes/no;
-- completed: yes/no;
-- actual discomfort, 0–10;
-- actual outcome;
-- evidence attachment or link;
-- what was learned;
-- whether the mission should be repeated, increased, or reduced in difficulty.
-
-### 7.4 Crew flow
-
-Each crew contains four to six active users when possible. Members can:
-
-- see each member’s current project and recent completed mission;
-- post a short daily proof or progress note;
-- react with bounded signals such as “seen,” “useful,” or “keep going”;
-- request or provide specific feedback;
-- attend an optional scheduled co-working session;
-- report inappropriate content or behavior.
-
-The crew experience must not contain follower counts, popularity rankings, public like counts, or an infinite feed.
-
-### 7.5 Weekly review
-
-Every seven days, the product summarizes:
-
-- missions planned and completed;
-- production minutes;
-- artifacts created or changed;
-- average predicted versus actual discomfort;
-- repeated avoidance points;
-- crew contributions;
-- project progress;
-- recommended adjustment for the next week.
-
-The review asks the user to choose one of three paths:
-
-- continue at the current level;
-- increase challenge;
-- reduce scope to protect completion.
-
-### 7.6 Completion flow
-
-A project is complete when the user has:
-
-- met the predefined definition of done;
-- uploaded or linked the final artifact;
-- written a short project summary;
-- identified skills demonstrated;
-- recorded at least one obstacle and response;
-- optionally requested peer feedback;
-- generated a shareable proof-of-work page.
-
-The completion page should be exportable as a public link and printable PDF in a later release. The MVP requires a public or private web page.
+**Completion.** A project is complete when the user's own definition of done is met, the final artifact is uploaded or linked, a short summary is written, skills demonstrated are identified, at least one obstacle and response is recorded, peer feedback is optionally requested, and a shareable proof-of-work page is generated.
 
 ## 8. Functional requirements
 
-### Account and profile
+| ID | Requirement |
+|---|---|
+| **FR-001** | Register with email or supported OAuth |
+| **FR-002** | Confirm age eligibility and accept terms |
+| **FR-003** | Set timezone, availability, interests, skills, privacy preferences |
+| **FR-004** | Export or delete account data |
+| **FR-010** | Select from project templates |
+| **FR-011** | Create a custom project with title, outcome, audience, artifact type, **user-set target date**, and definition of done |
+| **FR-012** | The system helps the user set scope and finish line, and flags when stated scope and stated availability are inconsistent. It does **not** impose a fixed programme length |
+| **FR-013** | Reduce project scope without losing historical evidence |
+| **FR-014** | Projects have stages: define, explore, build, test, revise, publish, reflect |
+| **FR-015** | One active project at a time in the MVP |
+| **FR-020** | Generate or select missions from project stage, available time, energy, skill level, dependencies, and recent behaviour |
+| **FR-021** | Every mission has title, instruction, definition of done, estimated duration, difficulty, artifact type, and stage |
+| **FR-022** | Accept, replace, simplify, skip, or report a blocker |
+| **FR-023** | Repeated replacement triggers a scope or blocker review |
+| **FR-024** | Non-AI fallback missions exist for every project stage |
+| **FR-025** | Never generate dangerous, illegal, exploitative, or clinically framed missions |
+| **FR-030** | Submit text, URL, image, or file evidence |
+| **FR-031** | Attempts preserve planned, attempted, completed, and skipped states |
+| **FR-032** | Predicted and actual discomfort stored separately |
+| **FR-033** | Transparent progress metrics |
+| **FR-034** | No universal "confidence score" is displayed |
+| **FR-035** | Browse the evidence timeline, filtered by stage or skill |
+| **FR-036** | Completed evidence can be added to the proof-of-work page |
+| **FR-040** | Join a crew by invitation or matching |
+| **FR-041** | Matching considers timezone, project category, session preference, language |
+| **FR-042** | Leave, mute, or report a crew |
+| **FR-043** | Crew posts are chronological and bounded |
+| **FR-044** | Members can request structured feedback |
+| **FR-045** | Moderators can remove content and suspend accounts |
+| **FR-046** | Crew codes for institution-led pilots |
+| **FR-050** | Schedule one daily production reminder |
+| **FR-051** | Notifications reference a concrete next mission, never guilt or streak loss |
+| **FR-052** | Disable all non-essential notifications |
+| **FR-053** | Crew notifications batched by default |
+| **FR-060** | Generate a proof-of-work page |
+| **FR-061** | Pages show artifact, contribution, skills, process evidence, reflection |
+| **FR-062** | Public, unlisted, or private visibility, user-controlled |
+| **FR-063** | Public pages never expose anxiety or discomfort data by default |
+| **FR-070** | Administrators create a cohort and invite users |
+| **FR-071** | Administrators view aggregate activation, participation, completion |
+| **FR-072** | Administrators cannot read private reflections unless explicitly shared |
+| **FR-073** | Aggregate reporting suppresses personally identifiable data where practical |
 
-- **FR-001:** Users can register with email or supported OAuth.
-- **FR-002:** Users must confirm age eligibility and accept terms.
-- **FR-003:** Users can set timezone, availability, interests, skills, and privacy preferences.
-- **FR-004:** Users can export or delete their account data.
+## 9. Measurement
 
-### Projects
-
-- **FR-010:** Users can select from project templates.
-- **FR-011:** Users can create a custom project with a title, outcome, audience, artifact type, deadline, and definition of done.
-- **FR-012:** The system validates that a project can reasonably be completed in 30 days.
-- **FR-013:** Users can reduce project scope without losing historical evidence.
-- **FR-014:** Projects have stages: define, explore, build, test, revise, publish, reflect.
-- **FR-015:** A user may have one active MVP project at a time.
-
-### Missions
-
-- **FR-020:** The system generates or selects missions based on project stage, available time, energy, skill level, dependencies, and recent behavior.
-- **FR-021:** Every mission has a title, instruction, definition of done, estimated duration, difficulty, artifact type, and project-stage mapping.
-- **FR-022:** Users can accept, replace, simplify, skip, or report a blocker.
-- **FR-023:** Repeated mission replacement triggers a scope or blocker review.
-- **FR-024:** The system must have non-AI fallback missions for every project stage.
-- **FR-025:** The system must not generate dangerous, illegal, exploitative, or clinically framed missions.
-
-### Evidence and progress
-
-- **FR-030:** Users can submit text, URL, image, or file evidence.
-- **FR-031:** Mission attempts preserve planned, attempted, completed, and skipped states.
-- **FR-032:** The system stores predicted and actual discomfort separately.
-- **FR-033:** Users can view transparent progress metrics.
-- **FR-034:** The system does not display a universal “confidence score.”
-- **FR-035:** Users can browse their evidence timeline and filter by project stage or skill.
-- **FR-036:** Completed evidence can be added to the final proof-of-work page.
-
-### Crews
-
-- **FR-040:** Users can join a crew by invitation or matching.
-- **FR-041:** Matching considers timezone, project category, session preference, and language.
-- **FR-042:** Users can leave, mute, or report a crew.
-- **FR-043:** Crew posts are chronological and bounded.
-- **FR-044:** Crew members can request structured feedback.
-- **FR-045:** Moderators can remove content and suspend accounts.
-- **FR-046:** The system supports a crew code for institution-led pilots.
-
-### Notifications
-
-- **FR-050:** Users can schedule one daily production reminder.
-- **FR-051:** Notifications must reference a concrete next mission, not generic guilt or streak loss.
-- **FR-052:** Users can disable all non-essential notifications.
-- **FR-053:** Crew notifications are batched by default.
-
-### Portfolio output
-
-- **FR-060:** Users can generate a proof-of-work page.
-- **FR-061:** Pages show the final artifact, contribution, skills, process evidence, and reflection.
-- **FR-062:** Users control public, unlisted, or private visibility.
-- **FR-063:** Public pages must not expose anxiety or discomfort data by default.
-
-### Administration and pilots
-
-- **FR-070:** Administrators can create a cohort and invite users.
-- **FR-071:** Administrators can view aggregate activation, participation, and completion data.
-- **FR-072:** Administrators cannot read private reflections unless the user explicitly shares them.
-- **FR-073:** Aggregate reporting must suppress personally identifiable data where practical.
-
-## 9. Measurement model
-
-The product must emphasize observable metrics:
-
-- missions attempted;
-- missions completed;
-- completion rate;
-- production minutes;
-- number of artifacts created or revised;
-- number of drafts shared before feeling ready;
-- project-stage progression;
-- crew feedback given and received;
-- predicted versus actual discomfort;
-- recovery time where recorded;
-- project completion;
-- proof-of-work page published;
-- continued production after the 30-day program.
-
-Suggested derived metrics:
+Observable metrics only: missions attempted and completed, completion rate, production minutes, artifacts created or revised, drafts shared before feeling ready, stage progression, crew feedback given and received, predicted versus actual discomfort, project completion, proof-of-work pages published, and continued production after completion.
 
 ```text
-7-day completion rate =
-completed missions / accepted missions
-
-difficulty-adjusted output =
-sum(completed mission difficulty)
-
-prediction gap =
-predicted discomfort - actual discomfort
-
-production consistency =
-active production days / planned production days
-
-artifact progression =
-completed required project stages / total required stages
+7-day completion rate      = completed missions / accepted missions
+difficulty-adjusted output = sum(completed mission difficulty)
+prediction gap             = predicted discomfort - actual discomfort
+production consistency     = active production days / planned production days
+artifact progression       = completed required stages / total required stages
 ```
 
-No derived metric should be presented as a clinical measure or objective measure of a person’s worth.
+No derived metric may be presented as a clinical measure or a measure of a person's worth.
 
-## 10. MVP success criteria
+## 10. Success criteria
 
-These are product hypotheses and pilot decision thresholds, not industry benchmarks.
+Pilot decision thresholds, not industry benchmarks.
 
-### Activation
+- **Activation:** 70% of registered pilot users accept a project · 60% complete a first mission within 24 hours · median registration→first accepted mission under 10 minutes.
+- **Engagement:** 50% complete three missions in week one · 40% still active in week three · 50% post or respond in their crew in week one.
+- **Outcome:** 30% complete their project · 40% produce a shareable artifact · 50% report the result is useful for a portfolio, application, or continued work · 25% begin another project within 14 days.
+- **Commercial:** 15 individuals pay at a tested price · three institutional buyers agree to a discovery meeting · one institution signs a paid or deposit-backed pilot before major platform expansion.
 
-- At least 70% of registered pilot users accept a project.
-- At least 60% complete a first mission within 24 hours.
-- Median time from registration to first accepted mission is under 10 minutes.
+## 11. Monetisation hypotheses
 
-### Engagement
+Test, don't assume. **B2C outcome purchase:** USD 29–79 for one project taken to completion — bounded by outcome, not by calendar. **B2C membership:** USD 8–15 monthly *after* a first completed project. **Institutional:** per-seat pricing. **Facilitated:** higher-priced, with human review and group sessions.
 
-- At least 50% of activated users complete three missions during week one.
-- At least 40% remain active in week three.
-- At least 50% post or respond in their crew during the first week.
+The first commercial test favours a bounded outcome over an indefinite subscription. The user must understand exactly what they are buying.
 
-### Outcome
+## 12. Safety, ethics, trust
 
-- At least 30% of activated users complete the defined project.
-- At least 40% produce a shareable proof-of-work artifact.
-- At least 50% report that the final project is useful for a portfolio, application, conversation, or continued personal work.
-- At least 25% begin another project or continue producing within 14 days of completion.
+Not therapy or medical treatment, and it says so. No shame, no withdrawal of social status, no punitive streaks. No encouragement of sleep deprivation, overwork, dangerous challenges, harassment, unauthorised access, or public exposure without consent. Reporting, blocking, and moderation controls throughout. Minimal collection of sensitive mental-health information. Private discomfort ratings never revealed to crews or administrators. AI missions and feedback pass content and schema validation. The core programme is completable without ever sharing publicly. Moderation policy covers abuse, sexual content, hate, self-harm content, exploitation, and IP violation.
 
-### Commercial
-
-- At least 15 individuals pay for a concierge pilot at a tested price.
-- At least three institutional buyers agree to a discovery meeting after seeing pilot outcomes.
-- At least one institution signs a paid or deposit-backed pilot before major platform expansion.
-
-## 11. Monetization hypotheses
-
-Test, do not assume:
-
-1. **B2C outcome purchase:** USD 29–79 for a 30-day project sprint.
-2. **B2C membership:** USD 8–15 monthly after users complete one project and understand recurring value.
-3. **Institutional cohort:** Per-seat pricing for universities, workforce organizations, bootcamps, or employers.
-4. **Facilitated cohort:** Higher-priced version including human project review and scheduled group sessions.
-
-The first commercial test should favor a bounded paid program rather than an indefinite subscription. The user should understand exactly what they are buying.
-
-## 12. Safety, ethics, and trust
-
-- The product must state that it is not therapy or medical treatment.
-- It must not use shame, withdrawal of social status, or punitive streak mechanics.
-- It must not encourage sleep deprivation, overwork, dangerous challenges, harassment, unauthorized access, or public exposure without consent.
-- It must provide reporting, blocking, and moderation controls.
-- It must minimize collection of sensitive mental-health information.
-- It must not reveal private discomfort ratings to crews or institutional administrators.
-- AI-generated missions and feedback must pass content and schema validation.
-- Users must be able to complete the core program without sharing publicly.
-- Moderation policies must address abuse, sexual content, hate, self-harm content, exploitation, and intellectual-property violations.
-- If a user expresses acute distress, the product should stop productivity coaching and present appropriate crisis-support guidance based on location. It should not attempt counselling.
+If a user expresses acute distress, the product stops productivity coaching and presents location-appropriate crisis-support guidance. It does not attempt counselling.
 
 ## 13. Non-functional requirements
 
-- **NFR-001 Performance:** Core authenticated pages should reach usable state within three seconds on typical mobile connections.
-- **NFR-002 Reliability:** Mission submission must be idempotent and recoverable after network interruption.
-- **NFR-003 Accessibility:** Target WCAG 2.2 AA for core flows.
-- **NFR-004 Responsive design:** All MVP flows must work at 360 px width.
-- **NFR-005 Security:** Encrypt data in transit and at rest through managed infrastructure.
-- **NFR-006 Privacy:** Separate private reflections from public portfolio data.
-- **NFR-007 Observability:** Log structured errors and key product events without storing reflection text in analytics.
-- **NFR-008 Portability:** Users can export project and evidence data in JSON or CSV.
-- **NFR-009 AI resilience:** Core flows remain usable when the language-model provider is unavailable.
-- **NFR-010 Cost control:** Cache reusable templates and impose per-user generation limits.
+| ID | Requirement |
+|---|---|
+| **NFR-001** | Core authenticated pages usable within three seconds on typical mobile connections |
+| **NFR-002** | Mission submission is idempotent and recoverable after network interruption |
+| **NFR-003** | WCAG 2.2 AA for core flows |
+| **NFR-004** | All MVP flows work at 360 px width |
+| **NFR-005** | Encryption in transit and at rest via managed infrastructure |
+| **NFR-006** | Private reflections stored separately from public portfolio data |
+| **NFR-007** | Structured error and event logging, with no reflection text in analytics |
+| **NFR-008** | Users export project and evidence data as JSON or CSV |
+| **NFR-009** | Core flows remain usable when the language-model provider is unavailable |
+| **NFR-010** | Reusable templates cached; per-user generation limits enforced |
 
-## 14. MVP release boundary
+## 14. Release boundary
 
-This section previously bundled crews and cohort administration into the first release, which contradicted the phased delivery plan in [initial design](initial-design.md) §19. The phased plan is correct and governs.
+An earlier version of this section bundled crews and cohort administration into the "first production release", contradicting the phased plan in [initial design](initial-design.md) §17. The phased plan governs ([D-013](../log/decision-log.md)).
 
-**First production release — solo MVP only:**
+**First release — solo MVP only:** web authentication, onboarding and baseline, project templates plus one custom project, mission generation with template fallback, mission attempts and evidence, transparent progress dashboard, proof-of-work page, analytics.
 
-- web authentication;
-- onboarding and baseline;
-- project templates and one custom project;
-- mission generation with template fallback;
-- mission attempts and evidence;
-- transparent progress dashboard;
-- proof-of-work page;
-- analytics.
+The goal is to prove activation and completion *without* community complexity. Crews are the largest source of scope, risk, and cold-start difficulty; shipping them alongside the core loop would make it impossible to tell which one failed.
 
-The goal of this release is to prove activation and project completion *without* community complexity. Crews are the single largest source of scope, risk, and cold-start difficulty in this product; shipping them alongside the core loop would make it impossible to tell which one failed.
-
-**Second release — crews:** chronological updates, structured feedback, matching, moderation, weekly review.
-
+**Second release — crews:** chronological updates, structured feedback, matching, moderation, weekly review.  
 **Third release — institutional:** cohort administration, aggregate dashboard, facilitator tools.
 
-Native mobile apps, application blocking, live video coworking, employer matching, sophisticated recommender models, and public discovery are later-stage features.
+Native mobile, application blocking, live video coworking, employer matching, sophisticated recommenders, and public discovery are later-stage.
 
-## 15. Open product decisions
+## 15. Open questions
 
-1. Which initial project category produces the clearest value: software, design, research, content, community service, or mixed?
-2. Is the primary payer the individual, university, workforce program, or employer?
-3. Are crews created at onboarding or after users complete a first mission?
-4. How much human facilitation is required to achieve acceptable completion rates?
-5. Does a 30-day program outperform a shorter 14-day program?
-6. Which final artifact is most persuasive to buyers: portfolio page, skills report, completed project, or verified contribution record?
+To be resolved by paid pilots, not internal debate.
+
+1. Which initial project category produces the clearest value — software, design, research, content, community service, or mixed?
+2. Is the primary payer the individual, university, workforce programme, or employer?
+3. Are crews created at onboarding or after a first completed mission?
+4. How much human facilitation is required for acceptable completion rates?
+5. Does a user-set finish line outperform a suggested default — and what default should be offered to users who ask for one?
+6. Which final artifact persuades buyers: portfolio page, skills report, completed project, or verified contribution record?
 7. Should the first market be geographically local, English-speaking global, or institution-specific?
-
-These questions should be resolved through paid pilots rather than internal debate alone.
