@@ -1,8 +1,14 @@
 # Demand and Market Thesis
 
-**Working title:** ForgePath  
+**Product:** ForgePath (working title)  
 **Document status:** Market hypothesis and validation plan  
+**BMAD stage:** Pre-BMAD input, feeds the Analyst brief  
+**Superseded by:** nothing yet — this remains the demand reference  
 **Research snapshot:** 31 July 2026
+
+> **Related:** [Requirements](requirements.md) · [Initial design](initial-design.md) · [BMAD path](../method/bmad-path.md) · [Future plans](../roadmap/future-plans.md) · [Decision log](../log/decision-log.md)
+
+> **How to read this:** every number below is either a cited external source (Section 12) or an explicitly labelled founder hypothesis. Scores in Section 7 and the models in Section 8 are assumptions, not measurements. Nothing here is validated until Section 9 has been run.
 
 ## 1. Executive judgment
 

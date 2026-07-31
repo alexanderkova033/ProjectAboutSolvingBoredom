@@ -1,9 +1,15 @@
 # Product Requirements
 
-**Working title:** ForgePath  
+**Product:** ForgePath (working title)  
 **Document status:** MVP specification  
+**BMAD stage:** Pre-BMAD input, feeds the PM PRD  
+**Superseded by:** `docs/product/prd.md` once the BMAD PM run produces it  
 **Research snapshot:** 31 July 2026  
 **Primary audience:** Product, engineering, design, research, and pilot partners
+
+> **Related:** [Demand](demand.md) · [Initial design](initial-design.md) · [BMAD path](../method/bmad-path.md) · [Future plans](../roadmap/future-plans.md) · [Decision log](../log/decision-log.md)
+
+> **How to read this:** the `FR-` and `NFR-` identifiers in Sections 8 and 13 are the stable handles for this project. When the BMAD PM produces `prd.md`, its epics and stories should trace back to these identifiers rather than renumbering them.
 
 ## 1. Product summary
 

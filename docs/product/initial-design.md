@@ -1,8 +1,14 @@
-# Product and Technical Design
+# Initial Product and Technical Design
 
-**Working title:** ForgePath  
-**Document status:** MVP design specification  
+**Product:** ForgePath (working title)  
+**Document status:** Initial design — a starting position, not a ratified architecture  
+**BMAD stage:** Pre-BMAD input, feeds the UX Expert spec and the Architect run  
+**Superseded by:** `docs/product/architecture.md` once the BMAD Architect run produces it  
 **Research snapshot:** 31 July 2026
+
+> **Related:** [Demand](demand.md) · [Requirements](requirements.md) · [BMAD path](../method/bmad-path.md) · [Future plans](../roadmap/future-plans.md) · [Decision log](../log/decision-log.md)
+
+> **Why "initial":** this document was written before any code, any user test, and any BMAD run. Sections 1–4 (principles, information architecture, screens) are the durable part and should survive. Sections 5–17 (stack, schema, engine, API) are a defensible first draft that the BMAD Architect is expected to challenge and replace. Do not treat the type definitions here as a migration target; treat them as evidence that the domain has been thought through.
 
 ## 1. Design objective
 
@@ -310,9 +316,21 @@ Option B, more portable:
 
 ## 6. Suggested repository structure
 
+No application code exists yet. The repository currently holds documentation only; see the [README](../../README.md) for the live tree.
+
+When code lands, the top level should scream the domain — a reader should see what ForgePath *does* before they see which framework it uses. Route and component folders are named after the five product surfaces in Section 3, and `lib/` is split by domain capability rather than by technical layer.
+
 ```text
 /
-├── app/
+├── README.md
+├── LICENSE
+├── docs/                      # exists today
+│   ├── product/               # demand.md, requirements.md, initial-design.md
+│   ├── method/                # bmad-path.md
+│   ├── roadmap/               # future-plans.md
+│   └── log/                   # decision-log.md
+│
+├── app/                       # arrives with Phase 1
 │   ├── (auth)/
 │   ├── onboarding/
 │   ├── today/
@@ -329,24 +347,23 @@ Option B, more portable:
 │   ├── evidence/
 │   └── ui/
 ├── lib/
-│   ├── ai/
+│   ├── ai/                    # provider-agnostic generation + schema validation
 │   ├── analytics/
 │   ├── auth/
 │   ├── db/
-│   ├── matching/
+│   ├── matching/              # crew matching score (Section 12)
 │   ├── moderation/
-│   ├── scoring/
+│   ├── scoring/               # progress dimensions (Section 11)
 │   └── validation/
 ├── prompts/
 ├── public/
-├── tests/
-│   ├── unit/
-│   ├── integration/
-│   └── e2e/
-├── REQUIREMENTS.md
-├── DEMAND.md
-└── DESIGN.md
+└── tests/
+    ├── unit/
+    ├── integration/
+    └── e2e/
 ```
+
+The `lib/` split is the load-bearing decision. `matching`, `scoring`, `moderation`, and `ai` are the four places where this product's actual rules live, and they must stay testable without a browser or a database — the AI evaluation set in Section 18 depends on it.
 
 ## 7. Domain model
 
