@@ -1,6 +1,6 @@
 # Initial Product and Technical Design
 
-**Product:** ForgePath (working title)  
+**Product:** ForgePath *(placeholder name — to be replaced)*  
 **Document status:** Initial design — a starting position, not a ratified architecture  
 **BMAD stage:** Pre-BMAD input, feeds the UX Expert spec and the Architect run  
 **Superseded by:** `docs/product/architecture.md` once the BMAD Architect run produces it  

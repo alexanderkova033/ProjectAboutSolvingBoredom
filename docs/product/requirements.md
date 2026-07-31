@@ -1,6 +1,6 @@
 # Product Requirements
 
-**Product:** ForgePath (working title)  
+**Product:** ForgePath *(placeholder name — to be replaced)*  
 **Document status:** MVP specification  
 **BMAD stage:** Pre-BMAD input, feeds the PM PRD  
 **Superseded by:** `docs/product/prd.md` once the BMAD PM run produces it  
@@ -404,7 +404,9 @@ The first commercial test should favor a bounded paid program rather than an ind
 
 ## 14. MVP release boundary
 
-The first production release includes:
+This section previously bundled crews and cohort administration into the first release, which contradicted the phased delivery plan in [initial design](initial-design.md) §19. The phased plan is correct and governs.
+
+**First production release — solo MVP only:**
 
 - web authentication;
 - onboarding and baseline;
@@ -412,11 +414,14 @@ The first production release includes:
 - mission generation with template fallback;
 - mission attempts and evidence;
 - transparent progress dashboard;
-- crews with chronological updates and structured feedback;
-- weekly review;
 - proof-of-work page;
-- simple cohort administration;
-- analytics and moderation controls.
+- analytics.
+
+The goal of this release is to prove activation and project completion *without* community complexity. Crews are the single largest source of scope, risk, and cold-start difficulty in this product; shipping them alongside the core loop would make it impossible to tell which one failed.
+
+**Second release — crews:** chronological updates, structured feedback, matching, moderation, weekly review.
+
+**Third release — institutional:** cohort administration, aggregate dashboard, facilitator tools.
 
 Native mobile apps, application blocking, live video coworking, employer matching, sophisticated recommender models, and public discovery are later-stage features.
 

@@ -1,6 +1,6 @@
 # Demand and Market Thesis
 
-**Product:** ForgePath (working title)  
+**Product:** ForgePath *(placeholder name — to be replaced)*  
 **Document status:** Market hypothesis and validation plan  
 **BMAD stage:** Pre-BMAD input, feeds the Analyst brief  
 **Superseded by:** nothing yet — this remains the demand reference  
