@@ -25,7 +25,7 @@ The full argument is in [demand.md](demand.md). What the design depends on:
 
 - **Boredom is upstream.** The chain runs boredom → consumption → not creating → no confidence → fear → *"I'm just lazy"*, and the last link feeds the first. Because boredom is first, the intervention is making, not fear-management ([D-023](../log/decision-log.md)).
 - **The last link is a verdict, not a cause.** Laziness is what users report while fear is what happens, and it is the only link phrased as an identity — which is what makes the loop stable. The design disputes it with a record and never names it ([D-027](../log/decision-log.md)).
-- **Autonomy is load-bearing.** A prescribed programme reproduces what makes courses inert. The user picks project, scope, and finish line ([D-016](../log/decision-log.md)).
+- **Autonomy is load-bearing.** A prescribed programme reproduces what makes courses inert. The user picks what to make; the product never asks how big or by when ([D-016](../log/decision-log.md), [D-028](../log/decision-log.md)).
 - **Payoff must arrive fast.** Creating will always be harder than consuming, so it can't win on ease — only on payoff size, and only if the payoff arrives soon enough to compete.
 - **The internet's default response is silence.** Any design promising external validation must engineer it rather than hope for it.
 
@@ -33,7 +33,7 @@ The full argument is in [demand.md](demand.md). What the design depends on:
 
 **Goals**
 
-1. First mission accepted within ten minutes of signup; something shipped within 72 hours.
+1. First mission started within ten minutes of opening the product, **without an account**; something shipped within 72 hours.
 2. Make authored hours visible and undeniable, without scoring the user.
 3. Guarantee that a first ship receives a response.
 4. Keep the core loop completable in five minutes.
@@ -49,39 +49,46 @@ Diagnosing or treating anything · promising happiness, income, or the removal o
 
 ### 4.1 Principles
 
-1. **Present tense.** Anything living in *will* (countdowns, goal ceremonies, deadline projections) or *have* (badges, streaks, trophies, portfolio-as-achievement) does not ship. This is a filter to run against every screen, not a sentiment ([D-024](../log/decision-log.md)).
-2. **One next action.** The default screen shows one mission, never a backlog.
-3. **The user decides; the product proposes.** Every suggestion is a default with a visible override.
-4. **Consequence visibility, not discipline.** Show where the time went; impose nothing.
-5. **Agency is real before it is legible.** Manufacturing a feeling of control the user lacks is a dark pattern ([D-021](../log/decision-log.md)).
-6. **Recall over aspiration.** What already absorbed them, not what they want to become.
-7. **Ship early, ship small.** Work nobody sees isn't progress.
-8. **No first ship into a void.**
-9. **Boredom is faced, not removed.** When scrolling stops it arrives undiluted. Say so.
-10. **Never describe the user, only what they did.** Nothing may imply they are lazy, behind, or failing — that reinforces the verdict the product exists to overturn ([D-027](../log/decision-log.md)).
-11. **AI is scaffolding, never the creator of record.**
+1. **Show, don't tell.** Show what the user can do. Never tell them what to feel, what to achieve, or what they already know about themselves ([D-029](../log/decision-log.md)).
+2. **Present tense.** Anything living in *will* (countdowns, deadlines, goal ceremonies) or *have* (badges, streaks, trophies, portfolio-as-achievement) does not ship. A filter to run against every screen, not a sentiment ([D-024](../log/decision-log.md)).
+3. **No scope, no finish line.** Never ask how big or by when. When someone is doing what they want, those questions don't help, and the pressure they add is a reason people stop ([D-028](../log/decision-log.md)).
+4. **One next action.** The default screen shows one mission, never a backlog.
+5. **The user decides; the product proposes.** Every suggestion is a default with a visible override.
+6. **Choice reveals preference.** Don't ask what they love — they know, and asking changes nothing. Show real options and record which one they take ([D-030](../log/decision-log.md)).
+7. **Nothing required to start.** No account, no questionnaire, no goal-setting in front of the first mission ([D-032](../log/decision-log.md)).
+8. **Ship early, ship small.** Work nobody sees isn't progress.
+9. **No first ship into a void.**
+10. **Boredom is faced, not removed.** When scrolling stops it arrives undiluted. Say so.
+11. **Never describe the user, only what they did.** Nothing may imply they are lazy, behind, or failing ([D-027](../log/decision-log.md)).
+12. **AI is scaffolding, never the creator of record.**
 
 ### 4.2 Surfaces
 
-**Now** — time-available selector, one mission, controls. **Project** — definition of done, stages, things made, scope adjustment. **Crew** — bounded chronological updates, guaranteed responses, reporting. **Evidence** — what was made, what shipped, what came back. **Profile** — schedule, privacy, notifications, export and deletion. Administrators get a separate **Cohort** area.
+**Now** — time-available selector, one mission, controls. **Project** — what is being made, stages, things made so far. **Evidence** — what was made, what shipped, what came back. **Profile** — privacy, notifications, export and deletion. Administrators get a separate **Cohort** area. A **Crew** surface is specified but unscheduled ([D-033](../log/decision-log.md)).
 
 ### 4.3 Key flows
 
 **Welcome.** *Your evenings are going somewhere. This is how you get them back.*
 
-**Recall**, before anything is chosen — three past-tense questions: when did you last lose track of time; what have you made or fixed, even badly; what do you read about when nobody set it. Free text, skippable, under 90 seconds. Never asks what the user wants to *become*; that question gets a performed answer.
+**Pick something.** No questionnaire, no account, no goal-setting. The first screen after the welcome is a small set of real, concrete things the user could make — a researched explainer, a simple tool, a product concept, a local problem-and-solution report, a short visual or audio story, a tiny service experiment for a real person. Each shown as the thing itself, with an example of what someone else's finished version looked like.
 
-**Project and finish line.** A small curated library — a researched explainer, a simple tool, a product concept, a local problem-and-solution report, a short visual or audio story, a tiny service experiment for a real person. The user writes their own definition of done and picks their own date. The system reflects the implication — *about four hours a week for six weeks* — and flags inconsistency with stated availability without blocking it.
+They pick one and start. The choice is the signal; nothing is asked about their interests ([D-030](../log/decision-log.md)). What they passed over is recorded too.
 
-**The loop.** *How much time do you have?* → one mission → done. The mission card carries a title, an instruction, a definition of done, a duration, and a difficulty. The user can accept, simplify, replace, or report a blocker.
+**No scope screen and no date screen exist** ([D-028](../log/decision-log.md)). The user is never asked how big the thing is or when it will be done. The 72-hour first ship keeps the work small without anyone having to declare a size, and the absence of a deadline is the point rather than an omission.
 
-**Ship.** The audience ladder, one rung at a time, each guaranteed to respond before the next unlocks: crew → people they know → one stranger who fits the thing → a small public. The user chooses the rung; the product never routes a first ship somewhere silence is likely.
+**The loop.** *How much time do you have?* → one mission → done. The mission card carries a title, an instruction, a definition of done, a duration, and a difficulty. The user can accept, simplify, replace, or report a blocker. *Done* belongs to the mission; nothing asks whether the project is finished.
+
+**Session feeling.** One tap before, one tap after — a small row of faces or a 1–5, no words, no explanation asked for. Skippable and skippable permanently. The user can see their own history; nobody else ever can, it is never turned into a score or a profile, and the product never comments on it ([D-031](../log/decision-log.md)).
+
+This is the single exception to measuring only behaviour, and it earns the exception by being the only direct measure of the promise: that the time felt different afterwards. The distinction that keeps it safe is the subject — the product never rates the user; the user rates a session.
+
+**Ship.** The audience ladder, one rung at a time, each guaranteed to respond before the next unlocks: one person the user already knows → one stranger who fits the thing → a small public. In hand-run cohorts the operator is the guaranteed responder for rung one. The user chooses the rung; the product never routes a first ship somewhere silence is likely.
 
 **Time mirror.** Weekly, backward-looking: hours authored, things made, things shipped, responses received. No target, no projection, no red, no comparison to other users.
 
 Its job is narrow and worth stating: **make *"I'm just lazy"* untenable against a record.** Not to inform, not to motivate — to dispute a verdict the user has already passed on themselves. That is why it counts what was made and stays silent about the rest, and why a low week must still read as a record rather than a shortfall. If it ever reads as judgment it has become the thing the product is fighting.
 
-After two stalled weeks, one question with the user's own recall answers above it: *is this still the thing you want to be making?* Dropping it is a good outcome.
+After two stalled weeks, one question: *is this still the thing you want to be making?* Shown alongside what they picked and passed over at the start. Dropping it is a good outcome.
 
 **Completion.** A page recording what the thing is, what it took, and what came back. A receipt that the hours were real — generated as a by-product, never presented as the reason for the work ([D-026](../log/decision-log.md)).
 
@@ -93,7 +100,8 @@ The important structural decision is that **making, shipping, and being responde
 
 | Entity | Holds | Why it's separate |
 |---|---|---|
-| **Project** | Title, outcome, user-written definition of done, user-set target date, stage, visibility | Target date is revisable without penalty; the model must not treat a moved date as failure |
+| **Project** | Title, artifact type, stage, visibility | Deliberately holds **no target date and no scope estimate** ([D-028](../log/decision-log.md)). There is no field to leave blank and no field to nag about, because the schema shouldn't make a deadline easy to add back later |
+| **Session mood** | An optional pair of taps, before and after a session | Stored against the session and only ever readable by its owner. Kept separate from every other record so no query can accidentally join it to a profile ([D-031](../log/decision-log.md)) |
 | **Mission** | Instruction, definition of done, duration, difficulty, stage, and a **kind** — *produce* or *distribute* | Making shipping a mission kind rather than a phase is what stops distribution being deferred forever |
 | **Mission attempt** | Attempted, completed, blocker, optional predicted and actual discomfort | Attempts are preserved separately from missions so a skip is data rather than an absence |
 | **Artifact** | The thing itself, and when it shipped | Distinct from evidence-of-work. Evidence proves effort; an artifact is what a stranger could actually receive |
@@ -101,7 +109,7 @@ The important structural decision is that **making, shipping, and being responde
 | **Response** | An external reaction, its kind, and **whether it came from someone who knows the user** | A friend's kindness and a stranger's use are not the same evidence and must not be counted together |
 | **Production session** | Minutes, and whether anything was produced | The unit the time mirror sums. Time is the product, so time is a first-class record |
 
-Projects own missions and artifacts; artifacts own ships; ships own responses; users own sessions and belong to crews. Private reflections sit under stricter row-level policies than anything shippable, and are stored apart from anything that could reach a public page.
+Projects own missions and artifacts; artifacts own ships; ships own responses; users own sessions. Private reflections and session-mood records sit under stricter row-level policies than anything shippable, and are stored apart from anything that could reach a public page.
 
 ### 5.2 Mission generation
 
@@ -128,13 +136,13 @@ Four transparent quantities, never combined into a score: authored hours, things
 
 ### 5.5 Interface surface
 
-The application needs capabilities for: managing a project and its scope, requesting and resolving missions, recording artifacts and shipping them to a rung, recording responses against a ship, retrieving the weekly mirror, crew membership and posting, and aggregate cohort metrics for administrators.
+The application needs capabilities for: managing what is being made, requesting and resolving missions, recording artifacts and shipping them to a rung, recording responses against a ship, recording an optional session-mood pair, retrieving the weekly mirror, and aggregate cohort metrics for administrators.
 
 Authorisation is enforced server-side on every resource. Hidden UI controls are never the access-control mechanism. Mission submission is idempotent and recoverable after a network interruption, because the core loop runs on phones with bad connections.
 
 ### 5.6 Privacy and safety
 
-Three data classes. **Private:** email, recall answers, discomfort ratings, reflections, moderation reports, billing. **Crew-visible:** display name, project title, deliberately shared artifacts. **Public:** only what the user explicitly selects, with AI assistance attributed. Administrators receive aggregate metrics and never reflections.
+Three data classes. **Private:** email, session-mood records, reflections, moderation reports, billing. **Shared-on-purpose:** display name, what they are making, deliberately shared artifacts. **Public:** only what the user explicitly selects, with AI assistance attributed. Administrators receive aggregate metrics and never reflections or per-user mood.
 
 Content moderation runs before crew publication, with file-type restrictions, malware scanning, reporting, blocking, a moderator audit trail, and rate limits. Model output is constrained by prohibited mission categories, risk classification, schema validation, and prompt-injection resistance for user-supplied project text, with escalation to a human for ambiguous flags.
 
@@ -153,11 +161,11 @@ For minors, additional constraints apply: guardian consent, no mixed-age crews, 
 | Model output fails validation twice | Falls back to a template mission silently |
 | Network drops mid-submission | Submission is idempotent; the attempt is recoverable |
 | A ship receives no response | Adaptation drops a rung to one with a guaranteed responder |
-| A crew falls below three active members | The crew is flagged for manual repair; matching is not automated at this stage |
+| A first ship gets no response | The guaranteed responder for rung one is a named person, not a pool. If they are unreachable the ship is held rather than sent onward |
 
 ### 5.8 Testing
 
-Unit coverage for mission schema validation, authored-hours arithmetic, ladder progression, permission rules, and stage transitions. Integration coverage for signup through first mission, a first ship with a guaranteed responder, private-versus-crew evidence separation, time-mirror generation, account deletion, and model-failure fallback. End-to-end coverage for signup to first ship in one session, a response recorded against an artifact, scope reduced without losing evidence, a minor account blocked from public publishing, and an administrator seeing aggregates without reflections.
+Unit coverage for mission schema validation, authored-hours arithmetic, ladder progression, permission rules, and stage transitions. Integration coverage for anonymous first mission through to registration without data loss, a first ship with a guaranteed responder, session-mood records staying private, time-mirror generation, account deletion, and model-failure fallback. End-to-end coverage for opening the product to a first ship in one session without an account, a response recorded against an artifact, changing what is being made without losing prior evidence, a minor account blocked from public publishing, and an administrator seeing aggregates without per-user mood or reflections.
 
 **Model evaluation set:** at least 100 fixed project states covering vague and overambitious projects, low energy, short time windows, repeated avoidance, unshippable projects, unsafe requests, prompt injection, and interpersonal missions. Scored for specificity, feasibility, duration fit, shippability, safety, and preserved user agency. This is why the generation and scoring rules must be callable without a browser or database — see [repo-structure.md](../roadmap/repo-structure.md).
 
@@ -171,9 +179,15 @@ Unit coverage for mission schema validation, authored-hours arithmetic, ladder p
 
 **Treating fear directly, with graded exposure.** Rejected. Fear is the last link in the chain, not the first, so exposure work treats a symptom. The discomfort-prediction machinery is retained but deliberately minor.
 
-**Building crew matching now.** Deferred. Matching solves a liquidity problem that does not exist yet, and the inactive-replacement rule assumes a bench of spare users only available at scale. Hand-picking until manual assembly is the obvious bottleneck ([D-014](../log/decision-log.md)).
+**Crews at all, for now.** Deferred to *maybe* ([D-033](../log/decision-log.md)). A social component at signup is a barrier for precisely the person this targets — someone already avoiding being seen. This breaks the audience ladder's original first rung, which assumed a crew; rung one becomes one person the user already knows, and in hand-run cohorts the operator is the guaranteed responder. Crews remain specified in the requirements so the work isn't lost.
 
-**Shipping crews with the core loop.** Rejected. Crews are the largest single source of scope, risk, and cold-start difficulty; shipping them together would make it impossible to tell which one failed ([D-013](../log/decision-log.md)).
+**Asking the user for scope and a finish line.** Rejected ([D-028](../log/decision-log.md)). It survived the removal of the fixed 30-day programme and shouldn't have — the deadline projection was already cut as a *will* mechanic while the date feeding it was left in place. When someone is doing what they actually want, size and deadline are irrelevant, and the pressure they add is itself a reason people stop.
+
+**A recall questionnaire at onboarding.** Rejected ([D-030](../log/decision-log.md)). *"When did you last lose track of time?"* is a self-help cliché and, worse, redundant: people already know what absorbs them. Knowing was never the missing piece. Replaced by showing real options and recording the pick.
+
+**Requiring an account before the first mission.** Rejected ([D-032](../log/decision-log.md)). Registration in front of value is a gate on the only thing that matters. Cost accepted: anonymous sessions complicate storage, analytics, and the age gate.
+
+**Measuring no internal state at all.** Rejected in one narrow place ([D-031](../log/decision-log.md)). A before/after session pair is the only direct evidence that the time felt different, which is the actual promise. It is safe only because the user is the one rating, and the rating never becomes a score.
 
 **Competing on blocking.** Rejected. The category is crowded and it is not where this differentiates — what appears *after* the block is. Integration with existing blockers stays open as future work ([D-007](../log/decision-log.md)).
 
@@ -193,9 +207,9 @@ Everything else is conventional: managed hosting, error monitoring, privacy-cons
 
 | Phase | Contains | Proves |
 |---|---|---|
-| **0 — Concierge** | No product. Forms, a spreadsheet, hand-written missions, hand-picked crews, unpaid | That the loop works at all, and what the templates should be |
+| **0 — Concierge** | No product. Forms, a spreadsheet, hand-written missions, the operator as guaranteed responder, unpaid | That the loop works at all, and what the options should be |
 | **1 — Solo** | Auth, recall, onboarding, templates, mission loop, evidence, ship missions, time mirror | That people ship in week one without community machinery |
-| **2 — Crews** | Chronological updates, the ladder's first rung, moderation | Whether a guaranteed audience changes ship rate |
+| **2 — Reach** | Upper ladder rungs, moderation. Crews only if the cohort asks for them ([D-033](../log/decision-log.md)) | Whether a guaranteed audience changes ship rate |
 | **3 — Institutional** | Cohort codes, aggregate dashboard, facilitator tools, data-processing terms | Distribution, and eventually willingness to pay |
 | **4 — Personalisation** | Adaptive difficulty, blocker detection, template expansion | That completion improves without AI cost running away |
 
@@ -206,5 +220,5 @@ Everything else is conventional: managed hosting, error monitoring, privacy-cons
 1. How large must a first response be before it changes how someone sees themselves? A crew member being kind may be dismissible as politeness; a stranger's use is not.
 2. Does reclaimed time sell, or does the finished thing sell? The demand doc leaves this deliberately unresolved.
 3. Which project category ships fastest while still feeling like the user's own?
-4. Do crews form at onboarding, or after a first ship?
+4. Does anyone actually want a crew, or is it a barrier dressed as a feature?
 5. How much facilitation does an acceptable ship rate require?

@@ -28,20 +28,31 @@ Existing tools each take one piece: blockers remove the app and return nothing; 
 
 ## 3. Principles
 
-1. **Present tense.** If a feature lives in *will* (countdowns, goal ceremonies, aspiration) or *have* (badges, streaks, trophies), it doesn't ship. The product operates in *now* ([D-024](../log/decision-log.md)).
-2. **The user decides; the product proposes.** They pick the project, scope, and finish line. Every suggestion is a default with a visible override.
-3. **Consequence visibility, not discipline.** No streaks, no obligation, no guilt. Show where the time went and let them choose ([D-017](../log/decision-log.md)).
-4. **Agency is real before it is legible.** Manufacturing a feeling of control the user doesn't have is a dark pattern, and every screen is audited against the manipulation taxonomy ([D-021](../log/decision-log.md)).
-5. **Recall over aspiration.** Ask what someone already lost track of time doing, not what they want to become.
-6. **Boredom is faced, not removed.** When the scrolling stops it arrives undiluted. Say so.
-7. **Never describe the user, only what they did.** No copy, mission, notification, or empty state may imply the user is lazy, behind, or failing — that reinforces the verdict the product exists to overturn ([D-027](../log/decision-log.md)).
-8. **AI is scaffolding, never the creator of record.**
+1. **Show, don't tell.** Show the user what they can do. Never tell them what to feel, what to achieve, or what they already know about themselves ([D-029](../log/decision-log.md)).
+2. **Present tense.** If a feature lives in *will* (countdowns, deadlines, goal ceremonies) or *have* (badges, streaks, trophies), it doesn't ship ([D-024](../log/decision-log.md)).
+3. **No scope, no finish line.** The product never asks how big the thing is or when it will be done. When someone is doing what they want, those questions don't help and the pressure they add is the thing that stops people ([D-028](../log/decision-log.md)). *Done* is defined per mission, never per project.
+4. **The user decides; the product proposes.** Every suggestion is a default with a visible override.
+5. **Choice reveals preference.** Don't ask what someone loves — they already know, and the question is a cliché that changes nothing. Put real options in front of them and watch which one they pick ([D-030](../log/decision-log.md)).
+6. **Consequence visibility, not discipline.** No streaks, no obligation, no guilt ([D-017](../log/decision-log.md)).
+7. **Agency is real before it is legible.** Manufacturing a feeling of control the user doesn't have is a dark pattern; every screen is audited against the manipulation taxonomy ([D-021](../log/decision-log.md)).
+8. **Boredom is faced, not removed.** When the scrolling stops it arrives undiluted. Say so.
+9. **Never describe the user, only what they did.** No copy, mission, notification, or empty state may imply they are lazy, behind, or failing ([D-027](../log/decision-log.md)).
+10. **AI is scaffolding, never the creator of record.**
 
 ## 4. Goals and non-goals
 
-**Goals.** Ship something within 72 hours of signing up. Make the week's authored hours visible. Produce one real external response. Reduce the gap between an idle moment and a made thing. Measure behaviour, never feelings.
+Goals are stated as things the product **does**, not states the user should reach. Nothing here is a feeling to be produced.
 
-**Non-goals.** Diagnose or treat anything. Promise happiness, purpose, or income. General social network or public feed. Job placement. Users under 16. App blocking. Generate the user's work. Creator monetisation, tokens, prizes. Streaks or any punitive mechanic.
+**The product must:**
+
+1. Get someone from opening it to making something in under ten minutes, without an account.
+2. Put one appropriately sized thing to do in front of them whenever they have a spare five minutes.
+3. Get the first made thing in front of a real person within 72 hours.
+4. Guarantee that first thing receives a response.
+5. Show, weekly, what was made — never what was missed.
+6. Keep working with the language model switched off.
+
+**Non-goals.** Diagnose or treat anything. Promise happiness, purpose, or income. Ask what the user wants to become. Set deadlines or scope. General social network or public feed. Job placement. Users under 16. App blocking. Generate the user's work. Creator monetisation, tokens, prizes. Streaks or any punitive mechanic.
 
 ## 5. Users
 
@@ -51,33 +62,37 @@ Existing tools each take one piece: blockers remove the app and return nothing; 
 
 ## 6. Core experience
 
-Six things must be true. Screens and copy are in [initial design](initial-design.md) §4.
+Seven things must be true. Screens and copy are in [initial design](initial-design.md) §4.
 
-1. **Recall precedes choosing.** Three past-tense questions — what absorbed you, what you've made, what you read unprompted — before any project is selected. Under 90 seconds, skippable.
-2. **The user sets scope and finish line.** The system reflects the implication and flags inconsistency without blocking. A suggested date is a default, never a container.
-3. **The loop is one mission at a time.** *I have 5 / 15 / 30 / 60 minutes* → one mission with a testable definition of done → done.
-4. **Shipping happens in week one, repeatedly.** Getting something in front of a real person is a mission kind, not an end-state.
-5. **The audience ladder guarantees a response** ([D-025](../log/decision-log.md)): crew → people they know → one fitting stranger → a small public. No first ship goes into a void.
-6. **The weekly view looks backward.** Authored hours, things made, things shipped, responses received. No projection, no deadline, no comparison. It counts what was made and stays silent about the rest. Its job is to make *"I'm just lazy"* untenable against a record ([D-027](../log/decision-log.md)) — not to inform, and not to motivate.
+1. **Nothing is required to start.** No account, no questionnaire, no goal-setting. The first thing anyone sees is something to make. Registration is offered only once there is work worth keeping ([D-032](../log/decision-log.md)).
+2. **Options, not questions.** The user is shown real things they could make and picks one. No interview about their interests — the pick is the signal ([D-030](../log/decision-log.md)).
+3. **No scope and no date are ever requested** ([D-028](../log/decision-log.md)). The 72-hour first ship keeps the work small without anyone having to declare a size.
+4. **The loop is one mission at a time.** *I have 5 / 15 / 30 / 60 minutes* → one mission with a testable definition of done → done. *Done* belongs to the mission; the project has no finish line.
+5. **Shipping happens in week one, repeatedly.** Getting something in front of a real person is a mission kind, not an end-state.
+6. **The audience ladder guarantees a response** ([D-025](../log/decision-log.md)): one person the user already knows → one stranger who fits the thing → a small public. During hand-run cohorts the operator is the guaranteed responder. No first ship goes into a void.
+7. **The weekly view shows what was made.** Authored hours, things made, things shipped, responses received. No projection, no deadline, no comparison, and never a word about time lost — the user already knows where that went. Its job is to make *"I'm just lazy"* untenable against a record ([D-027](../log/decision-log.md)).
 
-Completion means the user's own definition of done is met and the thing exists. The proof-of-work page is a **by-product** ([D-026](../log/decision-log.md)) — the receipt that the hours were real, not the reason for the work.
+**Session feeling, optionally, before and after** ([D-031](../log/decision-log.md)). One tap each side. This is the only internal state the product records, it belongs to the user rather than to us, and it is never scored, never averaged into anything, and never shown to anyone else. It exists because the delta is the only direct measure of the actual promise — that the time felt different afterwards.
+
+A project ends when the user stops, and stopping is not failure. The proof-of-work page is a **by-product** ([D-026](../log/decision-log.md)) — the receipt that the hours were real, not the reason for the work.
 
 ## 7. Functional requirements
 
 | ID | Requirement |
 |---|---|
-| **FR-001** | Register with email or supported OAuth |
-| **FR-002** | Confirm age eligibility and accept terms |
-| **FR-003** | Set timezone, availability, interests, privacy preferences |
-| **FR-004** | Export or delete account data |
-| **FR-010** | Select from project templates |
-| **FR-011** | Create a custom project with title, outcome, artifact type, **user-set target date**, and definition of done |
-| **FR-012** | Help the user set scope and finish line, and flag scope/availability inconsistency. Never impose a programme length |
-| **FR-013** | Reduce scope without losing evidence |
-| **FR-014** | Stages: define, explore, build, **ship**, respond, revise, reflect |
+| **FR-001** | Start and complete a first mission with **no account**. Work is held locally until there is something worth keeping |
+| **FR-002** | Offer registration only when work would otherwise be lost, never as a gate before it |
+| **FR-003** | Confirm age eligibility and accept terms at registration |
+| **FR-004** | Set timezone, availability, privacy preferences. Never asked at onboarding |
+| **FR-005** | Export or delete account data |
+| **FR-010** | Present real, concrete things the user could make and let them pick. Never interview them about their interests |
+| **FR-011** | Create a custom project with a title and an artifact type. **No target date, no declared scope** |
+| **FR-012** | Never request, infer, display, or act on a project deadline or size estimate |
+| **FR-013** | Reduce or change what is being made without losing evidence of what came before |
+| **FR-014** | Stages: define, explore, build, **ship**, respond, revise |
 | **FR-015** | One active project at a time |
-| **FR-016** | Capture recall answers at onboarding; use as suggestion input and re-surface when momentum dips |
-| **FR-018** | After two stalled weeks, show the user their recall answers and ask whether this is still what they want to make. Abandoning is valid and unpenalised |
+| **FR-016** | Record which options the user chose and passed over, and use that as suggestion input |
+| **FR-018** | After two stalled weeks, ask once whether this is still what they want to make. Stopping is valid and unpenalised, and is recorded as a completed decision rather than an abandonment |
 | **FR-019** | Weekly time mirror: hours that produced something, things made, things shipped, responses received. No projection, no target, no comparison |
 | **FR-020** | Generate or select missions from stage, available time, energy, skill, and recent behaviour |
 | **FR-021** | Every mission has title, instruction, definition of done, estimated duration, difficulty, and stage |
@@ -94,12 +109,9 @@ Completion means the user's own definition of done is met and the thing exists. 
 | **FR-034** | No universal "confidence score" is displayed, and no internal state is ever scored |
 | **FR-035** | Browse the evidence timeline |
 | **FR-036** | Record external responses against the thing that caused them |
-| **FR-040** | Join a crew by invitation or matching |
-| **FR-042** | Leave, mute, or report a crew |
-| **FR-043** | Crew posts are chronological and bounded |
-| **FR-044** | Crew members act as guaranteed first audience: a shipped thing surfaced to a crew must receive a response |
+| **FR-037** | Optionally record how the user feels before and after a session, one tap each. Private to that user, never scored, never averaged, never surfaced to anyone else ([D-031](../log/decision-log.md)) |
 | **FR-045** | Moderators can remove content and suspend accounts |
-| **FR-046** | Crew codes for institution-led pilots |
+| **FR-046** | Cohort codes for institution-led pilots |
 | **FR-050** | Schedule one daily production reminder |
 | **FR-051** | Notifications reference a concrete next mission — never guilt, streak loss, or time-remaining |
 | **FR-052** | Disable all non-essential notifications |
@@ -117,7 +129,9 @@ Completion means the user's own definition of done is met and the thing exists. 
 | **FR-085** | Minor cohorts have a named responsible adult and an escalation path |
 | **FR-086** | No direct messaging for under-18 accounts |
 
-**Retired:** `FR-017` (deadline projection — a *will* mechanic, replaced by `FR-019`) · `FR-041` (matching criteria — deferred, [D-014](../log/decision-log.md)) · `FR-053`, `FR-061`, `FR-073` (folded into neighbours).
+**Retired:** `FR-017` (deadline projection — a *will* mechanic, replaced by `FR-019`) · `FR-053`, `FR-061`, `FR-073` (folded into neighbours).
+
+**Deferred with crews** ([D-033](../log/decision-log.md)) — specified, not scheduled: `FR-040` join a crew · `FR-041` matching · `FR-042` leave, mute, report · `FR-043` chronological bounded posts · `FR-044` crew as guaranteed first audience.
 
 ## 8. Measurement
 
@@ -136,9 +150,9 @@ Never measure how the user feels. The internal outcome is the product; the exter
 
 Pilot thresholds, not benchmarks.
 
-- **Activation:** 60% ship something within 72 hours · median signup→first mission under 10 minutes.
+- **Activation:** 60% ship something within 72 hours · median open→first mission under 10 minutes · 50% reach a first mission **before** registering.
 - **Engagement:** 50% produce in three separate sessions in week one · 40% active in week three.
-- **Outcome:** 40% report the week felt different · 30% reach their own definition of done · 30% receive at least one unsolicited external response · 25% start something else within 14 days.
+- **Outcome:** 30% receive at least one unsolicited external response · 25% start something else within 14 days · **median session mood delta positive across a cohort** ([D-031](../log/decision-log.md)) — the one direct measure of the promise, reported in aggregate and never per user.
 - **Commercial:** *deferred* ([D-018](../log/decision-log.md)). The first cohort is unpaid, so nothing here is evidence of willingness to pay.
 
 ## 10. Monetisation
@@ -172,7 +186,7 @@ Not therapy, and it says so. No shame, no status withdrawal, no punitive streaks
 Phased per [initial design](initial-design.md) §8 ([D-013](../log/decision-log.md)).
 
 **First — solo:** auth, recall, onboarding, templates plus custom project, mission generation with fallback, evidence, ship missions, time mirror, proof-of-work by-product, analytics.  
-**Second — crews:** chronological updates, the audience ladder's first rung, moderation.  
+**Second — reach:** upper ladder rungs, moderation. Crews only if a cohort asks for them ([D-033](../log/decision-log.md)).  
 **Third — institutional:** cohort administration, aggregate dashboard, facilitator tools.
 
 Native mobile, app blocking, live coworking, employer matching, recommenders, and public discovery are later.
@@ -181,8 +195,8 @@ Native mobile, app blocking, live coworking, employer matching, recommenders, an
 
 1. Which project category ships fastest and still feels like the user's own?
 2. Is the primary payer the individual, school, university, or employer?
-3. Do crews form at onboarding or after a first ship?
+3. Does anyone actually want a crew, or is it a barrier dressed as a feature?
 4. How much facilitation does an acceptable ship rate require?
-5. How large must the first external response be to change how someone sees themselves? A crew member being kind may not count.
+5. How large must the first external response be to change how someone sees themselves? Someone the user knows being kind may be dismissible as politeness; a stranger's use is not.
 6. Does reclaimed time sell, or does the finished thing sell? (§6 of the demand doc leaves this open on purpose.)
 7. First market: local, English-speaking global, or institution-specific?

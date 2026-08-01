@@ -8,15 +8,19 @@ Where good ideas go so they stop competing with the current step. Each carries t
 
 ## Planned
 
-Sequenced in [initial design](../product/initial-design.md) §8: crews as guaranteed first audience; institutional cohort codes and facilitator tools; adaptive difficulty and blocker detection.
+Sequenced in [initial design](../product/initial-design.md) §8: upper rungs of the audience ladder; institutional cohort codes and facilitator tools; adaptive difficulty and blocker detection. Institutional tooling waits on a signed pilot, not on interest.
 
-Crews are the next release, but **matching is not** — hand-pick until manual assembly is obviously the bottleneck ([D-014](../log/decision-log.md)). Institutional tooling waits on a signed pilot, not on interest.
+## Maybe — crews
+
+Deferred wholesale ([D-033](../log/decision-log.md)). A social component at signup is a barrier for exactly the person this targets: someone already avoiding being seen. Requirements `FR-040` – `FR-044` stay written so the thinking isn't lost, and matching stays deferred beyond that ([D-014](../log/decision-log.md)).
+
+**Unlocks when** a cohort asks for it unprompted, or when the operator can no longer personally be the guaranteed responder for rung one. Not before — a crew added to fix retention would be a feature solving our problem rather than theirs.
 
 ## Plausible but unvalidated
 
 | Idea | Unlocks when |
 |---|---|
-| **Upper rungs of the audience ladder** — routing a finished thing to strangers who plausibly want it | The crew rung demonstrably changes ship rate, and we can identify a fitting stranger without it feeling like spam |
+| **Upper rungs of the audience ladder** — routing a finished thing to strangers who plausibly want it | Rung one demonstrably changes ship rate, and we can identify a fitting stranger without it feeling like spam |
 | **Payments, and the whole commercial layer** | The founder can hold a processor account ([D-018](../log/decision-log.md)) |
 | **Artifacts that outlive the account** — export, stable URL, structured data | Users try to take the receipt somewhere we don't control. Low priority while the artifact is a by-product ([D-026](../log/decision-log.md)) |
 | **Handoff from existing blockers**, so a blocked app surfaces a mission | The idle moment proves to be how users actually enter, rather than a scheduled session |

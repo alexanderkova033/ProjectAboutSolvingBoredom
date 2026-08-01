@@ -6,9 +6,9 @@
 
 Time is control, and generic apps took the control. You already have the hours — four of them went somewhere last night. What you don't have is any evidence they were yours.
 
-So: you pick something to make, and you set your own finish line. It asks how long you've got — five minutes or an hour — and gives you one thing to do with a clear definition of done. You make something small, you get it in front of a real person, and someone responds. At the end of the week it shows you the hours that left something behind.
+So: it shows you things you could make and you pick one. No sign-up, no questionnaire, no goal-setting — the first screen is something to do. It asks how long you've got, five minutes or an hour, and gives you one thing with a clear definition of done. You make something small, you get it in front of a real person, and someone responds. At the end of the week it shows you the hours that left something behind.
 
-No countdown. No streak. No curriculum. No AI writing it for you.
+Nothing asks how big it is or when it'll be done. No countdown, no streak, no curriculum, no AI writing it for you.
 
 ## What it isn't
 

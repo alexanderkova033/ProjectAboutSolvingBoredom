@@ -109,7 +109,7 @@ Distribution dominates both, and we have no evidence about it. A scenario table 
 
 *Threshold:* 15+ describe the evening-residue feeling unprompted · 10+ have a workaround · 10+ move off a laziness self-description when asked once more · language converges on one concrete outcome.
 
-**Phase 2 — Concierge cohort, unpaid.** 20–30 users, run by hand. Forms, a spreadsheet, hand-written missions, hand-picked crews.
+**Phase 2 — Concierge cohort, unpaid.** 20–30 users, run by hand. Forms, a spreadsheet, hand-written missions, the operator as guaranteed responder.
 
 *Unpaid weakens the evidence* ([D-018](../log/decision-log.md)) — free cohorts overstate commitment, and this limitation travels with every number produced here. A good result must never be re-read later as commercial validation.
 
