@@ -110,21 +110,23 @@ Then the record, beside their answer:
 
 This runs the other way sometimes. Someone will say they did loads and the record will say forty minutes. That screen looks identical: both shown, neither judged, nothing flagged. A record that only speaks up when it's flattering isn't a record.
 
-**Words for it.** Offered after the record, and again on the receipt ([D-039](../log/decision-log.md)). Not a valuation — a sentence they could actually use, assembled only from facts already in the record:
+**What you did, roughly.** Offered after the record, and again on the receipt ([D-039](../log/decision-log.md), [D-041](../log/decision-log.md)). Plain facts in ordinary words — deliberately loose, deliberately not a sentence:
 
-> **For a personal statement**
+> **What you did, roughly**
 >
-> *"I built and published a small tool that converts handwritten recipe cards into a searchable list. Three people used it; one asked for a change and I made it the same week."*
->
-> [ Copy ] [ Reword ] · For: **personal statement** / interview answer / application form
->
-> **What's in the record, plainly:** returned to it on 7 separate days · revised after feedback from someone outside the project · published it publicly
+> You came back to this on 7 different days.
+> You made a thing that turns handwritten recipe cards into a searchable list.
+> You put it in front of 3 people you don't know.
+> One of them asked for a change and you made it that week.
+> The first version didn't work and you kept going anyway.
 
-The audience selector matters: persona D is writing to admissions, personas A–C to employers, and the same facts want different sentences.
+**No polished sentence, no copy button, no application-ready formatting.** An earlier draft of this design generated a personal-statement sentence, and that was the product writing the user's application — the same failure D-005 exists to prevent, just wearing a different hat.
 
-**Three hard rules.** The product never says the work is impressive, valuable, or what a reader will think of it — that claim is unfalsifiable and it is precisely where every competitor in this category over-claims. It never names an outcome, a company, or a course. And it **never inflates**: one small thing is described as one small thing, because a padded sentence collapses under the first follow-up question in the room, which is the same way an AI-written artifact fails ([D-005](../log/decision-log.md)).
+It's also the worse outcome for the user. A paste-ready line means they never articulate it themselves, and the follow-up question in the room — *tell me about this* — then catches them with nothing. The phrasing has to be theirs to survive being asked about.
 
-The sentence is a draft the user edits, not a certificate the product issues.
+The gap this product fills is **noticing**. People genuinely cannot see what they did — that is the whole laziness-verdict thesis. Once they can see it, saying it is their work and their skill.
+
+**Two hard rules remain.** The product never says the work is impressive, valuable, or what a reader will think of it — unfalsifiable, and precisely where this category over-claims. And it **never inflates**: one small thing is described as one small thing, in the same plain register as everything else.
 
 **Time mirror.** Weekly thereafter, same shape, with the self-report step becoming occasional rather than every time. Backward-looking: hours authored, things made, things shipped, responses received. No target, no projection, no red, no comparison to other users.
 
