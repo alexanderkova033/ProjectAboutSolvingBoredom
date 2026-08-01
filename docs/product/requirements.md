@@ -29,15 +29,17 @@ Existing tools each take one piece: blockers remove the app and return nothing; 
 ## 3. Principles
 
 1. **Show, don't tell.** Show the user what they can do. Never tell them what to feel, what to achieve, or what they already know about themselves ([D-029](../log/decision-log.md)).
-2. **Present tense.** If a feature lives in *will* (countdowns, deadlines, goal ceremonies) or *have* (badges, streaks, trophies), it doesn't ship ([D-024](../log/decision-log.md)).
-3. **No scope, no finish line.** The product never asks how big the thing is or when it will be done. When someone is doing what they want, those questions don't help and the pressure they add is the thing that stops people ([D-028](../log/decision-log.md)). *Done* is defined per mission, never per project.
-4. **The user decides; the product proposes.** Every suggestion is a default with a visible override.
-5. **Choice reveals preference.** Don't ask what someone loves — they already know, and the question is a cliché that changes nothing. Put real options in front of them and watch which one they pick ([D-030](../log/decision-log.md)).
-6. **Consequence visibility, not discipline.** No streaks, no obligation, no guilt ([D-017](../log/decision-log.md)).
-7. **Agency is real before it is legible.** Manufacturing a feeling of control the user doesn't have is a dark pattern; every screen is audited against the manipulation taxonomy ([D-021](../log/decision-log.md)).
-8. **Boredom is faced, not removed.** When the scrolling stops it arrives undiluted. Say so.
-9. **Never describe the user, only what they did.** No copy, mission, notification, or empty state may imply they are lazy, behind, or failing ([D-027](../log/decision-log.md)).
-10. **AI is scaffolding, never the creator of record.**
+2. **The session must be good to be in.** Not rewarding afterwards — enjoyable *while it happens*. Creating can't beat consuming on ease, so the work itself has to be pleasant, or the product loses every evening to a feed. Every cheap route to this is banned (streaks, points, badges, confetti), which leaves the real ones: a task worth doing, visible change under your hands, speed, and an interface that stays quiet ([D-035](../log/decision-log.md)).
+3. **Never ask what they want to improve.** They don't know — that's the condition, not a gap to fill in ([D-036](../log/decision-log.md)).
+4. **Present tense.** If a feature lives in *will* (countdowns, deadlines, goal ceremonies) or *have* (badges, streaks, trophies), it doesn't ship ([D-024](../log/decision-log.md)).
+5. **No scope, no finish line.** The product never asks how big the thing is or when it will be done. When someone is doing what they want, those questions don't help and the pressure they add is the thing that stops people ([D-028](../log/decision-log.md)). *Done* is defined per mission, never per project.
+6. **The user decides; the product proposes.** Every suggestion is a default with a visible override.
+7. **Choice reveals preference.** Don't ask what someone loves — they already know, and the question is a cliché that changes nothing. Put real options in front of them and watch which one they pick ([D-030](../log/decision-log.md)).
+8. **Consequence visibility, not discipline.** No streaks, no obligation, no guilt ([D-017](../log/decision-log.md)).
+9. **Agency is real before it is legible.** Manufacturing a feeling of control the user doesn't have is a dark pattern; every screen is audited against the manipulation taxonomy ([D-021](../log/decision-log.md)).
+10. **Boredom is faced, not removed.** When the scrolling stops it arrives undiluted. Say so.
+11. **Never describe the user, only what they did.** No copy, mission, notification, or empty state may imply they are lazy, behind, or failing ([D-027](../log/decision-log.md)).
+12. **AI is scaffolding, never the creator of record.**
 
 ## 4. Goals and non-goals
 
@@ -64,10 +66,10 @@ Goals are stated as things the product **does**, not states the user should reac
 
 Seven things must be true. Screens and copy are in [initial design](initial-design.md) §4.
 
-1. **Nothing is required to start.** No account, no questionnaire, no goal-setting. The first thing anyone sees is something to make. Registration is offered only once there is work worth keeping ([D-032](../log/decision-log.md)).
-2. **Options, not questions.** The user is shown real things they could make and picks one. No interview about their interests — the pick is the signal ([D-030](../log/decision-log.md)).
-3. **No scope and no date are ever requested** ([D-028](../log/decision-log.md)). The 72-hour first ship keeps the work small without anyone having to declare a size.
-4. **The loop is one mission at a time.** *I have 5 / 15 / 30 / 60 minutes* → one mission with a testable definition of done → done. *Done* belongs to the mission; the project has no finish line.
+1. **Nothing is required to start.** No account, no questionnaire, no goal-setting, and no question about what they want to improve — they don't know, and being asked is where people stall ([D-032](../log/decision-log.md), [D-036](../log/decision-log.md)). The first thing anyone sees is something to do.
+2. **Options, not questions.** The user is shown real things they could make and picks one. No interview about their interests — the pick is the signal, and the direction emerges from what they keep choosing ([D-030](../log/decision-log.md)).
+3. **No scope, no date, and no time budget are ever requested** ([D-028](../log/decision-log.md), [D-034](../log/decision-log.md)).
+4. **The loop is one small thing at a time.** Open it → one mission is already there → do it → it's saved. Every mission is small by default, with the next available immediately if they want to keep going. Duration is **observed, not declared** — nobody is asked how long they have.
 5. **Shipping happens in week one, repeatedly.** Getting something in front of a real person is a mission kind, not an end-state.
 6. **The audience ladder guarantees a response** ([D-025](../log/decision-log.md)): one person the user already knows → one stranger who fits the thing → a small public. During hand-run cohorts the operator is the guaranteed responder. No first ship goes into a void.
 7. **The weekly view shows what was made.** Authored hours, things made, things shipped, responses received. No projection, no deadline, no comparison, and never a word about time lost — the user already knows where that went. Its job is to make *"I'm just lazy"* untenable against a record ([D-027](../log/decision-log.md)).
@@ -169,10 +171,10 @@ Not therapy, and it says so. No shame, no status withdrawal, no punitive streaks
 
 | ID | Requirement |
 |---|---|
-| **NFR-001** | Core pages usable within three seconds on typical mobile connections |
+| **NFR-001** | Core pages usable within three seconds on a typical domestic connection |
 | **NFR-002** | Mission submission idempotent and recoverable after interruption |
 | **NFR-003** | WCAG 2.2 AA for core flows |
-| **NFR-004** | All flows work at 360 px |
+| **NFR-004** | *Pending the platform decision* ([D-037](../log/decision-log.md)). The 360 px floor is withdrawn — it assumed mobile-first, which no longer follows |
 | **NFR-005** | Encryption in transit and at rest |
 | **NFR-006** | Private reflections stored separately from anything publishable |
 | **NFR-007** | Structured logging with no reflection text in analytics |
