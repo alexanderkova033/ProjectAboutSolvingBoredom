@@ -110,6 +110,22 @@ Then the record, beside their answer:
 
 This runs the other way sometimes. Someone will say they did loads and the record will say forty minutes. That screen looks identical: both shown, neither judged, nothing flagged. A record that only speaks up when it's flattering isn't a record.
 
+**Words for it.** Offered after the record, and again on the receipt ([D-039](../log/decision-log.md)). Not a valuation — a sentence they could actually use, assembled only from facts already in the record:
+
+> **For a personal statement**
+>
+> *"I built and published a small tool that converts handwritten recipe cards into a searchable list. Three people used it; one asked for a change and I made it the same week."*
+>
+> [ Copy ] [ Reword ] · For: **personal statement** / interview answer / application form
+>
+> **What's in the record, plainly:** returned to it on 7 separate days · revised after feedback from someone outside the project · published it publicly
+
+The audience selector matters: persona D is writing to admissions, personas A–C to employers, and the same facts want different sentences.
+
+**Three hard rules.** The product never says the work is impressive, valuable, or what a reader will think of it — that claim is unfalsifiable and it is precisely where every competitor in this category over-claims. It never names an outcome, a company, or a course. And it **never inflates**: one small thing is described as one small thing, because a padded sentence collapses under the first follow-up question in the room, which is the same way an AI-written artifact fails ([D-005](../log/decision-log.md)).
+
+The sentence is a draft the user edits, not a certificate the product issues.
+
 **Time mirror.** Weekly thereafter, same shape, with the self-report step becoming occasional rather than every time. Backward-looking: hours authored, things made, things shipped, responses received. No target, no projection, no red, no comparison to other users.
 
 Its job is narrow and worth stating: **make *"I'm just lazy"* untenable against a record.** Not to inform, not to motivate — to dispute a verdict the user has already passed on themselves. That is why it counts what was made and stays silent about the rest, and why a low week must still read as a record rather than a shortfall. If it ever reads as judgment it has become the thing the product is fighting.
@@ -128,7 +144,7 @@ The important structural decision is that **making, shipping, and being responde
 |---|---|---|
 | **Project** | Title, artifact type, stage, visibility | Deliberately holds **no target date and no scope estimate** ([D-028](../log/decision-log.md)). There is no field to leave blank and no field to nag about, because the schema shouldn't make a deadline easy to add back later |
 | **Session mood** | An optional pair of taps, before and after a session | Stored against the session and only ever readable by its owner. Kept separate from every other record so no query can accidentally join it to a profile ([D-031](../log/decision-log.md)) |
-| **Mission** | Instruction, definition of done, duration, difficulty, stage, and a **kind** — *produce* or *distribute* | Making shipping a mission kind rather than a phase is what stops distribution being deferred forever |
+| **Mission** | Instruction, definition of done, duration, difficulty, stage, and a **kind** — *produce*, *distribute*, or *reset* | Making shipping a mission kind rather than a phase is what stops distribution being deferred forever. *Reset* missions (go outside, clear the table) are modelled as missions but excluded from every production total — the kind field is what makes that exclusion enforceable rather than a convention ([D-040](../log/decision-log.md)) |
 | **Mission attempt** | Attempted, completed, blocker, optional predicted and actual discomfort | Attempts are preserved separately from missions so a skip is data rather than an absence |
 | **Artifact** | The thing itself, and when it shipped | Distinct from evidence-of-work. Evidence proves effort; an artifact is what a stranger could actually receive |
 | **Ship** | An artifact sent to one rung of the ladder, and the guaranteed responder for that rung | Modelling the rung explicitly is what makes "no first ship into a void" enforceable rather than aspirational |
@@ -149,6 +165,18 @@ A generated mission must start with one observable verb, produce or ship somethi
 Output is validated against a strict schema; two consecutive failures fall back to a hand-written template mission. Every project stage has template coverage, so the product is fully usable with the model switched off entirely.
 
 **Distribution missions are first-class.** Every template carries ship-shaped missions, and the generator must offer one as soon as anything is shippable.
+
+**Reset missions are the exception to "produce something real"** ([D-040](../log/decision-log.md)). *Go outside for ten minutes. Clear the table you're working at. Put the thing down and come back tomorrow.*
+
+They are framed as **conditions for making**, never as wellbeing — a cleared table removes the reason you won't start, and going outside is what you do when ninety minutes of staring hasn't worked. That framing is the only thing separating this from the generic tip-app genre, which the demand doc scores at the bottom of the market.
+
+Three constraints, all enforceable rather than advisory:
+
+- **They never count** toward authored hours, things made, or things shipped. The record's value is that it is true; padding it with walks would destroy the thing that disputes the verdict.
+- **One per session, maximum**, and they never accumulate.
+- **Never offered as a swap for a mission the user is avoiding.** They punctuate work; they don't replace it. Otherwise the product becomes a well-designed way to procrastinate.
+
+Offered when a blocker is reported, after a long session, after a ship, or when a session opens with several rapid swaps.
 
 **Adaptation changes one variable at a time** — duration, visibility, ambiguity, social exposure, or technical complexity. A high ship rate with no repeated blocker raises difficulty. Two consecutive skips reduce mission size or prompt a scope review. Something shipped to two rungs with no response drops a rung to one with a guaranteed responder. Reported overwhelm never increases difficulty.
 

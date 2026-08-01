@@ -64,7 +64,7 @@ Goals are stated as things the product **does**, not states the user should reac
 
 ## 6. Core experience
 
-Eight things must be true. Screens and copy are in [initial design](initial-design.md) §4.
+Nine things must be true. Screens and copy are in [initial design](initial-design.md) §4.
 
 1. **Nothing is required to start.** No account, no questionnaire, no goal-setting, and no question about what they want to improve — they don't know, and being asked is where people stall ([D-032](../log/decision-log.md), [D-036](../log/decision-log.md)). The first thing anyone sees is something to do.
 2. **Options, not questions.** The user is shown real things they could make and picks one. No interview about their interests — the pick is the signal, and the direction emerges from what they keep choosing ([D-030](../log/decision-log.md)).
@@ -73,7 +73,8 @@ Eight things must be true. Screens and copy are in [initial design](initial-desi
 5. **Shipping happens in week one, repeatedly.** Getting something in front of a real person is a mission kind, not an end-state.
 6. **The audience ladder guarantees a response** ([D-025](../log/decision-log.md)): one person the user already knows → one stranger who fits the thing → a small public. During hand-run cohorts the operator is the guaranteed responder. No first ship goes into a void.
 7. **They say what they did; then the record says what they did; nothing comments** ([D-038](../log/decision-log.md)). First at the 72-hour mark, occasionally after. Asked in words rather than numbers, never fired against an empty record, and never asked *before* work — questions before work are friction, questions after work are reflection.
-8. **The weekly view shows what was made.** Authored hours, things made, things shipped, responses received. No projection, no deadline, no comparison, and never a word about time lost — the user already knows where that went. Its job is to make *"I'm just lazy"* untenable against a record ([D-027](../log/decision-log.md)).
+8. **The record is translated into words, never into a valuation** ([D-039](../log/decision-log.md)). A sentence the user could put in a personal statement or an interview answer, built only from recorded facts, audience-selectable, editable, and never inflated. The product never says the work is good or predicts how a reader will take it.
+9. **The weekly view shows what was made.** Authored hours, things made, things shipped, responses received. No projection, no deadline, no comparison, and never a word about time lost — the user already knows where that went. Its job is to make *"I'm just lazy"* untenable against a record ([D-027](../log/decision-log.md)).
 
 **Session feeling, optionally, before and after** ([D-031](../log/decision-log.md)). One tap each side. This is the only internal state the product records, it belongs to the user rather than to us, and it is never scored, never averaged into anything, and never shown to anyone else. It exists because the delta is the only direct measure of the actual promise — that the time felt different afterwards.
 
@@ -106,6 +107,9 @@ A project ends when the user stops, and stopping is not failure. The proof-of-wo
 | **FR-024** | Non-AI fallback missions exist for every stage |
 | **FR-025** | Never generate dangerous, illegal, exploitative, or clinically framed missions |
 | **FR-026** | Distribution missions exist for every project type — getting the thing in front of someone is a mission, not an afterthought |
+| **FR-047** | Support a **reset** mission kind — go outside, clear the table, stop for today. Framed as conditions for making, never as wellbeing ([D-040](../log/decision-log.md)) |
+| **FR-048** | Reset missions are excluded from authored hours, things made, and things shipped. No production total may include one |
+| **FR-049** | Reset missions are capped at one per session, never accumulate, and are never offered as a swap for a mission the user is currently avoiding |
 | **FR-027** | Audience ladder: each rung has a guaranteed responder before the next is offered. Never route a first ship to an unguaranteed audience |
 | **FR-030** | Submit text, URL, image, or file evidence |
 | **FR-031** | Attempts preserve planned, attempted, completed, skipped |
@@ -122,6 +126,8 @@ A project ends when the user stops, and stopping is not failure. The proof-of-wo
 | **FR-052** | Disable all non-essential notifications |
 | **FR-060** | Generate a proof-of-work page as a by-product of completion |
 | **FR-062** | Public, unlisted, or private visibility, user-controlled |
+| **FR-064** | Generate a usable sentence describing what the user made, assembled **only** from facts in the record, with the audience selectable (personal statement, interview answer, application form). Editable by the user; offered as a draft, never issued as a certificate |
+| **FR-065** | Never assert or imply the work's value, quality, or how a reader will receive it. No named outcomes, companies, or courses. Never inflate a small result into a larger-sounding one ([D-039](../log/decision-log.md)) |
 | **FR-063** | Public pages never expose discomfort or reflection data |
 | **FR-070** | Administrators create a cohort and invite users |
 | **FR-071** | Administrators view aggregate participation and completion |
