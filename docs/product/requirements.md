@@ -1,6 +1,6 @@
 # Product Requirements
 
-**Product:** ForgePath *(placeholder name — to be replaced)*  
+**Product:** BreatheFree  
 **Status:** MVP specification · **Superseded by:** `prd.md` once the BMAD PM run produces it  
 **Research snapshot:** 1 August 2026
 
@@ -20,7 +20,7 @@ Not a confidence app, therapy product, social network, course, or blocker.
 
 Boredom is time you can feel passing. The chain runs **boredom → consumption → not creating → no confidence → fear → "I'm just lazy"** — and the last link feeds back into the first.
 
-Boredom is upstream, so the intervention point is *making*, not fear-management ([D-023](../log/decision-log.md)) — confidence is a by-product of having made things, and the fear machinery here is deliberately minor for that reason.
+Boredom is upstream, so the intervention point is *making*, not fear-management — confidence is a by-product of having made things, and the fear machinery here is deliberately minor for that reason.
 
 **Laziness is the last link and it is a verdict, not a cause** ([D-027](../log/decision-log.md)). It is what users will report — nobody says "I'm afraid to make a website", they say "I couldn't be bothered" — and it is the only link phrased as an identity rather than a state. Fear says *this might go badly*; laziness says *I am someone who doesn't do things*, which explains away every future instance and makes the loop stable rather than a bad week. The product disputes that verdict with a record, and never uses the word.
 
@@ -28,18 +28,23 @@ Existing tools each take one piece: blockers remove the app and return nothing; 
 
 ## 3. Principles
 
-1. **Show, don't tell.** Show the user what they can do. Never tell them what to feel, what to achieve, or what they already know about themselves ([D-029](../log/decision-log.md)).
-2. **The session must be good to be in.** Not rewarding afterwards — enjoyable *while it happens*. Creating can't beat consuming on ease, so the work itself has to be pleasant, or the product loses every evening to a feed. Every cheap route to this is banned (streaks, points, badges, confetti), which leaves the real ones: a task worth doing, visible change under your hands, speed, and an interface that stays quiet ([D-035](../log/decision-log.md)).
-3. **Never ask what they want to improve.** They don't know — that's the condition, not a gap to fill in ([D-036](../log/decision-log.md)).
-4. **Present tense.** If a feature lives in *will* (countdowns, deadlines, goal ceremonies) or *have* (badges, streaks, trophies), it doesn't ship ([D-024](../log/decision-log.md)).
-5. **No scope, no finish line.** The product never asks how big the thing is or when it will be done. When someone is doing what they want, those questions don't help and the pressure they add is the thing that stops people ([D-028](../log/decision-log.md)). *Done* is defined per mission, never per project.
-6. **The user decides; the product proposes.** Every suggestion is a default with a visible override.
-7. **Choice reveals preference.** Don't ask what someone loves — they already know, and the question is a cliché that changes nothing. Put real options in front of them and watch which one they pick ([D-030](../log/decision-log.md)).
-8. **Consequence visibility, not discipline.** No streaks, no obligation, no guilt ([D-017](../log/decision-log.md)).
-9. **Agency is real before it is legible.** Manufacturing a feeling of control the user doesn't have is a dark pattern; every screen is audited against the manipulation taxonomy ([D-021](../log/decision-log.md)).
-10. **Boredom is faced, not removed.** When the scrolling stops it arrives undiluted. Say so.
-11. **Never describe the user, only what they did.** No copy, mission, notification, or empty state may imply they are lazy, behind, or failing ([D-027](../log/decision-log.md)).
-12. **AI is scaffolding, never the creator of record.**
+Eight, and they bind the design document too — this is the only list ([initial design](initial-design.md) §4 refers here rather than restating).
+
+1. **Show, don't tell.** Show what they can do; never tell them what to feel, what to achieve, or what they already know about themselves. Describe only what they did, never what they are — no copy, empty state, or low-activity week may imply they are lazy, behind, or failing. Where the product could narrate a gap, it shows both sides and says nothing. And agency has to be real before it's legible: manufacturing a feeling of control the user doesn't have is a dark pattern.
+
+2. **Nothing is asked that they can't answer.** Not what they want to improve — they don't know, and being asked is where people stall. Not how big it is, not when it'll be done, not how long they've got. Show real options and record which they take; the pick is the signal and the direction emerges from it. Questions before work are friction; only questions *after* work are allowed, and only as reflection.
+
+3. **Present tense.** Anything living in *will* — countdowns, deadlines, goal ceremonies — or *have* — badges, streaks, trophies, portfolio-as-achievement — does not ship. A filter to run against every screen, not a sentiment.
+
+4. **One next action, and it must be good to do.** One mission on screen, never a backlog. Enjoyable *while it happens*, not merely rewarding afterwards — creating can't beat consuming on ease, so the work itself has to be pleasant or the product loses every evening to a feed. Every cheap route to that is banned, which leaves the real ones: a task worth doing, visible change under your hands, speed, and an interface that stays quiet.
+
+5. **Ship early, and never into a void.** Work nobody sees isn't progress. Every rung of the audience ladder has a guaranteed responder before the next unlocks.
+
+6. **Consequence visibility, not discipline.** No streaks, no obligation, no guilt. Show what happened and let them choose.
+
+7. **Boredom is faced, not removed.** When the scrolling stops it arrives undiluted. Say so.
+
+8. **AI is scaffolding, never the creator of record.** It decomposes, adapts, and critiques. It never makes the user's thing and never writes the user's words.
 
 ## 4. Goals and non-goals
 
@@ -64,21 +69,18 @@ Goals are stated as things the product **does**, not states the user should reac
 
 ## 6. Core experience
 
-Nine things must be true. Screens and copy are in [initial design](initial-design.md) §4.
+The mechanics. Principles are §3; screens and copy are in [initial design](initial-design.md) §4.
 
-1. **Nothing is required to start.** No account, no questionnaire, no goal-setting, and no question about what they want to improve — they don't know, and being asked is where people stall ([D-032](../log/decision-log.md), [D-036](../log/decision-log.md)). The first thing anyone sees is something to do.
-2. **Options, not questions.** The user is shown real things they could make and picks one. No interview about their interests — the pick is the signal, and the direction emerges from what they keep choosing ([D-030](../log/decision-log.md)).
-3. **No scope, no date, and no time budget are ever requested** ([D-028](../log/decision-log.md), [D-034](../log/decision-log.md)).
-4. **The loop is one small thing at a time.** Open it → one mission is already there → do it → it's saved. Every mission is small by default, with the next available immediately if they want to keep going. Duration is **observed, not declared** — nobody is asked how long they have.
-5. **Shipping happens in week one, repeatedly.** Getting something in front of a real person is a mission kind, not an end-state.
-6. **The audience ladder guarantees a response** ([D-025](../log/decision-log.md)): one person the user already knows → one stranger who fits the thing → a small public. During hand-run cohorts the operator is the guaranteed responder. No first ship goes into a void.
-7. **They say what they did; then the record says what they did; nothing comments** ([D-038](../log/decision-log.md)). First at the 72-hour mark, occasionally after. Asked in words rather than numbers, never fired against an empty record, and never asked *before* work — questions before work are friction, questions after work are reflection.
-8. **The record is stated as plain facts, never composed into a sentence** ([D-039](../log/decision-log.md), [D-041](../log/decision-log.md)). *You came back to this on 7 different days. Someone you don't know asked for a change and you made it.* Ordinary words, no polish, no paste-ready line for an application — writing it is the user's job, and it is the part that survives being asked about. The product never says the work is good or predicts how a reader will take it.
-9. **The weekly view shows what was made.** Authored hours, things made, things shipped, responses received. No projection, no deadline, no comparison, and never a word about time lost — the user already knows where that went. Its job is to make *"I'm just lazy"* untenable against a record ([D-027](../log/decision-log.md)).
+1. **The loop.** Open it → one mission is already there → do it → it's saved. Every mission is small by default, with the next available immediately. Duration is **observed, not declared**.
+2. **Reset missions exist.** Go outside, clear the table, stop for today — conditions for making, never wellbeing. They never count toward authored hours or things made, are capped at one per session, and are never offered as a swap for a mission being avoided.
+3. **Something is shipped within 72 hours**, and repeatedly after. Getting it in front of a real person is a mission kind, not an end-state.
+4. **The audience ladder guarantees a response**: one person the user already knows → one stranger who fits the thing → a small public. In hand-run cohorts the operator is the responder for rung one.
+5. **Session feeling, optionally, before and after** ([D-031](../log/decision-log.md)). One tap each side. The only internal state recorded anywhere — private, never scored, never averaged, never shown to anyone. It earns the exception because the delta is the only direct measure of the promise, that the time felt different afterwards. The product never rates the user; the user rates a session.
+6. **They say what they did, then the record says what they did, and nothing comments** ([D-038](../log/decision-log.md)). First at 72 hours, occasionally after. In words rather than numbers, never fired against an empty record.
+7. **The record is stated as plain facts, never composed into a sentence** ([D-041](../log/decision-log.md)). *You came back to this on 7 different days. Someone you don't know asked for a change and you made it.* No paste-ready line for an application — writing it is the user's job, and it's the part that survives being asked about.
+8. **The weekly view shows what was made.** Authored hours, things made, things shipped, responses received. Never a word about time lost — they already know where that went. Its job is to make *"I'm just lazy"* untenable against a record.
 
-**Session feeling, optionally, before and after** ([D-031](../log/decision-log.md)). One tap each side. This is the only internal state the product records, it belongs to the user rather than to us, and it is never scored, never averaged into anything, and never shown to anyone else. It exists because the delta is the only direct measure of the actual promise — that the time felt different afterwards.
-
-A project ends when the user stops, and stopping is not failure. The proof-of-work page is a **by-product** ([D-026](../log/decision-log.md)) — the receipt that the hours were real, not the reason for the work.
+A project ends when the user stops, and stopping is not failure. The proof-of-work page is a **by-product** — the receipt that the hours were real, not the reason for the work.
 
 ## 7. Functional requirements
 

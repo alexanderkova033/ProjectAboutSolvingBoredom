@@ -1,6 +1,6 @@
 # Decision Log and Work Log
 
-**Product:** ForgePath *(placeholder name — to be replaced)* · **Append only**
+**Product:** BreatheFree · **Append only**
 
 > **Related:** [Demand](../product/demand.md) · [Requirements](../product/requirements.md) · [Initial design](../product/initial-design.md) · [BMAD path](../method/bmad-path.md) · [Future plans](../roadmap/future-plans.md)
 
@@ -24,7 +24,7 @@ Reversed decisions are marked `Superseded`, never deleted — the wrong ones are
 | **D-012** | MIT licence | Frictionless while the asset is a thesis rather than code. | Provisional — revisit before the first outside contribution |
 | **D-013** | Solo release ships alone; crews later | Crews are the largest source of scope and cold-start risk; shipping together hides which one failed. | Accepted |
 | **D-014** | Hand-pick crews; don't build matching | Matching solves a liquidity problem we don't have. | Accepted |
-| **D-015** | Name deferred | Naming ahead of validation locks a name to positioning that's still moving. Cheap now, expensive once a domain exists. | Open — before the first cohort |
+| **D-015** | Name: **BreatheFree** | Chosen 1 Aug 2026, closing the deferral. **Two risks recorded rather than argued:** "breathe" sits squarely in the meditation and breathwork category, and "BreatheFree" is common phrasing in smoking cessation — both are collisions with genres this product is explicitly not in, and D-040 already names the tip-app genre as the thing to stay out of. It also implies relief, where the honest position (D-022) is that boredom arrives undiluted and is faced rather than removed. Check domain and trademark availability before anything is printed or bought. | Accepted |
 | **D-016** | No fixed programme length; user sets scope and finish line | A prescribed container removes the independence of choice that resolving boredom depends on. **Cost:** "in 30 days" was concrete marketing and a real deadline effect; both given up. | Accepted |
 | **D-017** | Consequence visibility replaces discipline | Discipline is consequence-blindness plus force. Something must do the job motivation is bad at, and that job goes to arithmetic, not obligation. | Accepted — mechanic changed by **D-024** from forward projection to backward mirror |
 | **D-018** | First cohort unpaid | Founder is under 18 and can't hold a processor account. **A real loss of evidence** — free cohorts overstate commitment, and that limitation travels with every number produced. Never re-read as commercial validation. | Accepted under constraint |
@@ -65,6 +65,8 @@ Untested assumptions everything rests on.
 | **Payer mismatch** | Users have time and no money; institutions have money and long cycles needing evidence that requires users first. |
 
 ## Work log
+
+**1 August 2026 — Named BreatheFree; final polish pass.** D-015 closed. Consolidated the principles into a single list of eight in requirements §3 — the two docs had drifted to 12 and 14 entries with items unique to each, which is the failure a duplicated list always produces; the design document now refers rather than restating. Cut core experience down to mechanics only, since it had come to restate the principles. Thinned decision citations from roughly one every six lines to only where the reasoning is non-obvious. Fixed a stale section reference in repo-structure. README rewritten to sell.
 
 **1 August 2026 — Describe, don't compose.** D-041 supersedes the composed-sentence half of D-039, written one commit earlier. The generated personal-statement line was the product writing the user's application — D-005's failure mode in a different hat, and it survived a whole decision unnoticed. It is also worse for the user: a paste-ready sentence means they never articulate it, and *"tell me about this"* then catches them with nothing. Replaced by a loose list of plain facts. The gap this product fills is noticing; phrasing is theirs.
 

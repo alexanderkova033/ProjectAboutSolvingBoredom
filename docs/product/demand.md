@@ -1,6 +1,6 @@
 # Demand and Market Thesis
 
-**Product:** ForgePath *(placeholder name — to be replaced)*  
+**Product:** BreatheFree  
 **Status:** Market hypothesis and validation plan · **Feeds:** the BMAD Analyst brief  
 **Research snapshot:** 1 August 2026
 

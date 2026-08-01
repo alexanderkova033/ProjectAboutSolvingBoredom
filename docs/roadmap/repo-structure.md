@@ -1,6 +1,6 @@
 # Repository Structure
 
-**Product:** ForgePath *(placeholder name — to be replaced)* · **Status:** Plan for code that does not exist yet
+**Product:** BreatheFree · **Status:** Plan for code that does not exist yet
 
 > **Related:** [Initial design](../product/initial-design.md) · [BMAD path](../method/bmad-path.md) · [Future plans](future-plans.md) · [Decision log](../log/decision-log.md)
 
@@ -8,7 +8,7 @@ No application code exists. The repository holds documentation only. This file r
 
 ## Principle
 
-The top level should scream the domain. A reader should see what the product *does* before they see which framework it uses. Route and component folders take their names from the product surfaces in [initial design](../product/initial-design.md) §3; `lib/` splits by domain capability, not by technical layer.
+The top level should scream the domain. A reader should see what the product *does* before they see which framework it uses. Route and component folders take their names from the product surfaces in [initial design](../product/initial-design.md) §4.2; `lib/` splits by domain capability, not by technical layer.
 
 ```text
 /

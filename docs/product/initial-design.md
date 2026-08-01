@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Product** | ForgePath *(placeholder name — to be replaced)* |
+| **Product** | BreatheFree |
 | **Status** | Draft — a starting position, not a ratified architecture |
 | **Author** | alexanderkova033 |
 | **Last revised** | 1 August 2026 |
@@ -51,20 +51,7 @@ Diagnosing or treating anything · promising happiness, income, or the removal o
 
 ### 4.1 Principles
 
-1. **Show, don't tell.** Show what the user can do. Never tell them what to feel, what to achieve, or what they already know about themselves ([D-029](../log/decision-log.md)).
-2. **The session must be good to be in.** Enjoyable while it happens, not only rewarding afterwards. Every cheap route is banned — streaks, points, badges, confetti — which leaves the real ones: a task worth doing, visible change under the user's hands, speed, and an interface that stays quiet ([D-035](../log/decision-log.md)).
-3. **Never ask what they want to improve.** They don't know. That is the condition, not a gap to fill in before starting ([D-036](../log/decision-log.md)).
-4. **Present tense.** Anything living in *will* (countdowns, deadlines, goal ceremonies) or *have* (badges, streaks, trophies, portfolio-as-achievement) does not ship. A filter to run against every screen, not a sentiment ([D-024](../log/decision-log.md)).
-5. **No scope, no finish line.** Never ask how big or by when. When someone is doing what they want, those questions don't help, and the pressure they add is a reason people stop ([D-028](../log/decision-log.md)).
-6. **One next action.** The default screen shows one mission, never a backlog.
-7. **The user decides; the product proposes.** Every suggestion is a default with a visible override.
-8. **Choice reveals preference.** Don't ask what they love — they know, and asking changes nothing. Show real options and record which one they take ([D-030](../log/decision-log.md)).
-9. **Nothing required to start.** No account, no questionnaire, no goal-setting in front of the first mission ([D-032](../log/decision-log.md)).
-10. **Ship early, ship small.** Work nobody sees isn't progress.
-11. **No first ship into a void.**
-12. **Boredom is faced, not removed.** When scrolling stops it arrives undiluted. Say so.
-13. **Never describe the user, only what they did.** Nothing may imply they are lazy, behind, or failing ([D-027](../log/decision-log.md)).
-14. **AI is scaffolding, never the creator of record.**
+The eight principles are in [requirements](requirements.md) §3 and are not restated here — two copies drift, and these already had.
 
 ### 4.2 Surfaces
 
@@ -76,23 +63,23 @@ Diagnosing or treating anything · promising happiness, income, or the removal o
 
 **Pick something.** No questionnaire, no account, no goal-setting. The first screen after the welcome is a small set of real, concrete things the user could make — a researched explainer, a simple tool, a product concept, a local problem-and-solution report, a short visual or audio story, a tiny service experiment for a real person. Each shown as the thing itself, with an example of what someone else's finished version looked like.
 
-They pick one and start. The choice is the signal; nothing is asked about their interests ([D-030](../log/decision-log.md)). What they passed over is recorded too.
+They pick one and start. The choice is the signal; nothing is asked about their interests. What they passed over is recorded too.
 
-**No scope screen and no date screen exist** ([D-028](../log/decision-log.md)). The user is never asked how big the thing is or when it will be done. The 72-hour first ship keeps the work small without anyone having to declare a size, and the absence of a deadline is the point rather than an omission.
+**No scope screen and no date screen exist.** The user is never asked how big the thing is or when it will be done. The 72-hour first ship keeps the work small without anyone having to declare a size, and the absence of a deadline is the point rather than an omission.
 
-**The loop.** Open it, and one mission is already on screen. No time question, no sizing question, no menu ([D-034](../log/decision-log.md)).
+**The loop.** Open it, and one mission is already on screen. No time question, no sizing question, no menu.
 
 The card carries a title, an instruction, and one definition of done. It does **not** show a duration — every mission is small enough to start now, and telling someone a task will take twenty minutes gives them a reason to postpone it. The user can start, swap it, make it smaller, or say what's in the way.
 
 When it's done, the next one is right there if they want it. Stopping needs no action and produces no comment. Duration is **observed, not declared** — the session records how long it actually took, which is better data than an estimate and no work for the user.
 
-**Session feeling.** One tap before, one tap after — a small row of faces or a 1–5, no words, no explanation asked for. Skippable and skippable permanently. The user can see their own history; nobody else ever can, it is never turned into a score or a profile, and the product never comments on it ([D-031](../log/decision-log.md)).
+**Session feeling.** One tap before, one tap after — a small row of faces or a 1–5, no words, no explanation asked for. Skippable and skippable permanently. The user can see their own history; nobody else ever can, it is never turned into a score or a profile, and the product never comments on it.
 
 This is the single exception to measuring only behaviour, and it earns the exception by being the only direct measure of the promise: that the time felt different afterwards. The distinction that keeps it safe is the subject — the product never rates the user; the user rates a session.
 
 **Ship.** The audience ladder, one rung at a time, each guaranteed to respond before the next unlocks: one person the user already knows → one stranger who fits the thing → a small public. In hand-run cohorts the operator is the guaranteed responder for rung one. The user chooses the rung; the product never routes a first ship somewhere silence is likely.
 
-**The first reckoning — at 72 hours, and the model for every mirror after it.** Two screens, in this order ([D-038](../log/decision-log.md)).
+**The first reckoning — at 72 hours, and the model for every mirror after it.** Two screens, in this order.
 
 First, one question in the user's own words:
 
