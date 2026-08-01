@@ -1,4 +1,4 @@
-# BreatheFree
+# Freathe
 
 ### You didn't waste four hours last night. You spent them. You just don't have anything to show for it.
 

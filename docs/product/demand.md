@@ -1,6 +1,6 @@
 # Demand and Market Thesis
 
-**Product:** BreatheFree  
+**Product:** Freathe  
 **Status:** Market hypothesis and validation plan · **Feeds:** the BMAD Analyst brief  
 **Research snapshot:** 1 August 2026
 

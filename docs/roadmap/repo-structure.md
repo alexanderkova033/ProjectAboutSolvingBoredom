@@ -1,6 +1,6 @@
 # Repository Structure
 
-**Product:** BreatheFree · **Status:** Plan for code that does not exist yet
+**Product:** Freathe · **Status:** Plan for code that does not exist yet
 
 > **Related:** [Initial design](../product/initial-design.md) · [BMAD path](../method/bmad-path.md) · [Future plans](future-plans.md) · [Decision log](../log/decision-log.md)
 

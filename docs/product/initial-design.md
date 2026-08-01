@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Product** | BreatheFree |
+| **Product** | Freathe |
 | **Status** | Draft — a starting position, not a ratified architecture |
 | **Author** | alexanderkova033 |
 | **Last revised** | 1 August 2026 |

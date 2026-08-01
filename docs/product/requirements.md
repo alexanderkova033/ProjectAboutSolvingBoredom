@@ -1,6 +1,6 @@
 # Product Requirements
 
-**Product:** BreatheFree  
+**Product:** Freathe  
 **Status:** MVP specification · **Superseded by:** `prd.md` once the BMAD PM run produces it  
 **Research snapshot:** 1 August 2026
 

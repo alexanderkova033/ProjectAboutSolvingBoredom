@@ -1,6 +1,6 @@
 # The BMAD Path
 
-**Product:** BreatheFree · **Last updated:** 1 August 2026
+**Product:** Freathe · **Last updated:** 1 August 2026
 
 > **Related:** [Demand](../product/demand.md) · [Requirements](../product/requirements.md) · [Initial design](../product/initial-design.md) · [Future plans](../roadmap/future-plans.md) · [Decision log](../log/decision-log.md)
 

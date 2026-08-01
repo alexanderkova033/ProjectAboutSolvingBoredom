@@ -1,6 +1,6 @@
 # Future Plans
 
-**Product:** BreatheFree · **Parking lot — nothing here is committed**
+**Product:** Freathe · **Parking lot — nothing here is committed**
 
 > **Related:** [Demand](../product/demand.md) · [Requirements](../product/requirements.md) · [Initial design](../product/initial-design.md) · [BMAD path](../method/bmad-path.md) · [Decision log](../log/decision-log.md)
 
