@@ -64,7 +64,7 @@ Goals are stated as things the product **does**, not states the user should reac
 
 ## 6. Core experience
 
-Seven things must be true. Screens and copy are in [initial design](initial-design.md) §4.
+Eight things must be true. Screens and copy are in [initial design](initial-design.md) §4.
 
 1. **Nothing is required to start.** No account, no questionnaire, no goal-setting, and no question about what they want to improve — they don't know, and being asked is where people stall ([D-032](../log/decision-log.md), [D-036](../log/decision-log.md)). The first thing anyone sees is something to do.
 2. **Options, not questions.** The user is shown real things they could make and picks one. No interview about their interests — the pick is the signal, and the direction emerges from what they keep choosing ([D-030](../log/decision-log.md)).
@@ -72,7 +72,8 @@ Seven things must be true. Screens and copy are in [initial design](initial-desi
 4. **The loop is one small thing at a time.** Open it → one mission is already there → do it → it's saved. Every mission is small by default, with the next available immediately if they want to keep going. Duration is **observed, not declared** — nobody is asked how long they have.
 5. **Shipping happens in week one, repeatedly.** Getting something in front of a real person is a mission kind, not an end-state.
 6. **The audience ladder guarantees a response** ([D-025](../log/decision-log.md)): one person the user already knows → one stranger who fits the thing → a small public. During hand-run cohorts the operator is the guaranteed responder. No first ship goes into a void.
-7. **The weekly view shows what was made.** Authored hours, things made, things shipped, responses received. No projection, no deadline, no comparison, and never a word about time lost — the user already knows where that went. Its job is to make *"I'm just lazy"* untenable against a record ([D-027](../log/decision-log.md)).
+7. **They say what they did; then the record says what they did; nothing comments** ([D-038](../log/decision-log.md)). First at the 72-hour mark, occasionally after. Asked in words rather than numbers, never fired against an empty record, and never asked *before* work — questions before work are friction, questions after work are reflection.
+8. **The weekly view shows what was made.** Authored hours, things made, things shipped, responses received. No projection, no deadline, no comparison, and never a word about time lost — the user already knows where that went. Its job is to make *"I'm just lazy"* untenable against a record ([D-027](../log/decision-log.md)).
 
 **Session feeling, optionally, before and after** ([D-031](../log/decision-log.md)). One tap each side. This is the only internal state the product records, it belongs to the user rather than to us, and it is never scored, never averaged into anything, and never shown to anyone else. It exists because the delta is the only direct measure of the actual promise — that the time felt different afterwards.
 
@@ -96,6 +97,8 @@ A project ends when the user stops, and stopping is not failure. The proof-of-wo
 | **FR-016** | Record which options the user chose and passed over, and use that as suggestion input |
 | **FR-018** | After two stalled weeks, ask once whether this is still what they want to make. Stopping is valid and unpenalised, and is recorded as a completed decision rather than an abandonment |
 | **FR-019** | Weekly time mirror: hours that produced something, things made, things shipped, responses received. No projection, no target, no comparison |
+| **FR-028** | Ask, in free text, what the user thinks they have got done — first at 72 hours, occasionally after. Never numeric, never before a work session, never fired when the record is empty |
+| **FR-029** | Display the self-report beside the record without narrating the difference: no delta, no arrow, no percentage, no evaluative language, in **either** direction ([D-038](../log/decision-log.md)) |
 | **FR-020** | Generate or select missions from stage, available time, energy, skill, and recent behaviour |
 | **FR-021** | Every mission has title, instruction, definition of done, estimated duration, difficulty, and stage |
 | **FR-022** | Accept, replace, simplify, skip, or report a blocker |
@@ -155,6 +158,7 @@ Pilot thresholds, not benchmarks.
 - **Activation:** 60% ship something within 72 hours · median open→first mission under 10 minutes · 50% reach a first mission **before** registering.
 - **Engagement:** 50% produce in three separate sessions in week one · 40% active in week three.
 - **Outcome:** 30% receive at least one unsolicited external response · 25% start something else within 14 days · **median session mood delta positive across a cohort** ([D-031](../log/decision-log.md)) — the one direct measure of the promise, reported in aggregate and never per user.
+- **The gap** ([D-038](../log/decision-log.md)): the direction and size of the difference between what users say they did and what the record shows. Predicted to skew toward under-reporting, since the laziness verdict is harsher than reality — and if it doesn't, the product's central premise is wrong and worth knowing early. Aggregate only; never shown to a user as a number.
 - **Commercial:** *deferred* ([D-018](../log/decision-log.md)). The first cohort is unpaid, so nothing here is evidence of willingness to pay.
 
 ## 10. Monetisation

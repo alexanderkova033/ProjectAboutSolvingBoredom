@@ -92,7 +92,25 @@ This is the single exception to measuring only behaviour, and it earns the excep
 
 **Ship.** The audience ladder, one rung at a time, each guaranteed to respond before the next unlocks: one person the user already knows → one stranger who fits the thing → a small public. In hand-run cohorts the operator is the guaranteed responder for rung one. The user chooses the rung; the product never routes a first ship somewhere silence is likely.
 
-**Time mirror.** Weekly, backward-looking: hours authored, things made, things shipped, responses received. No target, no projection, no red, no comparison to other users.
+**The first reckoning — at 72 hours, and the model for every mirror after it.** Two screens, in this order ([D-038](../log/decision-log.md)).
+
+First, one question in the user's own words:
+
+> *What have you got done so far?*
+
+Free text, no numbers requested, no list to fill in, skippable. It fires only if there is something in the record — asking what someone achieved when they achieved nothing is the worst screen in the product.
+
+Then the record, beside their answer:
+
+> **You said:** *not much really, messed about with the intro*
+>
+> **Recorded:** 3 sessions · 1 hour 40 minutes · 2 things made · 1 shipped · 1 response
+
+**Nothing narrates the gap.** No delta, no arrow, no percentage, no *"actually"*, no *"you did more than you thought"*. Both are simply present. If the user notices, the noticing is theirs — the product pointing it out would be the product describing the user, which is banned.
+
+This runs the other way sometimes. Someone will say they did loads and the record will say forty minutes. That screen looks identical: both shown, neither judged, nothing flagged. A record that only speaks up when it's flattering isn't a record.
+
+**Time mirror.** Weekly thereafter, same shape, with the self-report step becoming occasional rather than every time. Backward-looking: hours authored, things made, things shipped, responses received. No target, no projection, no red, no comparison to other users.
 
 Its job is narrow and worth stating: **make *"I'm just lazy"* untenable against a record.** Not to inform, not to motivate — to dispute a verdict the user has already passed on themselves. That is why it counts what was made and stays silent about the rest, and why a low week must still read as a record rather than a shortfall. If it ever reads as judgment it has become the thing the product is fighting.
 
