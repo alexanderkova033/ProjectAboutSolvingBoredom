@@ -53,4 +53,4 @@ The top level should scream the domain. A reader should see what the product *do
 
 ## The one load-bearing decision
 
-`scoring`, `moderation`, and `ai` are where this product's actual rules live. They must stay testable without a browser or a database — the AI evaluation set in [initial design](../product/initial-design.md) §16 depends on being able to run hundreds of project states through mission generation as plain function calls.
+`scoring`, `moderation`, and `ai` are where this product's actual rules live. They must stay testable without a browser or a database — the AI evaluation set in [initial design](../product/initial-design.md) §5.8 depends on being able to run hundreds of project states through mission generation as plain function calls.

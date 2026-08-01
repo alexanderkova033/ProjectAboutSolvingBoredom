@@ -1,46 +1,47 @@
 # ForgePath
 
-*Placeholder name. A real one gets chosen before the first paid cohort — see [D-015](docs/log/decision-log.md).*
+*Placeholder name. A real one gets chosen before the first cohort — see [D-015](docs/log/decision-log.md).*
 
-**Turn unused time into proof of what you can do.**
+**Your evenings are going somewhere. This is how you get them back.**
 
-You pick one real project, and you set the finish line. Each day it gives you a single mission sized to the time you actually have — five minutes or an hour — with one clear definition of done. You do the work, record the evidence, show it to a crew of four to six people doing the same. At the end you have a finished, shareable proof-of-work page: the artifact, how you made it, what broke, what you learned.
+Time is control, and generic apps took the control. You already have the hours — four of them went somewhere last night. What you don't have is any evidence they were yours.
 
-It doesn't hand you a curriculum or a countdown. Boredom is a signal to go after a *different* goal — a product that prescribes the plan reproduces the thing that makes courses feel inert. You choose the work; it supplies the next action.
+So: you pick something to make, and you set your own finish line. It asks how long you've got — five minutes or an hour — and gives you one thing to do with a clear definition of done. You make something small, you get it in front of a real person, and someone responds. At the end of the week it shows you the hours that left something behind.
 
-No feed. No follower counts. No streak guilt. No AI writing your project for you.
+No countdown. No streak. No curriculum. No AI writing it for you.
 
-## Why this and not the alternatives
+## What it isn't
 
-Blockers close the app and leave you with an empty fifteen minutes. Courses hand you someone else's project. Task managers hand you back the backlog you already had. AI assistants hand you a finished draft you can't defend in an interview.
+It won't make you happy and it won't make you money, and anything claiming otherwise is selling something. It also won't make boredom go away — when the scrolling stops, boredom arrives undiluted. That's the point. Boredom is a signal to go do something else, and the apps have been intercepting the signal before it reaches you.
 
-The wager: confidence comes from evidence of mastery, and purpose emerges from work you chose and finished. Neither can be sold directly — but the conditions for both can be designed.
+Blockers close the app and hand back nothing. Courses hand you someone else's plan. Task managers hand you back the backlog you already had. AI assistants hand you a finished thing you can't take credit for.
 
 ## Current state — planning, pre-code
 
 **There is no software yet. This repository is a product thesis.**
 
-Written: the market case, the MVP requirements, an initial design, and the build method. Next: a paid cohort run entirely by hand — forms, a spreadsheet, hand-written missions. Only then a solo MVP, then crews, then institutional pilots.
+Written: the market case, the requirements, an initial design, and the build method. Next: a cohort run entirely by hand, with predictions written down and committed before it starts. Then a solo release, then crews, then institutional pilots.
 
-Nobody has paid for this. No user has completed a project. Every number in these documents is a hypothesis with a threshold attached, and [demand](docs/product/demand.md) §9 states what evidence would kill the idea.
+Nobody has used this. Every number in these documents is a hypothesis with a threshold attached, and [demand](docs/product/demand.md) §8 says what evidence would kill it.
 
-Three assumptions carry the whole thesis, and none is tested:
+What isn't known:
 
-- that people defined by not finishing things will finish this one;
-- that the artifact is credible to someone doing the hiring;
-- that a sprint helps the genuinely stuck, not just the already-motivated.
+- whether reclaimed time is something people will pay for, or only something they feel;
+- whether a first ship gets a response, or silence — the default outcome online;
+- how big that first response has to be before it changes how someone sees themselves;
+- whether this reaches the genuinely stuck, or only the already-motivated.
 
-The next step is deliberately not code. A well-structured specification built on untested assumptions is harder to abandon than a messy one.
+And one thing that can't be known yet: the first cohort runs unpaid, so nothing here will be evidence that anyone will buy it ([D-018](docs/log/decision-log.md)).
 
 ## The documents
 
-**[demand.md](docs/product/demand.md) — should this exist?** The market case. Argues that boredom is a frequent pain nobody pays to fix while portfolio completion is an urgent one people do, so boredom becomes the hook and completion the product. Scores six adjacent opportunities, maps the gaps left by blockers, coworking, bootcamps and AI coaches, sizes the market bottom-up, and sets a four-phase validation plan with numeric stop/continue thresholds.
+**[demand.md](docs/product/demand.md) — should this exist?** The market case. Why boredom is the entry point and fear is downstream of it, what the four layers being sold actually are, why everyone else is fighting for *less* screen time while nobody sells it back. Competitive gaps, the beachhead, and a four-phase validation plan with numeric stop/continue thresholds.
 
-**[requirements.md](docs/product/requirements.md) — what does it do?** The MVP spec. Personas, the seven-step loop, hard non-goals, and every user flow from onboarding through the daily mission to completion. Then ~40 numbered `FR-` requirements and 10 `NFR-`s, the measurement model, pilot thresholds, monetisation hypotheses, safety rules, and seven open questions left to paid pilots rather than argument.
+**[requirements.md](docs/product/requirements.md) — what does it do?** The spec. Principles, personas, and the core loop from recall through shipping to the weekly time mirror. Then the numbered `FR-`/`NFR-` requirements, the measurement model, pilot thresholds, safeguarding obligations for the 16–18 segment, and seven open questions.
 
-**[initial-design.md](docs/product/initial-design.md) — how would it be built?** The first design position: seven principles, five product surfaces, key screens down to actual copy. Then the engineering draft — stack, domain model, mission-generation engine with its difficulty logic, progress dimensions, crew matching, moderation and privacy architecture, API outline, delivery phases. Named "initial" deliberately: the principles should survive, the schema is a starting position to be challenged.
+**[initial-design.md](docs/product/initial-design.md) — how would it be built?** Screens down to actual copy, the domain model, mission generation with distribution as a first-class mission kind, the audience ladder, privacy, testing, and the build order. Named "initial" deliberately — the principles should survive, the schema is a starting position to be challenged.
 
-**Also:** [the BMAD path](docs/method/bmad-path.md) for how this gets built, [the decision log](docs/log/decision-log.md) for why it looks like this, [future plans](docs/roadmap/future-plans.md) for what's deferred and what's refused.
+**Also:** [the BMAD path](docs/method/bmad-path.md) for how this gets built · [the decision log](docs/log/decision-log.md) for why it looks like this, including what was tried and dropped · [future plans](docs/roadmap/future-plans.md) for what's deferred and what's refused.
 
 ## Licence
 

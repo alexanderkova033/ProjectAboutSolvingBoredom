@@ -1,49 +1,60 @@
 # Decision Log and Work Log
 
-**Product:** ForgePath *(placeholder name — to be replaced)* · **Living document — append only**
+**Product:** ForgePath *(placeholder name — to be replaced)* · **Append only**
 
 > **Related:** [Demand](../product/demand.md) · [Requirements](../product/requirements.md) · [Initial design](../product/initial-design.md) · [BMAD path](../method/bmad-path.md) · [Future plans](../roadmap/future-plans.md)
 
-A decision belongs here if someone joining would otherwise ask "why is it like this?" Reversed decisions get marked `Superseded`, never deleted — the entries that turn out wrong are the ones worth keeping. `Provisional` means deliberately revisitable, pending evidence.
+Reversed decisions are marked `Superseded`, never deleted — the wrong ones are the ones worth keeping. IDs are never reused.
 
 ## Decisions
 
 | # | Decision | Why | Status |
 |---|---|---|---|
-| **D-001** | Sell project completion, not boredom relief | Boredom is frequent but scores 2.4/5 on willingness to pay; portfolio completion scores 4.2/5 because a job market forces the issue. Boredom stays the hook, never the purchase reason. | Accepted |
-| **D-002** | Beachhead is 18–26 in transition to work | Narrow enough to write copy for, large enough to matter, reachable through institutions that already budget for this outcome. Removes under-18 safeguarding from scope. | Accepted |
-| **D-003** | Bounded purchase before any subscription | The buyer must know exactly what they bought. Subscription apps churn on trial day one; AI-branded ones retain worst. | Superseded in part by **D-016** — the boundary is the outcome, not 30 days |
-| **D-004** | No clinical claims, no shame mechanics | Ethical and regulatory, but mostly integrity: a completion product leaning on guilt produces compliance, not the mastery it sells. | Accepted |
-| **D-005** | AI decomposes and critiques; never authors the artifact | The artifact's whole value is being defensible in an interview. Every competitor will offer to just make the thing — refusing is a deliberate conversion cost, not an obvious call, and will be re-proposed. | Accepted as a cost |
-| **D-006** | Every AI path ships a non-AI fallback | A daily loop can't break because a provider is down mid-project. Makes manual template authoring implementation priority #1. | Accepted |
-| **D-007** | Web-first responsive; no native apps, no app blocking | Blocking is crowded and isn't the differentiator — what appears *after* the block is. Native adds store review and platform cost pre-validation. | Accepted |
-| **D-008** | No public feed or follower counts; crews of 4–6 | A feed creates the comparison pressure that stops the target user publishing at all. Costs us conventional social growth loops. | Accepted |
-| **D-009** | Five transparent progress dimensions, never one score | A composite score is unfalsifiable, invites comparison, and drifts toward measuring the person. Raw counts can be argued with, which makes them trustworthy. | Accepted |
-| **D-010** | Concierge test before installing BMAD | Planning-phase efficiency works against us on unvalidated assumptions — it yields a well-organised spec that's harder to abandon. Repo stays docs-only meanwhile; intended, not stalled. | Accepted |
-| **D-011** | Docs-only repo, domain-named folders; `DESIGN.md` → `initial-design.md` | The rename is the substantive part: "design" implied a settled architecture, "initial design" states its real status. | Accepted |
-| **D-012** | MIT licence | Permissive and frictionless while the asset is a market thesis rather than code. | Provisional — revisit **before** the first outside contribution if the commercial model comes to rest on platform code |
-| **D-013** | Solo MVP ships alone; crews are a later release | Crews are the largest source of scope, risk and cold-start difficulty. Shipping them with the core loop makes it impossible to tell which one failed. Resolves a contradiction between requirements §14 and design §17 in favour of §17. | Accepted |
-| **D-014** | Hand-pick the first crews; don't build matching | Matching solves a liquidity problem we don't have. The replacement-of-inactives rule assumes a bench of spare users that only exists at scale. | Accepted |
-| **D-015** | Name deferred — "ForgePath" is a placeholder nobody is happy with | Naming ahead of validation locks a name to positioning that may still move; the concierge cohort will also supply the vocabulary users actually use for this. Renaming costs ~12 string replacements today, so deferring is close to free — but that cost rises the moment a domain, logo, or payment account exists. | Open — decide before the first paid cohort |
-| **D-016** | No fixed 30-day programme. The user sets scope and finish line | A prescribed 30-day container removes the independence of choice that resolving boredom depends on. Boredom is failed engagement — a signal to pursue a *different* goal — so a product that hands the user someone else's plan reproduces exactly what makes courses inert. The bounded purchase (D-003) survives, bounded by **outcome**: one project taken to completion. **Cost accepted:** "in 30 days" is concrete marketing and a real deadline effect, and both are given up. The mitigation is that the product offers a suggested finish line as a visible default the user can override, never as a container. | Accepted |
+| **D-001** | Sell completion, not boredom relief | Boredom scores 2.4/5 on willingness to pay; completion 4.2/5. | Amended by **D-022** — the thing sold is reclaimed time; completion is how it's proved |
+| **D-002** | Beachhead 18–26 in transition to work | Narrow enough to write copy for, reachable through institutions. | Amended by **D-019** |
+| **D-003** | Bounded purchase before any subscription | The buyer must know what they bought; subscriptions churn on day one. | Superseded in part by **D-016** — bounded by outcome, not calendar |
+| **D-004** | No clinical claims, no shame mechanics | A completion product leaning on guilt produces compliance, not mastery. | Accepted |
+| **D-005** | AI never authors the artifact | Its whole value is being defensible. Every competitor will offer to just make the thing; refusing is a real conversion cost. | Accepted as a cost |
+| **D-006** | Every AI path ships a non-AI fallback | The loop can't break because a provider is down. Makes manual templates priority #1. | Accepted |
+| **D-007** | Web-first; no native apps, no blocking | Blocking is crowded and isn't the differentiator — what appears *after* is. | Accepted |
+| **D-008** | No feed, no follower counts; crews of 4–6 | A feed creates the comparison pressure that stops people publishing at all. | Accepted |
+| **D-009** | Transparent quantities, never one score | A composite score is unfalsifiable and drifts toward measuring the person. | Accepted |
+| **D-010** | Concierge test before installing BMAD | Planning efficiency works against us on unvalidated assumptions. | Accepted |
+| **D-011** | Docs-only repo; `DESIGN.md` → `initial-design.md` | "Design" implied a settled architecture. | Accepted |
+| **D-012** | MIT licence | Frictionless while the asset is a thesis rather than code. | Provisional — revisit before the first outside contribution |
+| **D-013** | Solo release ships alone; crews later | Crews are the largest source of scope and cold-start risk; shipping together hides which one failed. | Accepted |
+| **D-014** | Hand-pick crews; don't build matching | Matching solves a liquidity problem we don't have. | Accepted |
+| **D-015** | Name deferred | Naming ahead of validation locks a name to positioning that's still moving. Cheap now, expensive once a domain exists. | Open — before the first cohort |
+| **D-016** | No fixed programme length; user sets scope and finish line | A prescribed container removes the independence of choice that resolving boredom depends on. **Cost:** "in 30 days" was concrete marketing and a real deadline effect; both given up. | Accepted |
+| **D-017** | Consequence visibility replaces discipline | Discipline is consequence-blindness plus force. Something must do the job motivation is bad at, and that job goes to arithmetic, not obligation. | Accepted — mechanic changed by **D-024** from forward projection to backward mirror |
+| **D-018** | First cohort unpaid | Founder is under 18 and can't hold a processor account. **A real loss of evidence** — free cohorts overstate commitment, and that limitation travels with every number produced. Never re-read as commercial validation. | Accepted under constraint |
+| **D-019** | Add 16–18 as a second segment | School access makes it reachable and testable in a way the primary market isn't. **Cost:** guardian consent, no mixed-age crews, no DMs, Children's Code (`FR-080`–`FR-086`). | Accepted |
+| **D-020** | Pre-register predictions before any cohort | Adopted from the sibling manipulation-recognition rubric. Completion rate is the load-bearing unknown; writing the expected number down first is what stops us rationalising whatever arrives. | Accepted |
+| **D-021** | Red-team against the manipulation taxonomy; agency real before legible | The sibling project catalogues exactly the techniques this one could reach for. Manufacturing a feeling of control the user lacks is the dark pattern that project exists to detect. | Accepted |
+| **D-022** | **The spine: time is control, generic apps took it, this returns it** | Money and being valued are both instrumental; time is closer to terminal. Boredom is time you can feel passing — the residue after an evening spent on nothing. Everyone else is fighting for *less* screen time; nobody is selling it *back*. **Boredom is not promised away:** when scrolling stops it arrives undiluted, and saying so is the only honest position and the only differentiated one. | Accepted |
+| **D-023** | Fear is downstream of boredom; intervene at making | The chain runs boredom → consumption → not creating → no confidence → fear. Because fear is the *last* link, treating it directly treats a symptom. Mission one is *make something*, not *survive being seen*, and the predicted-vs-actual discomfort machinery is demoted to optional (`FR-032`). | Accepted |
+| **D-024** | Present tense: cut every *will* and *have* mechanic | *Will* (countdowns, goal ceremonies, deadline projections) and *have* (badges, streaks, trophies, portfolio-as-achievement) both pull the user out of now, which is where the product works. Retires `FR-017`'s deadline projection in favour of the backward-looking time mirror (`FR-019`). | Accepted |
+| **D-025** | Audience ladder — no first ship goes into a void | The internet's default response is silence, and a promise of external proof fails hardest at the moment the user is most exposed. Every rung has a guaranteed responder before the next unlocks: crew → known people → one fitting stranger → small public. This is the part nobody else builds and the reason the proof is deliverable rather than hoped for. | Accepted |
+| **D-026** | The artifact is a by-product, not the promise | Things you *have* devalue — a portfolio page is worth little in five years. Time spent authoring doesn't devalue. The proof-of-work page stays as the receipt that the hours were real; it stops being the reason for the work. | Accepted |
 
 ## Open risks
 
-Not decisions — the assumptions everything rests on, none tested. Each needs an owner and an answer before Step 1.
+Untested assumptions everything rests on.
 
 | Risk | Why it's load-bearing |
 |---|---|
-| **Completion rate** | The 30% target carries the entire pitch. Self-directed programs typically complete far lower; Buildspace had huge energy, was free, and closed. Someone who doesn't finish has paid to be reminded they don't finish — worse than never buying. |
-| **Artifact credibility** | The whole value chain terminates in employers valuing proof of work. Asserted throughout, verified nowhere. If false, this is a motivation product with better marketing. |
-| **Who it's actually for** | The idle moment is a low-executive-function state. The sprint may serve the moderately motivated — already served by Focusmate and a to-do list — and fail the genuinely stuck, who are the stated market. *Who fails without this and succeeds with it?* |
-| **Payer mismatch** | Users have time and no money; institutions have money and 6–18 month sales cycles needing evidence that requires users first. B2C may be a loss-leader that exists to generate the B2B case study. If so, say it, because it changes how much B2C unit economics matter. |
+| **Reclaimed time is felt but not bought** | The demand doc scores the time framing lower on willingness to pay than the portfolio framing, and higher on frequency and open competitive space. Both are guesses. Phase 3 tests all three messages rather than assuming. |
+| **The first ship lands in silence** | The audience ladder is the mitigation, and it is unproven. If guaranteed responses feel manufactured, they won't update anyone's self-concept. |
+| **How big must the first response be** | A crew member being kind is dismissible as politeness; a stranger paying isn't. There's a threshold below which evidence doesn't change how someone sees themselves, and nobody knows where it sits. |
+| **Who it's actually for** | The idle moment is a low-executive-function state. The sibling project's field notes found heavier low-value-content consumption tracks with *less* self-recognition of a problem — so the people who most need this may be least likely to seek it. |
+| **Payer mismatch** | Users have time and no money; institutions have money and long cycles needing evidence that requires users first. |
 
 ## Work log
 
-**31 July 2026 — Fixed programme length removed; product docs cut.** D-016 replaces the 30-day container with a user-set scope and finish line, and adds autonomy as an explicit design principle rather than an implicit one. Demand, requirements, and initial design cut by roughly 60% — invented revenue scenario tables, restated framing, and prose padding removed; every `FR-`/`NFR-` identifier, threshold, and source retained. Initial design sections renumbered after the repository structure moved out to [repo-structure.md](../roadmap/repo-structure.md); all cross-references updated.
+**1 August 2026 — Rebuilt around time and control.** The docs previously sold process with the payoff six weeks out, which is the version nobody would use. New spine in D-022; fear placed downstream of boredom in D-023, moving the intervention to making; present-tense filter in D-024; audience ladder in D-025; artifact demoted in D-026.
 
-**31 July 2026 — Repository structured for BMAD.** Reorganised into `docs/{product,method,roadmap,log}`, renamed the design document, marked which BMAD artifact supersedes each product doc. Fixed two stale sections: the design document described a repository structure listing root-level files that no longer exist, and requirements §14 bundled crews and cohort admin into a "first release" that contradicted design §17.
+Model gains `Artifact`, `Ship`, `Response`, and `ProductionSession` — the old one could record that work happened but not that it landed, which is the only thing the new thesis cares about. Distribution becomes a first-class mission kind rather than a later phase. `FR-017` retired; `FR-019`, `FR-026`, `FR-027`, `FR-036` added. Product docs cut a further ~30%.
 
-Three of the seven open questions in requirements §15 block the concierge design: which project category to start with, whether crews form at onboarding or after the first mission, and how much facilitation completion actually requires.
+**1 August 2026 — Autonomy work.** D-017 through D-021: consequence visibility, unpaid cohort, 16–18 segment with safeguarding requirements, pre-registration, manipulation red-team.
 
-**31 July 2026 — Initial documentation committed.** Demand thesis, requirements, design spec. Beachhead selected over five alternatives. Not built, not tested, not sold.
+**31 July 2026 — Structure and first cuts.** Reorganised into `docs/{product,method,roadmap,log}`, renamed the design document, removed the fixed 30-day programme (D-016), cut the product docs by 65%, resolved a contradiction between the requirements release boundary and the phased delivery plan.

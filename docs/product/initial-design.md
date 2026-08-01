@@ -1,341 +1,206 @@
 # Initial Product and Technical Design
 
-**Product:** ForgePath *(placeholder name — to be replaced)*  
-**Document status:** Initial design — a starting position, not a ratified architecture  
-**BMAD stage:** Pre-BMAD input, feeds the UX Expert spec and the Architect run  
-**Superseded by:** `docs/product/architecture.md` once the BMAD Architect run produces it  
-**Research snapshot:** 31 July 2026
+| | |
+|---|---|
+| **Product** | ForgePath *(placeholder name — to be replaced)* |
+| **Status** | Draft — a starting position, not a ratified architecture |
+| **Author** | alexanderkova033 |
+| **Last revised** | 1 August 2026 |
+| **Superseded by** | `architecture.md`, after the BMAD Architect run |
+| **Reviewers** | None yet |
 
 > **Related:** [Demand](demand.md) · [Requirements](requirements.md) · [BMAD path](../method/bmad-path.md) · [Repo structure](../roadmap/repo-structure.md) · [Decision log](../log/decision-log.md)
 
-> **Why "initial":** written before any code, user test, or BMAD run. §1–4 (principles, architecture, screens) are the durable part. §5–15 (stack, schema, engine, API) are a defensible first draft the Architect is expected to challenge and replace — evidence the domain has been thought through, not a migration target.
+> Deliberately contains no code, schemas, or interface definitions. Those are verbose, carry detail that isn't load-bearing at this stage, and go stale faster than the decisions around them. What belongs here is the shape of the thing and the trade-offs behind it.
 
-## 1. Design objective
+## 1. Overview
 
-A mobile-first web product that converts an idle moment into one small production action, and accumulates those actions into a completed proof-of-work project.
+People spend evenings consuming and end them feeling the time was lost. Existing tools fight for *less* — blocking apps, capping screen time — and hand nothing back.
 
-It should feel simpler than a task manager, more active than a course, safer than a public social network, and more outcome-oriented than a generic AI coach.
+This is a mobile-first web product that turns an idle moment into one small act of making, gets the result in front of a real person quickly, and shows the user, weekly, how many hours they authored. It sells reclaimed time; it proves that time with something that exists outside the user's head.
 
-## 2. Core principles
+## 2. Background
 
-1. **One next action.** The default screen shows the project, progress, and one clear next mission — never a backlog.
-2. **Production before consumption.** Minimum context required to act. Advice ends in an observable action.
-3. **The user decides; the product proposes.** The user picks the project, the scope, and the finish line. Every system suggestion is a default with a visible override. Boredom is failed engagement — handing the user someone else's plan reproduces what makes courses inert.
-4. **Purpose through evidence.** Don't ask for a declared purpose. Help users notice what they repeatedly choose, improve, and finish.
-5. **Confidence through graded mastery.** Increase challenge gradually. Record predictions against outcomes. Reward attempts and revisions, not only polish.
-6. **Small recurring social units.** Crews stable enough for familiarity, small enough to prevent a feed economy.
-7. **Transparent measurement.** Raw behaviour and clear calculations. No mysterious score, no diagnosis.
-8. **AI as scaffolding.** AI may decompose, adapt, question, critique, summarise. It never becomes the creator of record.
+The full argument is in [demand.md](demand.md). What the design depends on:
 
-## 3. Information architecture
+- **Boredom is upstream, fear is downstream.** The chain runs boredom → consumption → not creating → no confidence → fear. Because fear is last, the intervention is making, not fear-management ([D-023](../log/decision-log.md)).
+- **Autonomy is load-bearing.** A prescribed programme reproduces what makes courses inert. The user picks project, scope, and finish line ([D-016](../log/decision-log.md)).
+- **Payoff must arrive fast.** Creating will always be harder than consuming, so it can't win on ease — only on payoff size, and only if the payoff arrives soon enough to compete.
+- **The internet's default response is silence.** Any design promising external validation must engineer it rather than hope for it.
 
-**Today** — time-available selector, current mission, mission controls, brief progress, optional crew pulse, no scrolling feed.  
-**Project** — outcome and definition of done, stages and milestones, artifact links, scope adjustment, proof-of-work builder.  
-**Crew** — bounded chronological updates, structured feedback requests, session info, norms and reporting.  
-**Evidence** — mission history, attachments, predicted versus actual outcomes, skills demonstrated, weekly summaries.  
-**Profile** — schedule, interests, skills, privacy, notifications, data export and deletion.
+## 3. Goals and non-goals
 
-Administrators get a separate **Cohort** area.
+**Goals**
 
-## 4. Key screens
+1. First mission accepted within ten minutes of signup; something shipped within 72 hours.
+2. Make authored hours visible and undeniable, without scoring the user.
+3. Guarantee that a first ship receives a response.
+4. Keep the core loop completable in five minutes.
+5. Degrade to full usefulness without the language model.
 
-**Welcome.** Headline: *Turn unused time into proof of what you can do.* Primary action: *Start a project.* Supporting: one real project · one small mission at a time · one crew · a shareable result.
+**Non-goals**
 
-**Outcome selection.** *What would you like to have finished?* — a portfolio project · something creative I publish · evidence of a new skill · momentum after a stuck period · exploration of a possible career.
+Diagnosing or treating anything · promising happiness, income, or the removal of boredom · a public feed or general social network · users under 16 · blocking third-party apps · generating the user's work · streaks, badges, or any punitive mechanic.
 
-**Project selection.** A small curated library, bounded and artifact-based. First templates: publish a researched explainer · build and test a simple web tool · design a small product concept · create a local problem-and-solution report · produce a short visual or audio story · run a tiny service experiment for a real person or organisation. Each carries target artifact, examples, required stages, expected weekly time, skills, difficulty, and suitability constraints.
+**Future goals** — deliberately out of this design: crew matching, native mobile, blocker integrations, employer matching, adaptive personalisation. See [future-plans.md](../roadmap/future-plans.md).
 
-**Scope and finish line.** The user names their own definition of done and target date. The system shows what that implies — *that's about 4 hours a week for 6 weeks* — and flags an inconsistency with stated availability without blocking it. Users who want a suggestion get one; it is a default, not a container.
+## 4. Product design
 
-**Baseline.** Under three minutes: project experience, available days and minutes, confidence finishing this kind of project, recent unfinished projects, main blocker, comfort showing unfinished work, desired final visibility.
+### 4.1 Principles
 
-**Today.** In order: project title and day number · *how much time do you have?* · mission card · accept / easier / different / blocker · progress strip · crew pulse.
+1. **Present tense.** Anything living in *will* (countdowns, goal ceremonies, deadline projections) or *have* (badges, streaks, trophies, portfolio-as-achievement) does not ship. This is a filter to run against every screen, not a sentiment ([D-024](../log/decision-log.md)).
+2. **One next action.** The default screen shows one mission, never a backlog.
+3. **The user decides; the product proposes.** Every suggestion is a default with a visible override.
+4. **Consequence visibility, not discipline.** Show where the time went; impose nothing.
+5. **Agency is real before it is legible.** Manufacturing a feeling of control the user lacks is a dark pattern ([D-021](../log/decision-log.md)).
+6. **Recall over aspiration.** What already absorbed them, not what they want to become.
+7. **Ship early, ship small.** Work nobody sees isn't progress.
+8. **No first ship into a void.**
+9. **Boredom is faced, not removed.** When scrolling stops it arrives undiluted. Say so.
+10. **AI is scaffolding, never the creator of record.**
 
-> **Create a rough problem statement**  
-> Write 100–150 words describing who experiences the problem, when it happens, and what they currently do instead.  
-> **Done when:** a draft is saved to your project, even if the wording is poor. **Time:** 15 min. **Difficulty:** 2/5
+### 4.2 Surfaces
 
-**Mission completion.** Did you attempt it? Is the definition of done satisfied? Attach evidence. What happened? Optionally predicted versus actual discomfort. What next? Immediately show: mission complete, artifact progress changed, evidence added, next action previewed.
+**Now** — time-available selector, one mission, controls. **Project** — definition of done, stages, things made, scope adjustment. **Crew** — bounded chronological updates, guaranteed responses, reporting. **Evidence** — what was made, what shipped, what came back. **Profile** — schedule, privacy, notifications, export and deletion. Administrators get a separate **Cohort** area.
 
-**Crew update.** Fixed format — *Today I made: … / I am stuck on: … / Feedback I need: [none, clarity, usefulness, technical, visual]*. Feedback prompts guide quality: "I understood…", "I was confused by…", "The most useful part is…", "One small next test could be…".
+### 4.3 Key flows
 
-**Weekly review.** Evidence-based summary — *You planned 5 production days and produced on 4. You completed 7 missions and revised 3 artifacts. Your average predicted discomfort was 7.1; actual was 4.8. You avoided publishing twice. Your crew responded to 4 of your updates.* Then one decision: increase challenge, hold, or reduce scope.
+**Welcome.** *Your evenings are going somewhere. This is how you get them back.*
 
-**Completion page.** Title, one-sentence outcome, problem or purpose, final artifact, the user's contribution, process timeline, tests or feedback, revisions, skills demonstrated, tools used including AI, reflection, and visibility control.
+**Recall**, before anything is chosen — three past-tense questions: when did you last lose track of time; what have you made or fixed, even badly; what do you read about when nobody set it. Free text, skippable, under 90 seconds. Never asks what the user wants to *become*; that question gets a performed answer.
 
-## 5. Implementation stack
+**Project and finish line.** A small curated library — a researched explainer, a simple tool, a product concept, a local problem-and-solution report, a short visual or audio story, a tiny service experiment for a real person. The user writes their own definition of done and picks their own date. The system reflects the implication — *about four hours a week for six weeks* — and flags inconsistency with stated availability without blocking it.
 
-A pragmatic recommendation, not a requirement.
+**The loop.** *How much time do you have?* → one mission → done. The mission card carries a title, an instruction, a definition of done, a duration, and a difficulty. The user can accept, simplify, replace, or report a blocker.
 
-**Frontend:** Next.js (App Router), TypeScript, React, Tailwind, accessible primitives (Radix or shadcn/ui), React Hook Form with Zod.
+**Ship.** The audience ladder, one rung at a time, each guaranteed to respond before the next unlocks: crew → people they know → one stranger who fits the thing → a small public. The user chooses the rung; the product never routes a first ship somewhere silence is likely.
 
-**Backend, option A (fastest):** Next.js server actions and route handlers, Supabase Postgres, Auth, and Storage, with Row-Level Security. **Option B (more portable):** Next.js, PostgreSQL, Prisma or Drizzle, Auth.js, S3-compatible storage.
-
-**AI layer:** provider-agnostic interface, structured JSON output, schema validation, prompt and model version logging, rate and cost limits, non-AI template fallback.
+**Time mirror.** Weekly, backward-looking: hours authored, things made, things shipped, responses received. No target, no projection, no red, no comparison to other users. It counts what was made and stays silent about the rest. If it ever reads as judgment it has become the thing the product is fighting.
 
-**Infrastructure:** Vercel or equivalent, managed PostgreSQL, error monitoring, privacy-conscious analytics, transactional email, optional queue for summaries and matching.
+After two stalled weeks, one question with the user's own recall answers above it: *is this still the thing you want to be making?* Dropping it is a good outcome.
 
-Code layout is in [repo-structure.md](../roadmap/repo-structure.md).
+**Completion.** A page recording what the thing is, what it took, and what came back. A receipt that the hours were real — generated as a by-product, never presented as the reason for the work ([D-026](../log/decision-log.md)).
 
-## 6. Domain model
+## 5. Detailed design
 
-```ts
-type User = {
-  id: string; email: string; createdAt: Date; timezone: string;
-  locale: string; ageConfirmed: boolean;
-  status: "active" | "suspended" | "deleted";
-};
+### 5.1 Domain model
 
-type Profile = {
-  userId: string; displayName: string; bio?: string;
-  interests: string[]; selfReportedSkills: string[];
-  preferredSessionMinutes: number[]; availableWeekdays: number[];
-  privacyDefault: "private" | "unlisted" | "public";
-};
+The important structural decision is that **making, shipping, and being responded to are three separate things**. An earlier model recorded that work happened but not that it landed — which is the only thing this thesis cares about.
 
-type ProjectStage =
-  | "define" | "explore" | "build" | "test" | "revise" | "publish" | "reflect";
+| Entity | Holds | Why it's separate |
+|---|---|---|
+| **Project** | Title, outcome, user-written definition of done, user-set target date, stage, visibility | Target date is revisable without penalty; the model must not treat a moved date as failure |
+| **Mission** | Instruction, definition of done, duration, difficulty, stage, and a **kind** — *produce* or *distribute* | Making shipping a mission kind rather than a phase is what stops distribution being deferred forever |
+| **Mission attempt** | Attempted, completed, blocker, optional predicted and actual discomfort | Attempts are preserved separately from missions so a skip is data rather than an absence |
+| **Artifact** | The thing itself, and when it shipped | Distinct from evidence-of-work. Evidence proves effort; an artifact is what a stranger could actually receive |
+| **Ship** | An artifact sent to one rung of the ladder, and the guaranteed responder for that rung | Modelling the rung explicitly is what makes "no first ship into a void" enforceable rather than aspirational |
+| **Response** | An external reaction, its kind, and **whether it came from someone who knows the user** | A friend's kindness and a stranger's use are not the same evidence and must not be counted together |
+| **Production session** | Minutes, and whether anything was produced | The unit the time mirror sums. Time is the product, so time is a first-class record |
 
-type Project = {
-  id: string; ownerId: string; templateId?: string;
-  title: string; outcome: string; audience?: string;
-  artifactType: string; definitionOfDone: string;
-  status: "draft" | "active" | "paused" | "completed" | "archived";
-  currentStage: ProjectStage;
-  startDate: Date;
-  targetDate: Date;          // set by the user, revisable without penalty
-  visibility: "private" | "unlisted" | "public";
-};
-
-type Mission = {
-  id: string; projectId: string;
-  source: "template" | "ai" | "facilitator" | "user";
-  title: string; instruction: string; definitionOfDone: string;
-  estimatedMinutes: 5 | 15 | 30 | 60;
-  difficulty: 1 | 2 | 3 | 4 | 5;
-  stage: ProjectStage;
-  evidenceType: "text" | "url" | "image" | "file" | "external_action";
-  status: "proposed" | "accepted" | "completed" | "skipped" | "expired";
-  generatedAt: Date; acceptedAt?: Date; completedAt?: Date;
-};
-
-type MissionAttempt = {
-  id: string; missionId: string; userId: string; attemptNumber: number;
-  predictedDifficulty?: number; predictedDiscomfort?: number;
-  predictedOutcome?: string; completionConfidence?: number;
-  attempted: boolean; completed: boolean;
-  actualDiscomfort?: number; actualOutcome?: string;
-  recoveryMinutes?: number; blockerCode?: string;
-  reflection?: string; createdAt: Date;
-};
-
-type Evidence = {
-  id: string; projectId: string; missionId?: string; ownerId: string;
-  type: "text" | "url" | "image" | "file";
-  title: string; textContent?: string; url?: string; storagePath?: string;
-  isPortfolioEligible: boolean;
-  visibility: "private" | "crew" | "portfolio";
-  createdAt: Date;
-};
-
-type Crew = {
-  id: string; cohortId?: string; name: string; language: string;
-  timezoneBand: string;
-  status: "forming" | "active" | "completed" | "archived";
-  capacity: number;
-};
-
-type CrewMember = {
-  crewId: string; userId: string; role: "member" | "facilitator";
-  joinedAt: Date; leftAt?: Date;
-  notificationLevel: "all" | "digest" | "off";
-};
-
-type CrewPost = {
-  id: string; crewId: string; authorId: string; projectId: string;
-  evidenceId?: string; madeText: string; blockerText?: string;
-  feedbackType?: "clarity" | "usefulness" | "technical" | "visual";
-  status: "visible" | "reported" | "removed"; createdAt: Date;
-};
-
-type Cohort = {
-  id: string; organizationId?: string; name: string; inviteCode: string;
-  startDate: Date; endDate: Date;
-  status: "draft" | "active" | "completed";
-};
-```
-
-```text
-User 1—1 Profile     Project 1—N Mission        Mission 1—N MissionAttempt
-User 1—N Project     Project 1—N Evidence       Crew 1—N CrewPost
-User N—N Crew (via CrewMember)                  Cohort 1—N Crew
-```
-
-Private reflections are stored separately or under stricter row-level policies than crew-visible evidence.
-
-## 7. Mission generation
-
-**Inputs:** template and definition of done, current stage, completed and skipped missions, remaining milestones, selected available time, self-reported energy, experience level, recent blockers, crew dependencies, existing evidence, safety category.
-
-**Quality rules.** A mission must start with one observable verb, produce an artifact or external action, fit the requested duration, have a testable definition of done, advance the project, avoid combining independent tasks, avoid unnecessary research, avoid producing the user's final work for them, sit mostly at difficulty 2–4, and be safe and lawful.
-
-> Bad: *Think about your target customer and improve your concept.*  
-> Better: *Write three sentences describing one target customer, the moment the problem occurs, and what they currently do instead.*
-
-**Structured output**, validated against a strict schema — two failures fall back to a template mission:
-
-```json
-{
-  "title": "Write a one-person problem statement",
-  "instruction": "Write 100–150 words describing one person, the moment the problem occurs, and their current workaround.",
-  "definitionOfDone": "A draft is saved to the project, even if incomplete.",
-  "estimatedMinutes": 15, "difficulty": 2,
-  "stage": "define", "evidenceType": "text",
-  "reason": "This creates the first testable project assumption.",
-  "safetyFlags": []
-}
-```
-
-**Difficulty adaptation** — change one variable at a time (duration, visibility, ambiguity, social exposure, technical complexity):
-
-```text
-completion_rate_7d >= 0.8 and avg_actual_discomfort <= 6 and no repeated blocker
-    → consider difficulty +1
-two consecutive skips, or completion_rate_7d < 0.4
-    → reduce mission size or project scope
-predicted - actual discomfort >= 3 across three attempts
-    → show calibration insight
-actual_discomfort >= 8, or user reports overwhelm
-    → do not increase difficulty
-```
-
-## 8. Project templates
-
-```ts
-type ProjectTemplate = {
-  id: string; title: string; promise: string; artifactType: string;
-  expectedHours: number; prerequisites: string[];
-  stages: TemplateStage[]; skills: string[];
-  exampleOutputs: string[]; riskFlags: string[];
-};
-```
+Projects own missions and artifacts; artifacts own ships; ships own responses; users own sessions and belong to crews. Private reflections sit under stricter row-level policies than anything shippable, and are stored apart from anything that could reach a public page.
 
-Each stage carries an objective, required evidence, mission patterns by duration, a completion rule, common blockers, and simplification options. **Templates are authored manually before any AI involvement** — the AI adapts a tested path, it does not invent the pedagogy.
+### 5.2 Mission generation
 
-## 9. Progress and scoring
+Generation takes the project stage, the definition of done, remaining milestones, available time, self-reported energy, experience, recent blockers, and what already exists.
 
-No universal confidence score. Five transparent dimensions: **consistency** (active ÷ planned production days), **execution** (completed ÷ accepted missions), **challenge** (total and average completed difficulty), **artifact progress** (required stages completed), **contribution** (feedback and useful crew actions). Optional calibration insight: `median(predicted discomfort − actual discomfort)`.
+A generated mission must start with one observable verb, produce or ship something real, fit the requested duration, carry a testable definition of done, cover one task rather than several, and never produce the user's work for them. Difficulty sits mostly at 2–4.
 
-```text
-Production days: 8 of 10 planned      Project stages complete: 4 of 7
-Missions completed: 14 of 17          Useful crew contributions: 6
-Current challenge level: 3 of 5       Predicted 7.0 / actual 4.5 discomfort
-```
+> Bad: *Think about your target customer.*
+> Better: *Write three sentences on one customer, the moment the problem hits, and what they do instead.*
 
-Emphasise trend and evidence, never comparison with other users.
+Output is validated against a strict schema; two consecutive failures fall back to a hand-written template mission. Every project stage has template coverage, so the product is fully usable with the model switched off entirely.
 
-## 10. Crew matching
+**Distribution missions are first-class.** Every template carries ship-shaped missions, and the generator must offer one as soon as anything is shippable.
 
-Deferred — hand-pick crews until manual assembly is the obvious bottleneck ([D-014](../log/decision-log.md)). When built:
-
-```text
-score = 0.35·timezone_overlap + 0.25·schedule_overlap
-      + 0.20·project_category_compatibility + 0.10·language_match
-      + 0.10·preferred_feedback_style_match
-```
+**Adaptation changes one variable at a time** — duration, visibility, ambiguity, social exposure, or technical complexity. A high ship rate with no repeated blocker raises difficulty. Two consecutive skips reduce mission size or prompt a scope review. Something shipped to two rungs with no response drops a rung to one with a guaranteed responder. Reported overwhelm never increases difficulty.
 
-Never place blocked users together. Preserve institution-specific cohorts. Avoid crews below three active members. Replace inactive members early. Allow facilitator override. Do not match on sensitive traits unless explicitly chosen for a protected affinity group.
+### 5.3 Templates
 
-## 11. Notifications
+Templates are authored by hand before any model involvement — the model adapts a tested path, it does not invent the pedagogy. Two selection criteria decide what enters the library: a first version must ship in days, and someone must plausibly want the result. A template that cannot answer *who would want this* does not go in.
 
-> Good: *Your next step takes 15 minutes: write the rough opening paragraph.*  
-> Bad: *You are losing your streak. Do not fail today.*
+### 5.4 Measurement
 
-Concrete and actionable, user-scheduled, no shame, no false urgency, no public exposure, crew activity batched, frequency automatically reduced after repeated dismissal.
+Four transparent quantities, never combined into a score: authored hours, things made, things shipped, responses received. No internal state is ever rated. The user is shown the evidence and draws their own conclusion — which is also the only version consistent with the agency principle, since the conclusion is theirs to reach.
 
-## 12. Moderation and safety
+### 5.5 Interface surface
 
-**Content:** text moderation before crew publication, file type and size restrictions, malware scanning, URL safety checks where practical, reporting and blocking, moderator audit trail, posting rate limits.
+The application needs capabilities for: managing a project and its scope, requesting and resolving missions, recording artifacts and shipping them to a rung, recording responses against a ship, retrieving the weekly mirror, crew membership and posting, and aggregate cohort metrics for administrators.
 
-**AI:** prohibited mission categories, project risk classification, structured output validation, prompt-injection resistance for user-supplied project text, no generation of harassment, dangerous instructions, illegal access, self-harm encouragement, or exploitation, and escalation to human moderation for ambiguous flags.
+Authorisation is enforced server-side on every resource. Hidden UI controls are never the access-control mechanism. Mission submission is idempotent and recoverable after a network interruption, because the core loop runs on phones with bad connections.
 
-**Community rules:** critique work, not personal worth · get consent before sharing another person's work · disclose substantial AI assistance · never solicit money, sexual contact, or private sensitive information · no employment guarantees or deceptive portfolio claims.
+### 5.6 Privacy and safety
 
-## 13. Privacy model
+Three data classes. **Private:** email, recall answers, discomfort ratings, reflections, moderation reports, billing. **Crew-visible:** display name, project title, deliberately shared artifacts. **Public:** only what the user explicitly selects, with AI assistance attributed. Administrators receive aggregate metrics and never reflections.
 
-**Private:** email, baseline responses, predicted and actual discomfort, private reflections, moderation reports, account and billing data.  
-**Crew-visible:** display name, project title, selected progress updates, deliberately shared evidence, feedback requests.  
-**Portfolio-visible:** only fields the user explicitly selects, with AI tools and collaborators attributed. Private behavioural ratings excluded by default.
+Content moderation runs before crew publication, with file-type restrictions, malware scanning, reporting, blocking, a moderator audit trail, and rate limits. Model output is constrained by prohibited mission categories, risk classification, schema validation, and prompt-injection resistance for user-supplied project text, with escalation to a human for ambiguous flags.
 
-Institutional administrators receive aggregate metrics, and user-level project status only where contractually justified and clearly disclosed.
+Notifications are concrete, user-scheduled, and reduce in frequency after repeated dismissal. No shame, no false urgency, no countdowns.
 
-## 14. Analytics events
+> Good: *Your next step takes 15 minutes: write the rough opening paragraph.*
+> Bad: *You are losing your streak.* / *Only 4 days left.*
 
-```text
-account_created · onboarding_started · onboarding_completed
-project_selected · project_created · scope_reduced
-mission_proposed · mission_accepted · mission_replaced · mission_simplified
-mission_skipped · mission_completed · evidence_added
-crew_joined · crew_post_created · feedback_given · weekly_review_viewed
-project_completed · portfolio_published
-subscription_started · subscription_cancelled · account_deleted
-```
+For minors, additional constraints apply: guardian consent, no mixed-age crews, no direct messaging, private-by-default publishing, and a named responsible adult per cohort. See [requirements](requirements.md) §11.
 
-Properties: anonymous or internal ID, template, cohort, mission duration and difficulty, project stage, source (template/AI/facilitator), time from onboarding. Never raw reflection text.
+### 5.7 Failure modes
 
-## 15. API outline
+| Failure | Behaviour |
+|---|---|
+| Language model unavailable | Template missions serve every stage; the user sees no degradation in the core loop |
+| Model output fails validation twice | Falls back to a template mission silently |
+| Network drops mid-submission | Submission is idempotent; the attempt is recoverable |
+| A ship receives no response | Adaptation drops a rung to one with a guaranteed responder |
+| A crew falls below three active members | The crew is flagged for manual repair; matching is not automated at this stage |
 
-```text
-POST   /api/projects                      POST  /api/evidence
-GET    /api/projects/:id                  GET   /api/projects/:id/evidence
-PATCH  /api/projects/:id
-POST   /api/projects/:id/scope-review     POST  /api/crews/join
-                                          GET   /api/crews/:id
-POST   /api/missions/generate             POST  /api/crews/:id/posts
-POST   /api/missions/:id/accept           POST  /api/crew-posts/:id/report
-POST   /api/missions/:id/replace
-POST   /api/missions/:id/attempts         GET   /api/reviews/weekly
-POST   /api/missions/:id/complete         POST  /api/reviews/weekly
+### 5.8 Testing
 
-POST   /api/portfolio/publish             GET   /api/admin/cohorts/:id/metrics
-PATCH  /api/portfolio/:id/visibility
-```
+Unit coverage for mission schema validation, authored-hours arithmetic, ladder progression, permission rules, and stage transitions. Integration coverage for signup through first mission, a first ship with a guaranteed responder, private-versus-crew evidence separation, time-mirror generation, account deletion, and model-failure fallback. End-to-end coverage for signup to first ship in one session, a response recorded against an artifact, scope reduced without losing evidence, a minor account blocked from public publishing, and an administrator seeing aggregates without reflections.
 
-Server-side authorisation on every resource. Never rely on hidden UI controls for access control.
+**Model evaluation set:** at least 100 fixed project states covering vague and overambitious projects, low energy, short time windows, repeated avoidance, unshippable projects, unsafe requests, prompt injection, and interpersonal missions. Scored for specificity, feasibility, duration fit, shippability, safety, and preserved user agency. This is why the generation and scoring rules must be callable without a browser or database — see [repo-structure.md](../roadmap/repo-structure.md).
 
-## 16. Testing strategy
+## 6. Alternatives considered
 
-**Unit:** mission schema validation, progress calculations, matching score, permission rules, notification selection, scope adjustment, stage transitions.
+**A fixed 30-day programme.** Rejected. A prescribed container removes the independence of choice that resolving boredom depends on, and reproduces the thing that makes courses inert. Cost accepted: "in 30 days" was concrete marketing and a genuine deadline effect, and both are given up ([D-016](../log/decision-log.md)).
 
-**Integration:** onboarding to first mission, mission attempt with file evidence, private versus crew evidence, weekly review generation, portfolio publication, account deletion, AI failure fallback.
+**A forward deadline projection at the weekly review** — *at this rate you finish in February.* Rejected after being drafted. It is a *will*-tense mechanic: future anxiety wearing the costume of information. Replaced by the backward-looking time mirror ([D-024](../log/decision-log.md)).
 
-**End-to-end:** new user completes onboarding and first mission · user joins a crew and posts evidence · user reports a post · user reduces scope and still completes · user publishes an unlisted portfolio page · admin views aggregate metrics without private reflections.
+**The portfolio page as the product's promise.** Rejected. Things you *have* devalue — a portfolio page is worth little in five years, while hours authored do not devalue. The page survives as a receipt ([D-026](../log/decision-log.md)).
 
-**AI evaluation set.** At least 100 fixed project states covering vague projects, overambitious projects, low energy, short time windows, repeated avoidance, different categories, unsafe or illegal requests, prompt injection, AI-dependent projects, and interpersonal missions. Score for specificity, feasibility, duration fit, artifact production, safety, and preservation of user agency.
+**Treating fear directly, with graded exposure.** Rejected. Fear is the last link in the chain, not the first, so exposure work treats a symptom. The discomfort-prediction machinery is retained but deliberately minor.
 
-## 17. Delivery phases
+**Building crew matching now.** Deferred. Matching solves a liquidity problem that does not exist yet, and the inactive-replacement rule assumes a bench of spare users only available at scale. Hand-picking until manual assembly is the obvious bottleneck ([D-014](../log/decision-log.md)).
 
-**Phase 0 — Concierge.** No product. Forms, a database, messaging, manually written missions. Delivers a paid cohort, tested templates, a facilitator playbook, completion data, qualitative evidence, and a pricing signal.
+**Shipping crews with the core loop.** Rejected. Crews are the largest single source of scope, risk, and cold-start difficulty; shipping them together would make it impossible to tell which one failed ([D-013](../log/decision-log.md)).
 
-**Phase 1 — Solo MVP.** Authentication, onboarding, templates, daily mission, evidence, progress, portfolio. *Goal: prove activation and completion without community complexity.*
+**Competing on blocking.** Rejected. The category is crowded and it is not where this differentiates — what appears *after* the block is. Integration with existing blockers stays open as future work ([D-007](../log/decision-log.md)).
 
-**Phase 2 — Crew MVP.** Crew updates, structured feedback, moderation, weekly review. *Goal: test whether crews improve completion and retention.*
+**A single confidence score.** Rejected. Unfalsifiable, invites comparison, and drifts toward measuring the person rather than the behaviour ([D-009](../log/decision-log.md)).
 
-**Phase 3 — Institutional pilot.** Cohort codes, aggregate dashboard, facilitator tools, data-processing terms, programme export. *Goal: validate distribution and willingness to pay.*
+## 7. Third-party considerations
 
-**Phase 4 — Personalisation.** Adaptive difficulty, mission recommendations, blocker detection, template expansion, optional blocker integrations. *Goal: improve completion while controlling AI cost and preserving user agency.*
+Two viable stacks. The fastest managed path is Next.js with Supabase for Postgres, auth, and storage, using row-level security. The more portable path is Next.js with self-managed PostgreSQL, an ORM, Auth.js, and S3-compatible storage. The trade is speed of first delivery against lock-in; the decision is the Architect's to make, and either satisfies this design.
 
-## 18. Implementation priorities
+Everything else is conventional: managed hosting, error monitoring, privacy-conscious analytics, and transactional email.
 
-1. Manual project templates and mission library
-2. Project, mission, attempt, and evidence data model
-3. Onboarding through first mission
-4. Completion and progress loop
-5. Proof-of-work output
-6. Analytics
-7. Crew system
-8. AI adaptation
-9. Institutional administration
-10. Optional screen-time tool integration
+**The language model is the only dependency with an open-ended cost.** It is contained by a provider-agnostic interface, template caching, per-user generation limits, and the requirement that every path degrade to templates. Cost per active user must be measured during the first cohort, not estimated after launch. Model choice is deliberately not made here.
 
-Prove that users finish valuable work before investing heavily in AI, mobile blocking, or social discovery.
+**Data protection.** A UK deployment involving minors engages UK GDPR and the ICO Age Appropriate Design Code, and a school pilot engages that school's safeguarding policy. These are identified, not discharged — see [requirements](requirements.md) §11.
+
+## 8. Roll-out
+
+| Phase | Contains | Proves |
+|---|---|---|
+| **0 — Concierge** | No product. Forms, a spreadsheet, hand-written missions, hand-picked crews, unpaid | That the loop works at all, and what the templates should be |
+| **1 — Solo** | Auth, recall, onboarding, templates, mission loop, evidence, ship missions, time mirror | That people ship in week one without community machinery |
+| **2 — Crews** | Chronological updates, the ladder's first rung, moderation | Whether a guaranteed audience changes ship rate |
+| **3 — Institutional** | Cohort codes, aggregate dashboard, facilitator tools, data-processing terms | Distribution, and eventually willingness to pay |
+| **4 — Personalisation** | Adaptive difficulty, blocker detection, template expansion | That completion improves without AI cost running away |
+
+**Build order within phase 1:** hand-written templates and mission library first, then the data model, then recall through first mission, then the ship flow and first ladder rung, then the time mirror, then analytics. The templates come first because everything else degrades to them.
+
+## 9. Open questions
+
+1. How large must a first response be before it changes how someone sees themselves? A crew member being kind may be dismissible as politeness; a stranger's use is not.
+2. Does reclaimed time sell, or does the finished thing sell? The demand doc leaves this deliberately unresolved.
+3. Which project category ships fastest while still feeling like the user's own?
+4. Do crews form at onboarding, or after a first ship?
+5. How much facilitation does an acceptable ship rate require?
