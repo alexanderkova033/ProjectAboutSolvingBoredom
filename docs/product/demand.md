@@ -59,7 +59,13 @@ The internal outcome is the product; the external event is what makes it real. C
 | Project communities | Buildspace (closed) | Validated the interest; its closure warns that enthusiasm isn't a business |
 | AI coaches | Many | RevenueCat's 2026 analysis of 115,000+ subscription apps: AI apps monetise better early (41% median year-one revenue-per-payer premium) and retain materially worse at 12 months. Not durable positioning |
 
-Everyone in the first row is fighting for *less*. Nobody is selling *back*. That gap is the position.
+Everyone in the first row is fighting for *less*. Nobody is selling *back*. That gap is the position, and it has a mechanism behind it rather than a claim of depth.
+
+**Everyone cuts the loop where cutting is easiest. This cuts it where cutting propagates.** Blockers attack *consumption* — the cheapest link, because removal is just subtraction. But subtraction propagates nowhere: the user gets the boredom back with nothing to put in the gap, which is why blockers get bypassed the moment motivation dips, and why the loop reforms within a week.
+
+Cutting at *not-creating* is the only intervention that moves forward through the rest of the chain unassisted. Making produces confidence; confidence removes the fear's grounds; the laziness verdict loses its evidence. Fear and laziness never have to be treated directly — they are downstream, and they starve.
+
+Say the mechanism, never the depth. *"Everyone else treats symptoms, we treat the cause"* is a genre convention, unfalsifiable, and precisely the pattern the red-team in [D-021](../log/decision-log.md) exists to catch. A pitch that wouldn't survive our own taxonomy doesn't ship.
 
 ## 5. Beachhead
 
