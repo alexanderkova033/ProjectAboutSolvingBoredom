@@ -18,9 +18,11 @@ Not a confidence app, therapy product, social network, course, or blocker.
 
 ## 2. Problem
 
-Boredom is time you can feel passing. The chain runs **boredom → consumption → not creating → no confidence → fear of creating**, and back into boredom.
+Boredom is time you can feel passing. The chain runs **boredom → consumption → not creating → no confidence → fear → "I'm just lazy"** — and the last link feeds back into the first.
 
-Boredom is upstream and fear is downstream ([D-023](../log/decision-log.md)). The intervention point is therefore *making*, not fear-management — confidence is a by-product of having made things. Fear machinery in this document is deliberately minor for that reason.
+Boredom is upstream, so the intervention point is *making*, not fear-management ([D-023](../log/decision-log.md)) — confidence is a by-product of having made things, and the fear machinery here is deliberately minor for that reason.
+
+**Laziness is the last link and it is a verdict, not a cause** ([D-027](../log/decision-log.md)). It is what users will report — nobody says "I'm afraid to make a website", they say "I couldn't be bothered" — and it is the only link phrased as an identity rather than a state. Fear says *this might go badly*; laziness says *I am someone who doesn't do things*, which explains away every future instance and makes the loop stable rather than a bad week. The product disputes that verdict with a record, and never uses the word.
 
 Existing tools each take one piece: blockers remove the app and return nothing; task managers assume you know what to do; courses hand you someone else's plan; AI assistants produce output without the user acting or learning.
 
@@ -32,7 +34,8 @@ Existing tools each take one piece: blockers remove the app and return nothing; 
 4. **Agency is real before it is legible.** Manufacturing a feeling of control the user doesn't have is a dark pattern, and every screen is audited against the manipulation taxonomy ([D-021](../log/decision-log.md)).
 5. **Recall over aspiration.** Ask what someone already lost track of time doing, not what they want to become.
 6. **Boredom is faced, not removed.** When the scrolling stops it arrives undiluted. Say so.
-7. **AI is scaffolding, never the creator of record.**
+7. **Never describe the user, only what they did.** No copy, mission, notification, or empty state may imply the user is lazy, behind, or failing — that reinforces the verdict the product exists to overturn ([D-027](../log/decision-log.md)).
+8. **AI is scaffolding, never the creator of record.**
 
 ## 4. Goals and non-goals
 
@@ -55,7 +58,7 @@ Six things must be true. Screens and copy are in [initial design](initial-design
 3. **The loop is one mission at a time.** *I have 5 / 15 / 30 / 60 minutes* → one mission with a testable definition of done → done.
 4. **Shipping happens in week one, repeatedly.** Getting something in front of a real person is a mission kind, not an end-state.
 5. **The audience ladder guarantees a response** ([D-025](../log/decision-log.md)): crew → people they know → one fitting stranger → a small public. No first ship goes into a void.
-6. **The weekly view looks backward.** Authored hours, things made, things shipped, responses received. No projection, no deadline, no comparison. It counts what was made and stays silent about the rest.
+6. **The weekly view looks backward.** Authored hours, things made, things shipped, responses received. No projection, no deadline, no comparison. It counts what was made and stays silent about the rest. Its job is to make *"I'm just lazy"* untenable against a record ([D-027](../log/decision-log.md)) — not to inform, and not to motivate.
 
 Completion means the user's own definition of done is met and the thing exists. The proof-of-work page is a **by-product** ([D-026](../log/decision-log.md)) — the receipt that the hours were real, not the reason for the work.
 

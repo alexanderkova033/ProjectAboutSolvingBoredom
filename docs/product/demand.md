@@ -21,12 +21,14 @@ Boredom is time you can feel passing. Time in flow disappears; time spent consum
 The chain runs one way, and the order decides where to intervene:
 
 ```text
-boredom → consumption (easier) → not creating → no confidence → fear of creating
-        ↑                                                              │
-        └──────────────────────────────────────────────────────────────┘
+boredom → consumption (easier) → not creating → no confidence → fear → "I'm just lazy"
+        ↑                                                                      │
+        └──────────────────────────────────────────────────────────────────────┘
 ```
 
-**Boredom is upstream, fear is downstream** ([D-023](../log/decision-log.md)) — so the intervention is *creating*, not fear-management. Confidence is a by-product of having made things; treating the fear directly treats a symptom.
+**Boredom is upstream** ([D-023](../log/decision-log.md)) — so the intervention is *creating*, not fear-management. Confidence is a by-product of having made things; treating the fear directly treats a symptom.
+
+**The last link is a verdict, not a cause** ([D-027](../log/decision-log.md)). Laziness is the socially acceptable name for avoidance, so it is what people will say while fear is what is happening. It is also the only link phrased as an identity — *I am someone who doesn't do things* — which explains away every future instance and is what makes this a stable loop rather than a bad week. Expect it in every interview and hear past it.
 
 Research supports the entry point. Boredom is failed engagement, a signal to pursue a *different* goal — and rapidly switching between videos to escape it makes people **more** bored, not less. The signal is real; the apps intercept it before it reaches you. More stimulation can't resolve disengagement, and blocking removes the stimulation without returning anything.
 
@@ -97,7 +99,9 @@ Distribution dominates both, and we have no evidence about it. A scenario table 
 
 **Phase 1 — Problem interviews.** 30+ in the beachhead. Never "would you use this?" Ask: what did you do last night, and how did you feel at the end of it · when did you last make something · what stopped you · who notices whether you do anything.
 
-*Threshold:* 15+ describe the evening-residue feeling unprompted · 10+ have a workaround · language converges on one concrete outcome.
+**Most will answer "I'm lazy" or "I couldn't be bothered."** That is the beginning of the answer, never the end — follow it with *what did you imagine would happen if you tried?* The gap between the two responses is the most valuable data in the interview ([D-027](../log/decision-log.md)).
+
+*Threshold:* 15+ describe the evening-residue feeling unprompted · 10+ have a workaround · 10+ move off a laziness self-description when asked once more · language converges on one concrete outcome.
 
 **Phase 2 — Concierge cohort, unpaid.** 20–30 users, run by hand. Forms, a spreadsheet, hand-written missions, hand-picked crews.
 

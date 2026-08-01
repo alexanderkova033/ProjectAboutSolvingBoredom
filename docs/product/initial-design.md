@@ -23,7 +23,8 @@ This is a mobile-first web product that turns an idle moment into one small act 
 
 The full argument is in [demand.md](demand.md). What the design depends on:
 
-- **Boredom is upstream, fear is downstream.** The chain runs boredom → consumption → not creating → no confidence → fear. Because fear is last, the intervention is making, not fear-management ([D-023](../log/decision-log.md)).
+- **Boredom is upstream.** The chain runs boredom → consumption → not creating → no confidence → fear → *"I'm just lazy"*, and the last link feeds the first. Because boredom is first, the intervention is making, not fear-management ([D-023](../log/decision-log.md)).
+- **The last link is a verdict, not a cause.** Laziness is what users report while fear is what happens, and it is the only link phrased as an identity — which is what makes the loop stable. The design disputes it with a record and never names it ([D-027](../log/decision-log.md)).
 - **Autonomy is load-bearing.** A prescribed programme reproduces what makes courses inert. The user picks project, scope, and finish line ([D-016](../log/decision-log.md)).
 - **Payoff must arrive fast.** Creating will always be harder than consuming, so it can't win on ease — only on payoff size, and only if the payoff arrives soon enough to compete.
 - **The internet's default response is silence.** Any design promising external validation must engineer it rather than hope for it.
@@ -57,7 +58,8 @@ Diagnosing or treating anything · promising happiness, income, or the removal o
 7. **Ship early, ship small.** Work nobody sees isn't progress.
 8. **No first ship into a void.**
 9. **Boredom is faced, not removed.** When scrolling stops it arrives undiluted. Say so.
-10. **AI is scaffolding, never the creator of record.**
+10. **Never describe the user, only what they did.** Nothing may imply they are lazy, behind, or failing — that reinforces the verdict the product exists to overturn ([D-027](../log/decision-log.md)).
+11. **AI is scaffolding, never the creator of record.**
 
 ### 4.2 Surfaces
 
@@ -75,7 +77,9 @@ Diagnosing or treating anything · promising happiness, income, or the removal o
 
 **Ship.** The audience ladder, one rung at a time, each guaranteed to respond before the next unlocks: crew → people they know → one stranger who fits the thing → a small public. The user chooses the rung; the product never routes a first ship somewhere silence is likely.
 
-**Time mirror.** Weekly, backward-looking: hours authored, things made, things shipped, responses received. No target, no projection, no red, no comparison to other users. It counts what was made and stays silent about the rest. If it ever reads as judgment it has become the thing the product is fighting.
+**Time mirror.** Weekly, backward-looking: hours authored, things made, things shipped, responses received. No target, no projection, no red, no comparison to other users.
+
+Its job is narrow and worth stating: **make *"I'm just lazy"* untenable against a record.** Not to inform, not to motivate — to dispute a verdict the user has already passed on themselves. That is why it counts what was made and stays silent about the rest, and why a low week must still read as a record rather than a shortfall. If it ever reads as judgment it has become the thing the product is fighting.
 
 After two stalled weeks, one question with the user's own recall answers above it: *is this still the thing you want to be making?* Dropping it is a good outcome.
 

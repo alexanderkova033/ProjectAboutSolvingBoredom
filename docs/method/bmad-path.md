@@ -66,5 +66,6 @@ Do this before installing BMAD: the planning phase converts assumptions into a s
 - **AI is scaffolding, never the creator of record.** A story letting AI produce the user's work is wrong however well it tests ([D-005](../log/decision-log.md)).
 - **No AI path without its non-AI fallback** — `FR-024`, `NFR-009`.
 - **No clinical framing, no shame** — binds generated copy, mission text, and notifications (requirements §11).
+- **Never describe the user, only what they did.** Reject any string implying they are lazy, behind, or failing — including empty states and low-activity weeks, where it is easiest to slip in ([D-027](../log/decision-log.md)).
 - **Private data stays private** — discomfort ratings and reflections never reach a crew view, admin view, public page, or analytics event.
 - **Prefer the smaller story.** Hold stories to the standard the product holds its missions to.
