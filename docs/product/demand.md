@@ -1,6 +1,6 @@
 # Demand and Market Thesis
 
-**Product:** Freathe · **Status:** Market hypothesis and validation plan · **Feeds:** the BMAD Analyst brief · **Snapshot:** 1 August 2026
+**Product:** Freathe · **Status:** Market hypothesis and validation plan · **Feeds:** the BMAD Analyst brief · **Snapshot:** 2 August 2026
 
 > **Related:** [Requirements](requirements.md) · [Initial design](initial-design.md) · [BMAD path](../method/bmad-path.md) · [Decision log](../log/decision-log.md)
 
@@ -40,8 +40,8 @@ Four layers. Only the middle two ever appear in the product.
 
 | Layer | Content | Rule |
 |---|---|---|
-| **Why** | Time and happiness | Never say it. Every product claims happiness; the claim carries no information |
-| **Promise** | A week that left something behind instead of nothing | This is the pitch |
+| **Why** | Happiness, and a life that feels like the user's own | Never say it. Every product claims happiness; the claim carries no information |
+| **Promise** | Reclaimed time — a week that left something behind instead of nothing | This is the pitch. **Time is spoken and happiness is not**, and the difference is that one is observable: an evening either produced something or it didn't, while a claim about how someone feels can't be checked by the person hearing it |
 | **Proof** | One real external event — someone used it, responded to it, paid for it | The only honest source of the internal change |
 | **Measure** | Shipped, responded to, hours that produced something | External and falsifiable only. Never score how anyone feels |
 
@@ -110,14 +110,20 @@ Three hypotheses, ranked by cost, none validated:
 | **Where the complaint is posted** — procrastination and quarter-life communities, self-taught-creator and study servers, "I have no hobbies" threads | Someone describing the residue of a lost evening is qualified in a way no ad targeting reproduces. Costs time, not money | Reply to real posts with the real thing, two weeks. Count **qualified replies and first missions started**, not impressions. Kill it if the response reads as spam to the community it's in |
 | **In person, through the founder's own segment** | The only channel with genuine access, zero cost, and a warm room — and the actual reason the 16–18 segment exists | **Closed for the concierge phase** ([D-046](../log/decision-log.md)). Reopens with a named responsible adult, not before |
 | **The artifact carries the trace** — things shipped point back at where they were made | The only channel that compounds, and the only one that survives the founder not being in the room | Untestable until things are shipping to strangers at all. Not a first channel |
+| **Publish what the cohort made** ([D-057](../log/decision-log.md)) — video, where this problem is *consumed* even though nobody searches for it | The only channel here that **compounds** and survives the founder not being in the room. **Not an advertisement:** the self-improvement genre runs on the promises §3 forbids, so the winning format there is the one we banned. What needs no forbidden claim is someone who had made nothing, three weeks later holding a small thing a stranger used | Consent per participant, never assumed. Count **missions started, not views**. Follows Phase 1 rather than replacing it — one good video is a week not spent interviewing. Kill it if it can't be made without a claim §3 forbids |
+| ~~**A store listing for the card**~~ | Withdrawn with [D-059](../log/decision-log.md). Both stores need an adult-held account, and there is no native artifact to list — the phone surface is a web page you install. **An app store was a channel; a URL is not one**, and losing it puts more weight on the two above |
 
-**Refused.** Paid acquisition — LTV is unknown, so no acquisition cost can be justified, and buying traffic against an unvalidated message burns the message and the money together. Productivity-influencer content — the genre runs on exactly the promises §3 forbids, and arriving through it sets expectations the product then breaks on purpose.
+**Refused.** Paid acquisition — LTV is unknown, so no acquisition cost can be justified, and buying traffic against an unvalidated message burns the message and the money together. Productivity-influencer content — the genre runs on exactly the promises §3 forbids, and arriving through it sets expectations the product then breaks on purpose. **This is not the same as [D-057](../log/decision-log.md):** the refusal is on *making the claims the genre runs on*, whoever makes them, and publishing a record of what somebody actually built makes none of them. The line is the claim, not the platform.
 
 Institutional distribution is a sales motion rather than a channel, and downstream of all of the above: schools want evidence, evidence requires users, users require a channel.
 
 ## 8. Validation plan
 
-**Phase 1 — Problem interviews.** 30+ in the beachhead. Never "would you use this?" Ask: what did you do last night, and how did you feel at the end of it · when did you last make something · what stopped you · who notices whether you do anything.
+**Phase 1 — Problem interviews.** 30+ in the beachhead. Never "would you use this?" Ask: what did you do last night, and how did you feel at the end of it · when did you last make something · what stopped you · who notices whether you do anything. **The script is [interview-script.md](../method/interview-script.md)**, and five to eight conversations already teach most of it — thirty is what these thresholds need, not what learning something costs.
+
+**One question decides whether the ladder is the right mechanism** ([D-054](../log/decision-log.md)): *describe a time something changed for you — what happened?* Then code each answer as **someone reacted to what I made** or **someone was there when I started**. The product is built entirely on the first; the only three first-hand accounts available to us are the second. Ask it late in the interview and never explain why.
+
+Record two facts alongside the answers, because they cost nothing to collect and each decides a build: **what phone they carry** ([D-052](../log/decision-log.md) is Android-only) and **whether they own a laptop at all** ([D-051](../log/decision-log.md) assumes one). Neither is a question about the product, so neither is subject to the demand characteristics that make everything else here soft.
 
 **Most will answer "I'm lazy" or "I couldn't be bothered."** That's the beginning of the answer, never the end — follow it with *what did you imagine would happen if you tried?* The gap between the two responses is the most valuable data in the interview ([D-027](../log/decision-log.md)).
 
@@ -148,9 +154,10 @@ Institutional distribution is a sales motion rather than a channel, and downstre
 | Risk | Mitigation |
 |---|---|
 | **Nobody encounters it** | The largest and newest. No channel is validated and there's no search demand. §7 names three hypotheses and one cheap test; run it before the message test ([D-044](../log/decision-log.md)) |
-| **Nothing brings anyone back** | Every conventional retention lever is banned on purpose ([D-042](../log/decision-log.md)). Two unproven mechanisms remain: the work being pleasant ([D-045](../log/decision-log.md)) and a response arriving. §8 measures return against responses received |
+| **Nothing brings anyone back** | Every conventional retention lever is banned on purpose ([D-042](../log/decision-log.md)). Two unproven mechanisms remain — the work being pleasant ([D-045](../log/decision-log.md)) and a response arriving — plus one surface, the home-screen card ([D-049](../log/decision-log.md)), which removes the excuse of having forgotten and supplies no motive of its own. §8 measures return against responses received |
 | Reclaimed time is felt but not bought | Keep the artifact as proof; test all three messages in Phase 3 rather than assuming |
-| The first ship lands in silence | Engineer the audience ladder ([D-025](../log/decision-log.md)), ordered by audience size rather than familiarity so the first rung isn't also the most exposing ([D-043](../log/decision-log.md)) |
+| The first ship lands in silence | Engineer the audience ladder ([D-025](../log/decision-log.md)), ordered by audience size rather than familiarity so the first rung isn't also the most exposing ([D-043](../log/decision-log.md)). **Never by a self-response** ([D-055](../log/decision-log.md)) |
+| **The change moment isn't a response at all** | The ladder assumes a reaction to finished work is what changes someone. The only first-hand accounts we have describe *someone competent present at the start* instead ([D-054](../log/decision-log.md)). One interview question settles it, and it is asked in Phase 1 — before the ladder is built |
 | Users need heavy facilitation | Measure facilitator minutes per active user; standardise before automating |
 | AI does the work instead of the user | Require decisions, process evidence, attribution |
 | Time mirror reads as judgment | Count what was made; never scold the rest. If it feels like a screen-time dashboard it has become the enemy |

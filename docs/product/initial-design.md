@@ -1,6 +1,6 @@
 # Initial Product and Technical Design
 
-**Product:** Freathe · **Status:** Draft — a starting position, not a ratified architecture · **Superseded by:** `architecture.md` after the BMAD Architect run · **Revised:** 1 August 2026
+**Product:** Freathe · **Status:** Draft — a starting position, not a ratified architecture · **Superseded by:** `architecture.md` after the BMAD Architect run · **Revised:** 2 August 2026
 
 > **Related:** [Demand](demand.md) · [Requirements](requirements.md) · [BMAD path](../method/bmad-path.md) · [Repo structure](../roadmap/repo-structure.md) · [Decision log](../log/decision-log.md)
 
@@ -10,7 +10,7 @@
 
 Turn an idle moment into one small act of making, get the result in front of a real person quickly, and show the user weekly how many hours they authored. It sells reclaimed time and proves it with something that exists outside their head.
 
-**The platform is an open decision** ([D-037](../log/decision-log.md)). Mobile-first no longer follows: the missions produce real artifacts — writing, tools, designs, recordings — and beginners make almost none of that on a phone. Recommendation is desktop web, with mobile at most a thin later surface for the moment boredom strikes. Nothing else here depends on the answer.
+**The platform is settled, and it is two things** ([D-051](../log/decision-log.md)). D-037 was right that beginners make almost no real artifacts on a phone, and drew the wrong conclusion from it — a desktop-only product is absent at the moment it claims to intervene, because boredom arrives on the phone. So the surfaces split by job: **the phone holds the trigger and one mission; the laptop is where the thing gets made.** Both are the same responsive web app, installed to the phone's home screen ([D-059](../log/decision-log.md)) — a native card was the better surface and is unreachable, since the beachhead carries iPhones and iOS wants a Mac, $99/year and an adult-held account. The seam between the two is an account, asked for after the introduction and not before it.
 
 Goals and non-goals are [requirements](requirements.md) §4; principles are §3 there. Neither is restated — two copies drift, and these already had.
 
@@ -19,7 +19,7 @@ Goals and non-goals are [requirements](requirements.md) §4; principles are §3 
 - **Boredom is upstream**, so the intervention is making, not fear-management ([D-023](../log/decision-log.md)).
 - **The last link is a verdict, not a cause**, so the design disputes it with a record and never names it ([D-027](../log/decision-log.md)).
 - **Autonomy is load-bearing.** A prescribed programme reproduces what makes courses inert ([D-028](../log/decision-log.md)).
-- **Payoff must arrive fast.** Creating can't win on ease, only on payoff size, and only if it arrives soon enough to compete.
+- **Payoff must arrive fast.** Creating can't win on ease, only on payoff size, and only if it arrives soon enough to compete. And **the session being enjoyable is the primary reason anyone returns** ([D-056](../log/decision-log.md)) — which means competing with entertainment on a different pleasure, not on ease.
 - **The internet's default response is silence.** External validation has to be engineered, not hoped for.
 - **Freedom, and consequence** ([D-042](../log/decision-log.md)). Discipline isn't available as a mechanism: nothing is scheduled or owed, and leaving is free at every point. The job is making the *invisible* consequence visible, never the one already felt.
 
@@ -27,7 +27,7 @@ Goals and non-goals are [requirements](requirements.md) §4; principles are §3 
 
 ### 3.1 Surfaces
 
-**Now** — one mission, already on screen, with controls to start, swap, shrink, or flag a blocker. No selector. **Project** — what's being made, stages, things made. **Evidence** — what was made, what shipped, what came back. **Profile** — privacy, notifications, export, deletion. Administrators get **Cohort**. A **Crew** surface is specified but unscheduled ([D-033](../log/decision-log.md)).
+**Card** — the phone's home screen, one mission, no app opened. **Now** — the same mission on the laptop, with controls to start, swap, shrink, or flag a blocker. No selector. **Project** — what's being made, stages, things made. **Evidence** — what was made, what shipped, what came back. **Profile** — privacy, notifications, export, deletion. Administrators get **Cohort**. A **Crew** surface is specified but unscheduled ([D-033](../log/decision-log.md)).
 
 ### 3.2 Key flows
 
@@ -37,7 +37,13 @@ Goals and non-goals are [requirements](requirements.md) §4; principles are §3 
 
 **No scope screen and no date screen exist.** The 72-hour first ship keeps work small without anyone declaring a size; the absence of a deadline is the point, not an omission.
 
-**The loop.** One mission is already on screen. The card carries a title, an instruction, and one definition of done — but **no duration**, because telling someone a task takes twenty minutes gives them a reason to postpone it. Start, swap, shrink, or say what's in the way. When it's done the next is right there. Stopping needs no action and produces no comment.
+**The loop.** One mission is already on screen. The card carries a title, an instruction, and one definition of done — but **no duration**, because telling someone a task takes twenty minutes gives them a reason to postpone it. The engine still records one and sizes the next mission from it; the user never sees the number, on any surface, including notifications ([D-048](../log/decision-log.md)). Start, swap, shrink, or say what's in the way. When it's done the next is right there. Stopping needs no action and produces no comment.
+
+**The home-screen surface** ([D-049](../log/decision-log.md), [D-059](../log/decision-log.md)). An icon the user installs, opening straight onto the current mission — title and definition of done, and nothing else. **No count, total, streak, or elapsed time**: the weekly mirror is something the user goes and looks at, while this sits where they look fifty times a day without choosing to, and that is the exact condition under which a number stops being a record and becomes a demand. Opening it **starts**; swapping is a smaller, secondary target, because a surface whose cheapest gesture is *give me a different one* teaches swapping (`FR-056`). It draws from the cached template library, so it works with no network and no account, is never empty, and never shows an error (`FR-055`).
+
+It is a **pull surface**, and that is the whole argument for it. **The user puts it there** — it is placed, not delivered, and dragging it off takes two seconds with nothing asking why. That is the difference from a notification, which arrives whether or not it was wanted. It cannot interrupt an open mission (`NFR-012`); it is there when the phone is picked up and does nothing when it isn't. That is the only shape of re-entry the principles permit — and it is a surface rather than a reason, so it removes an excuse and answers nothing about motivation.
+
+**Be honest about what was lost.** The intended surface was a live card showing the mission itself, with nothing to open — and the whole force of *one thing already on the screen* came from the word *already*. An icon is one tap short of that, and one tap is exactly the gap this product exists to close. Native is the only way to close it and native is unreachable ([D-059](../log/decision-log.md)). **Measure the cost rather than assuming it away:** if installs happen and openings don't, that tap is the reason, and it is the strongest argument that will ever exist for buying a Mac.
 
 **What makes the session pleasant** ([D-045](../log/decision-log.md)) — five mechanisms, each a consequence of something already decided:
 
@@ -54,6 +60,10 @@ Whether it works is **observed, not asked** — does the user start another miss
 **Ship.** The ladder, one rung at a time, each guaranteed to respond before the next unlocks: **one guaranteed responder → several → a small public.**
 
 The rungs are a **scale sequence, not an intimacy one** ([D-043](../log/decision-log.md)). *Someone you already know* sat at rung one on the assumption that familiar means gentle. It runs the other way: a friend's judgment persists — they're at the table at Christmas, and a bad first thing becomes a thing about you — while a stranger's evaporates on contact. So the rung is defined by one property, that someone is guaranteed to respond, and **the user picks who**. A fitting stranger is the default offer. In hand-run cohorts the guarantee is a named person, not a pool.
+
+**Your own work, cold** ([D-055](../log/decision-log.md), `FR-038`). Something made weeks ago, shown back for review with no prompt about how to feel about it — the same move as the record screen above, with your past output as the external thing. And before a ship, optionally: *what would you want someone to notice?* It surfaces what you actually care about and gives the eventual response something to land against.
+
+**None of this is a response.** A self-response never satisfies a rung's guarantee, never counts as external, never enters `response rate` (`FR-039`). The temptation is obvious and arrives exactly when the pool is dry: it costs nothing, scales infinitely, and feels like it worked. It is the mood without the evidence, and this product's entire claim is the difference between those two. **When nothing came back, the product says nothing.**
 
 **When a response arrives late.** Projects end and responses sometimes turn up afterwards. That response is shown (`FR-067`) as news, with no call to action — not *ready to start something else?*, not a suggested project, not reactivation dressed as a notification. It's the one piece of genuinely new information the product ever has, and it is also the retention hypothesis in its entirety: nothing else here has permission to pull anyone back.
 
@@ -103,7 +113,7 @@ The important structural decision: **making, shipping, and being responded to ar
 |---|---|---|
 | **Project** | Title, artifact type, stage, visibility | Holds **no target date and no scope estimate** ([D-028](../log/decision-log.md)) — no field to leave blank, and no field that makes a deadline easy to add back later |
 | **Session mood** | An optional pair of taps | Stored against the session, readable only by its owner, kept apart so no query can join it to a profile ([D-031](../log/decision-log.md)) |
-| **Mission** | Instruction, definition of done, duration, difficulty, stage, and a **kind** — *produce*, *distribute*, or *reset* | Shipping as a kind rather than a phase is what stops distribution being deferred forever. The kind field is also what makes the reset exclusion enforceable rather than a convention ([D-040](../log/decision-log.md)) |
+| **Mission** | Instruction, definition of done, duration, difficulty, stage, and a **kind** — *produce*, *distribute*, or *reset* | Shipping as a kind rather than a phase is what stops distribution being deferred forever. The kind field is also what makes the reset exclusion enforceable rather than a convention ([D-040](../log/decision-log.md)). Duration is an **engine input, never a display field** ([D-048](../log/decision-log.md)) — it exists so adaptation can size the next one |
 | **Mission attempt** | Attempted, completed, blocker, optional discomfort | Preserved separately so a skip is data rather than an absence |
 | **Artifact** | The thing itself, and when it shipped | Evidence proves effort; an artifact is what a stranger could actually receive |
 | **Ship** | An artifact sent to one rung, and that rung's guaranteed responder | Modelling the rung is what makes "no first ship into a void" enforceable |
@@ -133,10 +143,12 @@ Capabilities needed: managing what's being made, requesting and resolving missio
 
 Three data classes. **Private:** email, mood records, reflections, moderation reports, billing. **Shared-on-purpose:** display name, what they're making, deliberately shared artifacts. **Public:** only what the user explicitly selects, with AI assistance attributed. Administrators get aggregates, never reflections or per-user mood.
 
-Moderation runs before publication — file-type restrictions, malware scanning, reporting, blocking, an audit trail, rate limits. Model output is constrained by prohibited categories, risk classification, schema validation, and prompt-injection resistance. Notifications are concrete, user-scheduled, and reduce after repeated dismissal.
+Moderation runs before publication — file-type restrictions, malware scanning, reporting, blocking, an audit trail, rate limits. Model output is constrained by prohibited categories, risk classification, schema validation, and prompt-injection resistance.
 
-> Good: *Your next step takes 15 minutes: write the rough opening paragraph.*
-> Bad: *You are losing your streak.* / *Only 4 days left.*
+**Nothing is scheduled** ([D-049](../log/decision-log.md)). The card is where a next mission appears, silently, and the only thing the product sends unbidden is a response that arrived (`FR-067`) — news, with nothing attached.
+
+> Good: *Someone read the thing you sent on Tuesday and wrote back.*
+> Bad: *You are losing your streak.* / *Only 4 days left.* / *Your next step takes 15 minutes* — a duration, on the surface most likely to be read as a demand ([D-048](../log/decision-log.md)).
 
 Safeguarding obligations, and why the minor segment is **blocked** rather than scheduled, are [requirements](requirements.md) §11.
 
@@ -149,6 +161,7 @@ Safeguarding obligations, and why the minor segment is **blocked** rather than s
 | Network drops mid-submission | Idempotent; the attempt is recoverable |
 | A ship receives no response | Adaptation drops a rung to one with a guaranteed responder |
 | A first ship gets no response | Rung one's responder is a named person, not a pool. If unreachable, the ship is held rather than sent onward |
+| The card has no network, or no account yet | Draws from the local template library (`FR-055`). Never empty, never an error — an error on a home screen is worse than a stale mission |
 
 ### 4.5 Testing
 
@@ -166,7 +179,13 @@ Treating fear directly with graded exposure is the one rejection with no decisio
 
 ## 6. Third-party considerations
 
-Two viable stacks: Next.js with Supabase for Postgres, auth, and storage using row-level security, or Next.js with self-managed PostgreSQL, an ORM, Auth.js, and S3-compatible storage. The trade is speed of first delivery against lock-in; the decision is the Architect's, and either satisfies this design. Everything else is conventional.
+Two viable stacks for the laptop half: Next.js with Supabase for Postgres, auth, and storage using row-level security, or Next.js with self-managed PostgreSQL, an ORM, Auth.js, and S3-compatible storage. The trade is speed of first delivery against lock-in; the decision is the Architect's, and either satisfies this design. Everything else is conventional.
+
+**There is no native client** ([D-059](../log/decision-log.md)). The phone surface is the same web app, installed to the home screen and cached for offline use. That was not the first choice — the first choice was an Android widget forked from the sibling SapGlance repo, and the engineering case for it was strong. The market case was not: the reachable segment carries iPhones, and iOS refuses a live home-screen card to anything but a native app, which wants a Mac, $99 a year, and an account only an adult can hold.
+
+What the SapGlance work still contributes is a rule rather than a codebase: its selection engine lives in a module with **zero Android imports**, testable on a plain JVM, and that is the same constraint [repo structure](../roadmap/repo-structure.md) independently places on `record` and `ai`. The domain logic never imports the surface. Two products, two routes to one rule.
+
+**One thing to watch rather than assume.** Offline mission delivery on an installed web app is a service worker and a cached template library, which is ordinary — but iOS has historically been the weakest platform for exactly this, and eviction of stored data is its own failure mode. Assume nothing, test on a real iPhone early, and treat `FR-055`'s *never empty, never an error* as the thing most likely to break first.
 
 **The language model is the only dependency with an open-ended cost.** Contained by a provider-agnostic interface, template caching, per-user generation limits, and the requirement that every path degrade to templates. Cost per active user is measured during the first cohort, not estimated after launch.
 
@@ -175,19 +194,20 @@ Two viable stacks: Next.js with Supabase for Postgres, auth, and storage using r
 | Phase | Contains | Proves |
 |---|---|---|
 | **0 — Concierge** | No product. Forms, a spreadsheet, hand-written missions, a guaranteed responder, unpaid, **18+ only** ([D-046](../log/decision-log.md)), with operator, responder and interviewer split ([D-047](../log/decision-log.md)) | That the loop works at all, and what the options should be. Also the first channel test ([D-044](../log/decision-log.md)) — the cohort is recruited from somewhere, and where that is, is data |
-| **1 — Solo** | Auth, onboarding, templates, mission loop, evidence, ship missions, time mirror | That people ship in week one without community machinery |
+| **1 — Solo** | Auth, onboarding, templates, mission loop, evidence, ship missions, time mirror, **installable home-screen surface** ([D-059](../log/decision-log.md)) | That people ship in week one without community machinery |
 | **2 — Reach** | Upper ladder rungs, moderation. Crews only if a cohort asks ([D-033](../log/decision-log.md)) | Whether a guaranteed audience changes ship rate |
 | **3 — Institutional** | Cohort codes, aggregate dashboard, facilitator tools, data-processing terms | Distribution, and eventually willingness to pay |
 | **4 — Personalisation** | Adaptive difficulty, blocker detection, template expansion | That completion improves without AI cost running away |
 
-**Build order within phase 1:** templates and mission library, then the data model, then first mission, then ship flow and rung one, then the time mirror, then analytics. Templates come first because everything else degrades to them.
+**Build order within phase 1:** templates and mission library, then the data model, then first mission, then ship flow and rung one, then the time mirror, then analytics, then the card. Templates come first because everything else degrades to them — **including the card**, which renders from them with no network and no account (`FR-055`), so it cannot be built before they exist. It comes last within the phase for the same reason it comes at all: it is the surface that brings someone back to a loop, and there has to be a loop first.
 
 ## 8. Open questions
 
 1. **Where does anyone encounter this?** No channel is validated and there's no search demand ([D-044](../log/decision-log.md)). Nothing else here matters if this has no answer.
-2. **Does a late response bring anyone back?** The only re-entry mechanism the principles permit, and a guess.
-3. How large must a first response be before it changes how someone sees themselves?
-4. Does reclaimed time sell, or does the finished thing sell?
-5. Which project category ships fastest while still feeling like the user's own — and which survive the third template criterion at all?
-6. Does anyone actually want a crew, or is it a barrier dressed as a feature?
-7. How much facilitation does an acceptable ship rate require?
+2. **Does a late response bring anyone back?** The only re-entry *reason* the principles permit, and a guess. The card ([D-049](../log/decision-log.md)) is a re-entry *surface* and does not answer this — it makes returning cheap and supplies no motive.
+3. **Does an installed icon get opened?** The live card was the point and iOS won't allow one ([D-059](../log/decision-log.md)). If people install and don't open, the missing tap is why — and that is the only argument that would ever justify the cost of going native.
+4. How large must a first response be before it changes how someone sees themselves?
+5. Does reclaimed time sell, or does the finished thing sell — and what is the unit of sale, now that completion isn't one ([D-050](../log/decision-log.md))?
+6. Which project category ships fastest while still feeling like the user's own — and which survive the third template criterion at all?
+7. Does anyone actually want a crew, or is it a barrier dressed as a feature?
+8. How much facilitation does an acceptable ship rate require?

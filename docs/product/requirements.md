@@ -1,6 +1,6 @@
 # Product Requirements
 
-**Product:** Freathe · **Status:** MVP specification · **Superseded by:** `prd.md` once the BMAD PM run produces it · **Snapshot:** 1 August 2026
+**Product:** Freathe · **Status:** MVP specification · **Superseded by:** `prd.md` once the BMAD PM run produces it · **Snapshot:** 2 August 2026
 
 > **Related:** [Demand](demand.md) · [Initial design](initial-design.md) · [BMAD path](../method/bmad-path.md) · [Decision log](../log/decision-log.md)
 
@@ -32,7 +32,7 @@ Eight, and they bind the design document too — this is the only list ([initial
 
 5. **Ship early, and never into a void.** Work nobody sees isn't progress. Every rung has a guaranteed responder before the next unlocks.
 
-6. **You are free to do whatever you want. You are not free of the consequences.** Discipline is force applied against wanting, and force runs out — so nothing is scheduled, owed, or required, any mission can be dropped, and stopping is a decision rather than a failure. What replaces it is a visible consequence, and only ever **the one they cannot already see**: the lost evening was felt in full by the person who lost it, so repeating it is scolding, while the seven days they came back is the only new fact available ([D-042](../log/decision-log.md)).
+6. **You are free to do whatever you want. You are not free of the consequences.** Stated the other way round: you don't endure a path in order to arrive at a success — you take the success, and the path is its consequence, which is exactly why the consequence has to be one you'd choose. Discipline is force applied against wanting, and force runs out — so nothing is scheduled, owed, or required, any mission can be dropped, and stopping is a decision rather than a failure. What replaces it is a visible consequence, and only ever **the one they cannot already see**: the lost evening was felt in full by the person who lost it, so repeating it is scolding, while the seven days they came back is the only new fact available ([D-042](../log/decision-log.md)).
 
 7. **Boredom is faced, not removed.** When the scrolling stops it arrives undiluted. Say so.
 
@@ -42,7 +42,7 @@ Eight, and they bind the design document too — this is the only list ([initial
 
 Goals are things the product **does**, not states the user should reach.
 
-**The product must:** get someone from opening it to making something in under ten minutes without an account · put one appropriately sized thing to do in front of them whenever they have a spare five minutes · get the first made thing in front of a real person within 72 hours · guarantee that thing receives a response · show, weekly, what was made and never what was missed · keep working with the language model switched off.
+**The product must:** get someone from opening it to making something in under ten minutes without an account · be **already on the screen boredom arrives on**, holding one appropriately sized thing to do, without having been opened · get the first made thing in front of a real person within 72 hours · guarantee that thing receives a response · show, weekly, what was made and never what was missed · keep working with the language model switched off.
 
 **Non-goals.** Diagnose or treat anything. Promise happiness, purpose, or income. Ask what the user wants to become. Set deadlines or scope. General social network or public feed. Job placement. Users under 16. App blocking. Generate the user's work. Creator monetisation, tokens, prizes. Streaks or any punitive mechanic.
 
@@ -56,14 +56,15 @@ Goals are things the product **does**, not states the user should reach.
 
 The mechanics, as an index. Principles are §3; screens, copy and reasoning are [initial design](initial-design.md) §3.2, which is not restated here.
 
-1. **The loop.** One mission is already there → do it → it's saved → the next is available immediately. Small by default; duration **observed, not declared**.
-2. **Reset missions exist** — conditions for making, never wellbeing. Excluded from every production total, one per session, never a swap for a mission being avoided.
-3. **Something ships within 72 hours** and repeatedly after. Getting it in front of a person is a mission kind, not an end-state.
-4. **The audience ladder guarantees a response**: one responder → several → a small public. Ordered by count, not familiarity; the user picks who, and a stranger is the default ([D-043](../log/decision-log.md)).
-5. **Session feeling, optional, one tap each side.** The only internal state recorded anywhere: private, never scored, never averaged. The user rates a session; the product never rates the user ([D-031](../log/decision-log.md)).
-6. **They say what they did, then the record says what they did, and nothing comments** ([D-038](../log/decision-log.md)). In words, not numbers, never against an empty record.
-7. **The record is plain facts, never a composed sentence** ([D-041](../log/decision-log.md)). No paste-ready line — phrasing is the user's, and it's the part that survives being asked about.
-8. **The weekly view shows what was made**, never what was missed. Its job is to make *"I'm just lazy"* untenable against a record.
+1. **The loop.** One mission is already there → do it → it's saved → the next is available immediately. Small by default; duration **observed, not declared**, and never shown ([D-048](../log/decision-log.md)).
+2. **Two surfaces, one loop** ([D-051](../log/decision-log.md)). The mission sits on the phone's home screen because that is where boredom arrives; the work happens on a laptop because that is where things get made. The account is the seam between them and is asked for after the introduction, never before it.
+3. **Reset missions exist** — conditions for making, never wellbeing. Excluded from every production total, one per session, never a swap for a mission being avoided.
+4. **Something ships within 72 hours** and repeatedly after. Getting it in front of a person is a mission kind, not an end-state.
+5. **The audience ladder guarantees a response**: one responder → several → a small public. Ordered by count, not familiarity; the user picks who, and a stranger is the default ([D-043](../log/decision-log.md)).
+6. **Session feeling, optional, one tap each side.** The only internal state recorded anywhere: private, never scored, never averaged. The user rates a session; the product never rates the user ([D-031](../log/decision-log.md)).
+7. **They say what they did, then the record says what they did, and nothing comments** ([D-038](../log/decision-log.md)). In words, not numbers, never against an empty record.
+8. **The record is plain facts, never a composed sentence** ([D-041](../log/decision-log.md)). No paste-ready line — phrasing is the user's, and it's the part that survives being asked about.
+9. **The weekly view shows what was made**, never what was missed. Its job is to make *"I'm just lazy"* untenable against a record.
 
 A project ends when the user stops, and stopping is not failure. The proof-of-work page is a **by-product** — the receipt that the hours were real, not the reason for the work.
 
@@ -72,7 +73,7 @@ A project ends when the user stops, and stopping is not failure. The proof-of-wo
 | ID | Requirement |
 |---|---|
 | **FR-001** | Start and complete a first mission with **no account**. Work is held locally until there is something worth keeping |
-| **FR-002** | Offer registration only when work would otherwise be lost, never as a gate before it |
+| **FR-002** | Offer registration only **after the introduction** — the first finished mission — and only when it buys the user something: work that would otherwise be lost, or a second device to carry it to ([D-051](../log/decision-log.md)). Never a gate before the work |
 | **FR-003** | Confirm age eligibility and accept terms at registration |
 | **FR-004** | Set timezone, availability, privacy preferences. Never asked at onboarding |
 | **FR-005** | Export or delete account data |
@@ -86,7 +87,7 @@ A project ends when the user stops, and stopping is not failure. The proof-of-wo
 | **FR-018** | After two stalled weeks, ask once whether this is still what they want to make. Stopping is valid, unpenalised, and recorded as a completed decision rather than an abandonment |
 | **FR-019** | Weekly time mirror: hours that produced something, things made, things shipped, responses received. No projection, no target, no comparison |
 | **FR-020** | Generate or select missions from stage, available time, energy, skill, and recent behaviour |
-| **FR-021** | Every mission has title, instruction, definition of done, estimated duration, difficulty, and stage. The **first move is mechanical** — the opening step requires execution, not invention ([D-045](../log/decision-log.md)) |
+| **FR-021** | Every mission has title, instruction, definition of done, estimated duration, difficulty, and stage. Duration is **recorded and never displayed** to the user, on any surface, including notifications ([D-048](../log/decision-log.md)) — the engine sizes the next mission from it, and telling someone a task takes twenty minutes hands them a reason to postpone it. The **first move is mechanical** — the opening step requires execution, not invention ([D-045](../log/decision-log.md)) |
 | **FR-022** | Accept, replace, simplify, skip, or report a blocker |
 | **FR-023** | Repeated replacement triggers a scope or blocker review |
 | **FR-024** | Non-AI fallback missions exist for every stage |
@@ -103,14 +104,18 @@ A project ends when the user stops, and stopping is not failure. The proof-of-wo
 | **FR-035** | Browse the evidence timeline |
 | **FR-036** | Record external responses against the thing that caused them |
 | **FR-037** | Optionally record how the user feels before and after a session, one tap each. Private, never scored, never averaged, never surfaced ([D-031](../log/decision-log.md)) |
+| **FR-038** | Ask the user to **respond to their own work**, as a responder would — what they'd change, what they'd keep — and show that beside the thing itself. The gap between their judgement and the work is the point, and nothing narrates it, exactly as in `FR-029`. Also offered cold, on something made weeks earlier, and optionally before a ship as *what would you want someone to notice* ([D-055](../log/decision-log.md)) |
+| **FR-039** | A self-response is **never** counted as an external response, never satisfies a rung's guarantee, and never enters `response rate`. When nothing came back, the product says nothing ([D-055](../log/decision-log.md)) |
 | **FR-045** | Moderators can remove content and suspend accounts |
 | **FR-046** | Cohort codes for institution-led pilots |
 | **FR-047** | Support a **reset** mission kind — go outside, clear the table, stop for today. Framed as conditions for making, never wellbeing |
 | **FR-048** | Reset missions are excluded from authored hours, things made, and things shipped. No production total may include one |
 | **FR-049** | Reset missions are capped at one per session, never accumulate, and are never offered as a swap for a mission being avoided |
-| **FR-050** | Schedule one daily production reminder |
-| **FR-051** | Notifications reference a concrete next mission — never guilt, streak loss, or time-remaining |
+| **FR-051** | **Nothing is scheduled.** The only notification the product sends unbidden is an external response arriving (`FR-067`); it names what came back and carries no call to action. Never guilt, streak loss, time-remaining, or a mission ([D-049](../log/decision-log.md)) |
 | **FR-052** | Disable all non-essential notifications |
+| **FR-054** | A **home-screen surface the user installs themselves**, opening straight onto the current mission — title and definition of done — with **nothing cumulative**: no count, total, streak, elapsed time, or record of any kind ([D-049](../log/decision-log.md)). The record is deliberate and weekly (`FR-019`); anything seen fifty times a day without being chosen is where a count turns into a demand. **On web this is an icon, not a live card** ([D-059](../log/decision-log.md)) — the mission is one tap away rather than already visible, and that gap is the cost of reaching iPhone at all |
+| **FR-055** | The home-screen surface renders with **no network and no account**, from the local template library (`FR-024`). It is never empty and never shows an error |
+| **FR-056** | **Starting is the primary gesture**; swapping is a smaller, secondary target. Rapid swapping on this surface counts toward `FR-023`'s blocker review like any other — the card must not make replacement the cheapest thing to do with it |
 | **FR-060** | Generate a proof-of-work page as a by-product of completion |
 | **FR-062** | Public, unlisted, or private visibility, user-controlled |
 | **FR-063** | Public pages never expose discomfort or reflection data |
@@ -130,7 +135,7 @@ A project ends when the user stops, and stopping is not failure. The proof-of-wo
 | **FR-085** | Minor cohorts have a named responsible adult and an escalation path |
 | **FR-086** | No direct messaging for under-18 accounts |
 
-**Retired:** `FR-017` (deadline projection — a *will* mechanic, replaced by `FR-019`) · `FR-053`, `FR-061`, `FR-073` (folded into neighbours).
+**Retired:** `FR-017` (deadline projection — a *will* mechanic, replaced by `FR-019`) · `FR-050` (daily production reminder — a scheduled re-entry prompt, which `FR-051`'s wording rules disguised rather than fixed, [D-049](../log/decision-log.md)) · `FR-053`, `FR-061`, `FR-073` (folded into neighbours).
 
 **Deferred with crews** ([D-033](../log/decision-log.md)) — specified, not scheduled: `FR-040` join a crew · `FR-041` matching · `FR-042` leave, mute, report · `FR-043` chronological bounded posts · `FR-044` crew as guaranteed first audience.
 
@@ -148,7 +153,7 @@ return           = users who start something else / users whose thing got a resp
 
 **Retired:** *consistency = active days / planned days.* There are no planned days ([D-042](../log/decision-log.md)), so the denominator never existed — a discipline metric that outlived the discipline.
 
-`continuation` proxies whether the work was pleasant (`FR-068`); `return` tests the retention hypothesis directly, that the **response** brings people back rather than the product. Compare it against users whose thing received nothing.
+`continuation` proxies whether the work was pleasant (`FR-068`) and is the **primary** retention measure ([D-056](../log/decision-log.md)). `return` tests the second hypothesis, that a **response** brings people back rather than the product; compare it against users whose thing received nothing. Self-responses are excluded from `response rate` by `FR-039` — a metric that can be satisfied by the user talking to themselves measures nothing.
 
 Never measure how the user feels. The internal outcome is the product; the external numbers are the only honest evidence of it.
 
@@ -157,15 +162,21 @@ Never measure how the user feels. The internal outcome is the product; the exter
 Pilot thresholds, not benchmarks.
 
 - **Activation:** 60% ship something within 72 hours · median open→first mission under 10 minutes · 50% reach a first mission **before** registering.
-- **Engagement:** 50% produce in three separate sessions in week one · 40% active in week three · **40% of sessions contain a further unprompted mission** — the only observable evidence the work is pleasant rather than merely virtuous.
-- **Outcome:** 30% receive at least one unsolicited external response · 25% start something else within 14 days, **and at a higher rate among those who got a response** — if not, the retention hypothesis is wrong and nothing here gives anyone a reason to come back.
+- **Engagement:** **40% of sessions contain a further unprompted mission** — promoted to the *leading* indicator ([D-056](../log/decision-log.md)), because enjoyment is now the primary retention hypothesis and this is its only observable form. Then: 50% produce in three separate sessions in week one · 40% active in week three.
+- **Outcome:** 30% receive at least one unsolicited external response · 25% start something else within 14 days. Read return against **both** hypotheses — continuation rate and whether a response arrived. If neither predicts it, nothing here gives anyone a reason to come back.
 - **The gap** ([D-038](../log/decision-log.md)): direction and size of the difference between what users say they did and what the record shows. Predicted to skew toward under-reporting; if it doesn't, the central premise is wrong and worth knowing early. Aggregate only.
 - **Weak by construction:** median session mood delta positive across a cohort. Badly confounded by selection, demand characteristics, and the mere fact of finishing. **Never quoted without that sentence attached.**
 - **Commercial:** *deferred* ([D-018](../log/decision-log.md)). The first cohort is unpaid, so nothing here is evidence of willingness to pay.
 
 ## 10. Monetisation
 
-All deferred until payments are possible. Hypotheses only: bounded outcome purchase (one project to completion, USD 29–79) · membership after a first completed project · per-seat institutional · facilitated premium. Bounded by outcome, never by calendar.
+**Parked in [future plans](../roadmap/future-plans.md), with one seam held open** ([D-050](../log/decision-log.md), [D-053](../log/decision-log.md)).
+
+No price is stated here, and the previous range was furniture — a number invented to fill a heading. Two things block it, and only one of them is temporary: the founder cannot hold a processor account ([D-018](../log/decision-log.md)), and **there is no unit of sale**, because *one project to completion* was written nine decisions after [D-028](../log/decision-log.md) deleted completion and accepted *no completion metric* as its cost. The first expires with a birthday; the second is a design question (§14).
+
+**What is kept ready is a seam, not a feature** ([D-053](../log/decision-log.md)). Every capability check goes through one gate that today answers *yes* to everything. Payments later then mean changing one implementation rather than finding every place a check should have been — which is the part that is actually expensive to retrofit. Nothing else is built in anticipation.
+
+**One product constraint travels with any future answer:** a subscription is a recurring obligation, and this product's central claim is that nothing is owed ([D-042](../log/decision-log.md)). Whatever gets sold has to survive that, so bounded purchases sit inside the principles and rent does not.
 
 ## 11. Safety and trust
 
@@ -182,7 +193,7 @@ Not therapy, and it says so. No shame, no status withdrawal, no punitive streaks
 | **NFR-001** | Core pages usable within three seconds on a typical domestic connection |
 | **NFR-002** | Mission submission idempotent and recoverable after interruption |
 | **NFR-003** | WCAG 2.2 AA for core flows |
-| **NFR-004** | *Pending the platform decision* ([D-037](../log/decision-log.md)). The 360 px floor is withdrawn — it assumed mobile-first, which no longer follows |
+| **NFR-004** | Two surfaces, **one codebase** ([D-051](../log/decision-log.md), [D-059](../log/decision-log.md)). Responsive web from **360 px** upward: installable to a phone home screen, offline-capable for the mission loop, and sized for the laptop where the work actually happens. No native client on either platform |
 | **NFR-005** | Encryption in transit and at rest |
 | **NFR-006** | Private reflections stored separately from anything publishable |
 | **NFR-007** | Structured logging with no reflection text in analytics |
@@ -196,18 +207,18 @@ Not therapy, and it says so. No shame, no status withdrawal, no punitive streaks
 
 Phased per [initial design](initial-design.md) §7 ([D-013](../log/decision-log.md)).
 
-**First — solo:** auth, onboarding, templates plus custom project, mission generation with fallback, evidence, ship missions, time mirror, proof-of-work by-product, analytics.
+**First — solo:** auth, onboarding, templates plus custom project, mission generation with fallback, evidence, ship missions, time mirror, proof-of-work by-product, analytics — plus the **home-screen card** ([D-052](../log/decision-log.md)), which ships here rather than later because it is the surface the trigger lives on, and shipping the laptop half alone tests a product nobody is reminded to open.
 **Second — reach:** upper ladder rungs, moderation. Crews only if a cohort asks ([D-033](../log/decision-log.md)).
 **Third — institutional:** cohort administration, aggregate dashboard, facilitator tools.
 
-Native mobile, app blocking, live coworking, employer matching, recommenders, and public discovery are later.
+App blocking, live coworking, employer matching, recommenders, public discovery, and any iOS surface are later.
 
 ## 14. Open questions
 
 1. **Where does anyone encounter this?** No channel is validated and there is no search demand ([D-044](../log/decision-log.md)). First, because a product nobody encounters fails identically to one nobody wants.
 2. **Does a response bring people back?** The only retention mechanism left once discipline mechanics are banned, and a hypothesis ([D-042](../log/decision-log.md)).
 3. Which project category ships fastest and still feels like the user's own?
-4. Is the primary payer the individual, school, university, or employer?
+4. Is the primary payer the individual, school, university, or employer — and **what is the unit of sale**, given that completion no longer exists to be sold ([D-050](../log/decision-log.md))?
 5. Does anyone actually want a crew, or is it a barrier dressed as a feature?
 6. How much facilitation does an acceptable ship rate require?
 7. How large must the first external response be to change how someone sees themselves?

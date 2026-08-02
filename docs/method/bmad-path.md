@@ -1,6 +1,6 @@
 # The BMAD Path
 
-**Product:** Freathe · **Last updated:** 1 August 2026
+**Product:** Freathe · **Last updated:** 2 August 2026
 
 > **Related:** [Demand](../product/demand.md) · [Requirements](../product/requirements.md) · [Initial design](../product/initial-design.md) · [Future plans](../roadmap/future-plans.md) · [Decision log](../log/decision-log.md)
 
@@ -38,17 +38,20 @@ Delivery phases in [initial design](../product/initial-design.md) §7 remain the
 
 **Step 0 — Evidence. No BMAD, no code.**
 
-1. **Find a channel, or none of the rest happens** ([D-044](../log/decision-log.md)). Two weeks, no product: reply to real posts where people describe the loop, with the real offer. Count qualified replies and people who then do a first mission by hand — not impressions. This also recruits the cohort in step 4, so it costs nothing extra and produces the plan's most missing number.
-2. **Pre-register the predictions.** Write down the expected value for every threshold in demand §8, plus what result would change your mind. Commit it — the git timestamp is the proof it was decided in advance. Reuse the analysis rubric in the sibling `manipulation recognition` repo (`docs/research/05-analysis-rubric.md`).
-3. **Five conversations with people who read applications** — hiring managers, admissions or sixth-form staff. Show them a real record as the product would state it (`FR-064`) and ask whether it changes how they read the candidate. Everything downstream terminates in the artifact being worth something to someone who decides; it's asserted everywhere and tested nowhere.
-4. **An unpaid concierge cohort of 20–30, adults only** ([D-018](../log/decision-log.md), [D-046](../log/decision-log.md)). Forms, a spreadsheet, hand-written missions, a guaranteed responder — **no crews** ([D-033](../log/decision-log.md)). **Split the roles** ([D-047](../log/decision-log.md)): whoever writes the missions is not whoever runs the exit interviews.
-5. **Interview everyone who didn't finish, and not by the operator.** They're the real product risk, the easiest group to skip, and the most likely to be polite to the person who wrote their missions.
-6. **Test the name cold** ([D-015](../log/decision-log.md)). Ten strangers, five each way, before anything is bought or printed. Under 7/10, rename.
-7. **Red-team the artifacts.** Run every mission, notification, and screen string past the manipulation taxonomy in the other repo. Anything that codes as a manipulation technique gets cut. A product built by someone researching manipulation should be the cleanest on the market.
+1. **Find a channel, or none of the rest happens** ([D-044](../log/decision-log.md)). Two weeks, no product: reply to real posts where people describe the loop, with the real offer. Count qualified replies and people who then do a first mission by hand — not impressions. This also recruits the cohort in step 5, so it costs nothing extra and produces the plan's most missing number.
+2. **Run the interviews** — the script is [interview-script.md](interview-script.md). Five to eight is enough to start; thirty is what demand §8's thresholds need.
+3. **Pre-register the predictions.** Write down the expected value for every threshold in demand §8, plus what result would change your mind. Commit it — the git timestamp is the proof it was decided in advance. Reuse the analysis rubric in the sibling `manipulation recognition` repo (`docs/research/05-analysis-rubric.md`).
+4. **Five conversations with people who read applications** — hiring managers, admissions or sixth-form staff. Show them a real record as the product would state it (`FR-064`) and ask whether it changes how they read the candidate. Everything downstream terminates in the artifact being worth something to someone who decides; it's asserted everywhere and tested nowhere.
+5. **An unpaid concierge cohort of 20–30, adults only** ([D-018](../log/decision-log.md), [D-046](../log/decision-log.md)). Forms, a spreadsheet, hand-written missions, a guaranteed responder — **no crews** ([D-033](../log/decision-log.md)). **Split the roles** ([D-047](../log/decision-log.md)): whoever writes the missions is not whoever runs the exit interviews.
+6. **Interview everyone who didn't finish, and not by the operator.** They're the real product risk, the easiest group to skip, and the most likely to be polite to the person who wrote their missions.
+7. **Test the name cold** ([D-015](../log/decision-log.md)). Ten strangers, five each way, before anything is bought or printed. Under 7/10, rename.
+8. **Red-team the artifacts.** Run every mission, notification, and screen string past the manipulation taxonomy in the other repo. Anything that codes as a manipulation technique gets cut. A product built by someone researching manipulation should be the cleanest on the market.
 
 Do this before installing BMAD: the planning phase converts assumptions into a structured PRD very efficiently, and on unvalidated assumptions that efficiency works against us.
 
 *Exit: demand §8 Phase 2 thresholds met and compared against the pre-registered predictions, or the offer revised and retested.*
+
+Note the home-screen surface ([D-059](../log/decision-log.md)) is **Phase 1, not step 0**. A concierge cohort is run by hand, by text message if that is what works, and building a phone surface first would be code before evidence — the thing D-010 exists to prevent. **The one trigger that pulls it forward:** if the cohort's return numbers fail and the exit interviews say *I forgot* rather than *I didn't want to*, that is a surface problem. Any other reason is impatience.
 
 **Step 1 — Planning phase.** Analyst → PM → UX Expert → Architect → PO, on concierge data. Scope the PRD to the **solo MVP only** ([requirements](../product/requirements.md) §13); crews are a later increment. The Architect challenges the initial design rather than ratifying it.
 
@@ -63,9 +66,11 @@ Do this before installing BMAD: the planning phase converts assumptions into a s
 ## 4. Guardrails for every agent
 
 - **Present tense.** Reject any story adding a *will* mechanic (countdown, deadline projection, goal ceremony) or a *have* mechanic (badge, streak, trophy, portfolio-as-achievement). A hard filter, not a preference ([D-024](../log/decision-log.md)).
-- **Nothing is owed.** Reject any story that schedules, requires, or bills the user for something — including *are you sure* on leaving, re-entry prompts, and anything making stopping cost more than not starting ([D-042](../log/decision-log.md), `NFR-012`).
+- **Nothing is owed.** Reject any story that schedules, requires, or bills the user for something — including *are you sure* on leaving, re-entry prompts, and anything making stopping cost more than not starting ([D-042](../log/decision-log.md), `NFR-012`). This guardrail already caught one requirement that had been written anyway: `FR-050`'s daily reminder, retired by [D-049](../log/decision-log.md). **A sanitised notification is still a scheduled one** — check the trigger, not the copy.
+- **Nothing cumulative on the home-screen card.** Reject any story putting a count, total, streak, elapsed time, or record on it (`FR-054`). It is seen without being chosen, which is what makes a number there a demand rather than a record. Expect this one to be argued away by a reasonable-sounding request.
+- **Duration is recorded, never displayed** ([D-048](../log/decision-log.md), `FR-021`). Reject any string, card, or notification that tells the user how long something takes.
 - **Show only the consequence they can't already see.** A story surfacing time lost, days missed, or a gap in activity is rejected, and not for tone: they already have that information, and repeating it is scolding ([D-042](../log/decision-log.md)).
-- **No first ship into a void.** Any story routing work to an audience must name the guaranteed responder, and must not assume rung one is someone the user knows ([D-025](../log/decision-log.md), [D-043](../log/decision-log.md)).
+- **No first ship into a void, and no substitute for a real one.** Any story routing work to an audience must name the guaranteed responder, and must not assume rung one is someone the user knows ([D-025](../log/decision-log.md), [D-043](../log/decision-log.md)). Reject anything that lets a self-response fill a guaranteed slot or enter a response count ([D-055](../log/decision-log.md), `FR-039`) — it will be proposed as a fix when the pool runs dry, which is precisely when it does the most damage.
 - **Cheap in time** — `NFR-011`. A story whose flow can't complete in five minutes needs justifying.
 - **AI is scaffolding, never the creator of record** ([D-005](../log/decision-log.md)), and **no AI path without its non-AI fallback** — `FR-024`, `NFR-009`.
 - **No clinical framing, no shame** — binds generated copy, mission text, and notifications ([requirements](../product/requirements.md) §11).
