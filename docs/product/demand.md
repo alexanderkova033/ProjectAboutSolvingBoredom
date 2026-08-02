@@ -73,7 +73,7 @@ Say the mechanism, never the depth. *"Everyone else treats symptoms, we treat th
 
 **Excluded:** under 16 · "everyone who is bored", too broad to write copy for · clinical framing of any kind.
 
-**Payers** may be the user, a parent, a school, a university career centre, a workforce programme, or an employer. Institutions have budget and long sales cycles.
+**Payers.** Not the user, and not a parent ([D-060](../log/decision-log.md)) — a funder, and secondarily a school, a university career centre, a workforce programme, or an employer. All of them have budget, long cycles, and the same demand for evidence.
 
 ## 6. Demand scoring
 
@@ -90,30 +90,32 @@ Founder hypotheses, not measurements.
 
 The portfolio sprint scores highest on paper — and it's the version that assumes an artifact people want, six weeks out. The reclaimed-time framing scores lower on willingness to pay and higher on frequency and competitive space. **This tension is unresolved and §8 exists to resolve it.**
 
+The willingness-to-pay column is weaker than it looks now ([D-060](../log/decision-log.md)): the user never pays, so what the column has to predict is whether a funder or an institution finds the outcome legible — a different question, and one nobody in this table was scored against.
+
 ## 7. Distribution and market model
 
 ```text
-B2C:           reachable qualified audience × paid conversion × average annual spend
-Institutional: partner organisations × average active seats × price per seat
+Reach:  reachable qualified audience × people who start something × people who ship
+Funded: funders and partner institutions × places supported × cost per place
 ```
 
-Distribution dominates both. The missing input isn't a conversion rate, though — it's a channel.
+Neither line has a paid-conversion term any more ([D-060](../log/decision-log.md)) — the user is not the payer. Distribution still dominates both, and the missing input isn't a rate: it's a channel.
 
 **There is no search demand** ([D-044](../log/decision-log.md)). Nobody types this into a search box, and the reason is in our own risk register: the people furthest into the loop recognise it least as a problem. Intent-based acquisition has nothing to bid on, which rules out search independently of budget.
 
 **They do complain, and the complaint is the channel.** This loop gets described in public constantly, in the chain's own last-link language — *wasted the whole evening again*, *I have no hobbies*, *I'm just lazy*. A complaint is the only reliable signal that someone is in the market, so where it gets posted is where the market is reachable.
 
-Three hypotheses, ranked by cost, none validated:
+Four hypotheses, none validated, and one of them closed for the duration of Phase 0:
 
 | Channel | The bet | The test |
 |---|---|---|
 | **Where the complaint is posted** — procrastination and quarter-life communities, self-taught-creator and study servers, "I have no hobbies" threads | Someone describing the residue of a lost evening is qualified in a way no ad targeting reproduces. Costs time, not money | Reply to real posts with the real thing, two weeks. Count **qualified replies and first missions started**, not impressions. Kill it if the response reads as spam to the community it's in |
 | **In person, through the founder's own segment** | The only channel with genuine access, zero cost, and a warm room — and the actual reason the 16–18 segment exists | **Closed for the concierge phase** ([D-046](../log/decision-log.md)). Reopens with a named responsible adult, not before |
-| **The artifact carries the trace** — things shipped point back at where they were made | The only channel that compounds, and the only one that survives the founder not being in the room | Untestable until things are shipping to strangers at all. Not a first channel |
-| **Publish what the cohort made** ([D-057](../log/decision-log.md)) — video, where this problem is *consumed* even though nobody searches for it | The only channel here that **compounds** and survives the founder not being in the room. **Not an advertisement:** the self-improvement genre runs on the promises §3 forbids, so the winning format there is the one we banned. What needs no forbidden claim is someone who had made nothing, three weeks later holding a small thing a stranger used | Consent per participant, never assumed. Count **missions started, not views**. Follows Phase 1 rather than replacing it — one good video is a week not spent interviewing. Kill it if it can't be made without a claim §3 forbids |
-| ~~**A store listing for the card**~~ | Withdrawn with [D-059](../log/decision-log.md). Both stores need an adult-held account, and there is no native artifact to list — the phone surface is a web page you install. **An app store was a channel; a URL is not one**, and losing it puts more weight on the two above |
+| **The artifact carries the trace** — things shipped point back at where they were made | Costs nothing per unit and keeps working with nobody doing anything — a property of shipping rather than an activity, which no other channel here has | Untestable until things are shipping to strangers at all. Not a first channel |
+| **Publish what the cohort made** ([D-057](../log/decision-log.md)) — video, where this problem is *consumed* even though nobody searches for it | The only compounding channel that can be **started now** — the artifact trace above compounds too and cannot be run until things are already shipping. **Not an advertisement:** the self-improvement genre runs on the promises §3 forbids, so the winning format there is the one we banned. What needs no forbidden claim is someone who had made nothing, three weeks later holding a small thing a stranger used | Consent per participant, never assumed. Count **missions started, not views**. Follows Phase 1 rather than replacing it — one good video is a week not spent interviewing. Kill it if it can't be made without a claim §3 forbids |
+| ~~**A store listing for the card**~~ | Withdrawn with [D-059](../log/decision-log.md). Both stores need an adult-held account, and there is no native artifact to list — the phone surface is a web page you install. **An app store was a channel; a URL is not one** | Nothing to test. Losing it puts the weight back on the complaint threads, which is the one channel that can be run this week |
 
-**Refused.** Paid acquisition — LTV is unknown, so no acquisition cost can be justified, and buying traffic against an unvalidated message burns the message and the money together. Productivity-influencer content — the genre runs on exactly the promises §3 forbids, and arriving through it sets expectations the product then breaks on purpose. **This is not the same as [D-057](../log/decision-log.md):** the refusal is on *making the claims the genre runs on*, whoever makes them, and publishing a record of what somebody actually built makes none of them. The line is the claim, not the platform.
+**Refused.** Paid acquisition — there is no lifetime value to weigh a cost against, and under [D-060](../log/decision-log.md) there will not be one in the usual sense, so no acquisition cost can be justified; buying traffic against an unvalidated message burns the message and the money together. Productivity-influencer content — the genre runs on exactly the promises §3 forbids, and arriving through it sets expectations the product then breaks on purpose. **This is not the same as [D-057](../log/decision-log.md):** the refusal is on *making the claims the genre runs on*, whoever makes them, and publishing a record of what somebody actually built makes none of them. The line is the claim, not the platform.
 
 Institutional distribution is a sales motion rather than a channel, and downstream of all of the above: schools want evidence, evidence requires users, users require a channel.
 
@@ -123,7 +125,7 @@ Institutional distribution is a sales motion rather than a channel, and downstre
 
 **One question decides whether the ladder is the right mechanism** ([D-054](../log/decision-log.md)): *describe a time something changed for you — what happened?* Then code each answer as **someone reacted to what I made** or **someone was there when I started**. The product is built entirely on the first; the only three first-hand accounts available to us are the second. Ask it late in the interview and never explain why.
 
-Record two facts alongside the answers, because they cost nothing to collect and each decides a build: **what phone they carry** ([D-052](../log/decision-log.md) is Android-only) and **whether they own a laptop at all** ([D-051](../log/decision-log.md) assumes one). Neither is a question about the product, so neither is subject to the demand characteristics that make everything else here soft.
+Record two facts alongside the answers, because they cost nothing to collect and each decides a build: **what phone they carry** — the surface is web on both platforms now ([D-059](../log/decision-log.md)), but an Android-carrying beachhead is the one finding that would bring the widget back ([D-052](../log/decision-log.md)) — and **whether they own a laptop at all** ([D-051](../log/decision-log.md) assumes one). Neither is a question about the product, so neither is subject to the demand characteristics that make everything else here soft.
 
 **Most will answer "I'm lazy" or "I couldn't be bothered."** That's the beginning of the answer, never the end — follow it with *what did you imagine would happen if you tried?* The gap between the two responses is the most valuable data in the interview ([D-027](../log/decision-log.md)).
 
@@ -147,15 +149,15 @@ Record two facts alongside the answers, because they cost nothing to collect and
 
 **Phase 3 — Message test.** Three landing pages, design and traffic held constant: reclaimed time · finished thing · productive belonging. Measure qualified visitor→application, application→first ship, week-one production. Not email signups. *A message test needs traffic* — so §7's first channel is tested **before** this phase, and the winning message is only meaningful for the channel that carried it.
 
-**Phase 4 — Institutional discovery.** Schools, career centres, workforce organisations, employer graduate programmes. Ask for a budget or a letter of intent. A positive interview without a buyer and a procurement path is not validation.
+**Phase 4 — Funder and institutional discovery.** Grant funders and youth foundations ([D-060](../log/decision-log.md)), then schools, career centres, workforce organisations, employer graduate programmes. Ask for a budget, a grant round, or a letter of intent. A positive interview without a buyer and a procurement path is not validation, and enthusiasm from a funder is worth exactly what enthusiasm from a user is.
 
 ## 9. Risks
 
 | Risk | Mitigation |
 |---|---|
 | **Nobody encounters it** | The largest and newest. No channel is validated and there's no search demand. §7 names three hypotheses and one cheap test; run it before the message test ([D-044](../log/decision-log.md)) |
-| **Nothing brings anyone back** | Every conventional retention lever is banned on purpose ([D-042](../log/decision-log.md)). Two unproven mechanisms remain — the work being pleasant ([D-045](../log/decision-log.md)) and a response arriving — plus one surface, the home-screen card ([D-049](../log/decision-log.md)), which removes the excuse of having forgotten and supplies no motive of its own. §8 measures return against responses received |
-| Reclaimed time is felt but not bought | Keep the artifact as proof; test all three messages in Phase 3 rather than assuming |
+| **Nothing brings anyone back** | Every conventional retention lever is banned on purpose ([D-042](../log/decision-log.md)). Two unproven mechanisms remain — the work being pleasant ([D-045](../log/decision-log.md)) and a response arriving — plus one surface, an icon on the first home screen ([D-049](../log/decision-log.md), [D-061](../log/decision-log.md)), which is seen at unlock, removes the excuse of having forgotten, and supplies no motive of its own. §8 measures return against responses received |
+| Reclaimed time is felt but not funded | The user was never the payer ([D-060](../log/decision-log.md)), so the question is whether a funder finds reclaimed hours legible or wants a countable outcome instead. Keep the artifact as proof; test all three messages in Phase 3 rather than assuming |
 | The first ship lands in silence | Engineer the audience ladder ([D-025](../log/decision-log.md)), ordered by audience size rather than familiarity so the first rung isn't also the most exposing ([D-043](../log/decision-log.md)). **Never by a self-response** ([D-055](../log/decision-log.md)) |
 | **The change moment isn't a response at all** | The ladder assumes a reaction to finished work is what changes someone. The only first-hand accounts we have describe *someone competent present at the start* instead ([D-054](../log/decision-log.md)). One interview question settles it, and it is asked in Phase 1 — before the ladder is built |
 | Users need heavy facilitation | Measure facilitator minutes per active user; standardise before automating |

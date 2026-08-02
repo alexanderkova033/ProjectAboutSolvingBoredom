@@ -10,7 +10,7 @@ Time in flow disappears. Time spent scrolling drags *and* leaves a residue — t
 
 ## How it works
 
-There's one thing to do, already on the screen. Not the screen you have to go and open — the one in your hand, on the home screen, where the evening was about to go anyway.
+There's one thing to do, and it's on the first screen your phone unlocks to. Not an app you go and find — something you put there yourself, on the page the evening was about to go to anyway. One tap, and the thing to do is in front of you, already chosen.
 
 No sign-up. No questionnaire. Nothing asking what your goals are or how much time you've got — because you don't know, and being asked is where people stall. Just something small and specific, with a clear finish.
 
@@ -18,7 +18,7 @@ You do it. It's saved. If you want another, it's right there.
 
 Three days in, something you made is in front of a real person and a real person has answered — that part is guaranteed, not hoped for. At the end of the week it shows you what you made. Not what you missed.
 
-The card on your phone catches the moment; the laptop is where the thing actually gets made. It only asks you to sign in once you've finished something and there's work worth keeping.
+The thing on your phone catches the moment; the laptop is where it actually gets made. It only asks you to sign in once you've finished something and there's work worth keeping.
 
 ## Discipline isn't the mechanism
 
@@ -61,12 +61,12 @@ Nobody has used this. Every number here is a hypothesis with a threshold attache
 Five things aren't known, in order of how much damage each does:
 
 - **where anyone encounters this at all.** Nobody searches for it, so there's no channel to buy — only the places people describe the problem in their own words ([D-044](docs/log/decision-log.md));
-- whether anything brings a person back once the first thing is finished. Every conventional retention trick is banned here on purpose, which leaves one candidate: the response ([D-042](docs/log/decision-log.md)). The card on the home screen is a *surface*, not a reason — it removes the excuse of having forgotten and supplies no motive ([D-049](docs/log/decision-log.md));
+- whether anything brings a person back once the first thing is finished. Every conventional retention trick is banned here on purpose, which leaves one candidate: the response ([D-042](docs/log/decision-log.md)). what sits on the home screen is a *surface*, not a reason — put it on the first page and it's seen every unlock, which removes the excuse of having forgotten and supplies no motive whatsoever ([D-049](docs/log/decision-log.md), [D-061](docs/log/decision-log.md));
 - whether a first ship gets a response or silence — silence being the internet's default;
 - how big that response has to be before it changes how someone sees themselves;
-- whether reclaimed time is something people will pay for, or only something they feel — and if so, what the unit of sale even is, since completion was deliberately deleted and can't be the thing that's sold ([D-050](docs/log/decision-log.md)).
+- whether anyone funds it. That the user is not the payer is settled ([D-060](docs/log/decision-log.md)), which moves the question rather than answering it: a funder wants the same evidence a school does, on the same slow cycles, and there is still no fundable unit — completion was deliberately deleted and can't be the thing anyone buys ([D-050](docs/log/decision-log.md)).
 
-And three that can't be known yet, all downstream of the founder being 15: the first cohort runs unpaid, so nothing it produces is evidence anyone will buy this ([D-018](docs/log/decision-log.md)); it runs adults-only, because a minor can't be the responsible adult a minor cohort requires — which closes the one channel that came with real access ([D-046](docs/log/decision-log.md)); and every account that would let this be sold or listed in a store opens in 2029, so neither is a plan ([D-058](docs/log/decision-log.md)).
+And three that can't be known yet, all downstream of the founder being 15: the first cohort runs unpaid, so nothing it produces is evidence anyone will fund this ([D-018](docs/log/decision-log.md)); it runs adults-only, because a minor can't be the responsible adult a minor cohort requires — which closes the one channel that came with real access ([D-046](docs/log/decision-log.md)); and every account that could receive money opens in 2029, including a charity's, since trustees are adults too ([D-058](docs/log/decision-log.md), [D-060](docs/log/decision-log.md)).
 
 There is also nobody to dogfood it. The founder is below the product's own minimum age, so every claim here about how a session *feels* is reasoned rather than felt.
 

@@ -18,7 +18,9 @@ Not deferred by choice. It needs a named responsible adult and the founder is un
 
 ## Being rethought — who guarantees the response
 
-**The open structural problem, and the largest one in the plan.** The audience ladder promises that no first ship goes into a void ([D-025](../log/decision-log.md)), and that promise is currently kept by a person answering by hand. That works at 25 users, is an agency at 2,500, and everything else in the product either degrades to templates or is commodity — so **the one differentiated thing is the one thing that does not scale.** No decision has been taken; this records the leading candidate and what would have to be true.
+**The open structural problem, and the largest one in the plan.** The audience ladder promises that no first ship goes into a void ([D-025](../log/decision-log.md)), and that promise is currently kept by a person answering by hand. That works at 25 users, is an agency at 2,500, and everything else in the product either degrades to templates or is commodity — so **the one differentiated thing is the one thing that does not scale.** No decision has been taken; this records the two candidates and what would have to be true of either.
+
+[D-060](../log/decision-log.md) put a second candidate on the table — **volunteers**, who a not-for-profit can ask and a company cannot. It is not an answer either: it moves the cost from payroll to safeguarding and vetting, and a volunteer pool is a recruitment problem with its own churn. Both candidates below stay open.
 
 **Peer response — users answer each other.** The instinct is right, because it is the only candidate where supply grows with demand instead of against it. Five things decide whether it is beautiful or merely annoying:
 
@@ -28,36 +30,41 @@ Not deferred by choice. It needs a named responsible adult and the founder is un
 4. **Reciprocity needs liquidity, which changes an old decision.** [D-014](../log/decision-log.md) refused matching because it *"solves a liquidity problem we don't have."* True then. A response market has one by construction, so that decision needs revisiting rather than citing.
 5. **Does responding count as production?** It is making something, for someone else, and it is not making *your* thing. Resets are excluded from every total ([D-040](../log/decision-log.md)); this is a different case and undecided. Getting it wrong in the generous direction pads the record that exists to dispute the laziness verdict.
 
-**Alternatives not yet costed:** a paid response pool (turns the margin problem into the business model) · routing to strangers who plausibly want the thing (a two-sided cold start, below) · accepting that rung one stays hand-run and capping growth to what one person can answer.
+**Alternatives not yet costed:** a volunteer pool ([D-060](../log/decision-log.md)) · a paid response pool (turns the margin problem into the business model, and needs money that does not exist) · routing to strangers who plausibly want the thing (a two-sided cold start, below) · accepting that rung one stays hand-run and capping growth to what one person can answer.
+
+**And before any of it, a smaller version of the same problem.** Phase 0 needs a guaranteed responder for 20–30 people and nobody is named. [D-047](../log/decision-log.md) additionally requires that the responder, the operator, and the exit interviewer are not the same person. That is a roster, not a mechanism, and it is unfilled.
 
 **Unlocks when** the concierge cohort has shown the ladder changes anything at all. Building a response market before knowing a response matters is the expensive mistake here.
 
-## Being rethought — is this a charity?
+## Decided — not-for-profit ([D-060](../log/decision-log.md))
 
-Undecided, raised August 2026, and it changes more than the tax status. The budget is near zero and stays there until 2029 ([D-058](../log/decision-log.md)), which is long enough that "we'll monetise later" is not a plan.
+Settled as direction in August 2026, and it changes more than the tax status. The legal form is not settled and is deliberately not researched yet.
 
-**What it would fix.** The unit-of-sale problem stops being urgent, because the payer becomes a funder rather than a user — and the payer mismatch in the risk register (users have time and no money) is *the normal condition* of a charity rather than a defect. More importantly it makes **volunteer responders askable**. *Spend ten minutes telling a young person what you'd change about the thing they made* is a request a charity can make and a company cannot, and it is the only answer to the response-scaling problem that doesn't require either a payroll or a reciprocity market.
+**What it fixes.** The unit-of-sale problem stops being urgent, because the payer becomes a funder rather than a user — and the payer mismatch in the risk register (users have time and no money) is *the normal condition* of a charity rather than a defect. More importantly it makes **volunteer responders askable**. *Spend ten minutes telling a young person what you'd change about the thing they made* is a request a charity can make and a company cannot, and it is the only answer to the response-scaling problem above that requires neither a payroll nor a reciprocity market.
 
-**Where it converges with [D-054](../log/decision-log.md).** If the interviews say the change moment is *someone competent present at the start* rather than *a reaction to something finished*, then what a volunteer supplies is not a response but company — and a charity recruiting volunteer mentors is an ordinary, well-understood model rather than a novel one. Two open threads pointing at the same shape is worth noticing, and worth not acting on until the interviews are in.
+**Why now rather than after the interviews.** Three unknowns were converging: response scaling, the payer mismatch, and [D-054](../log/decision-log.md). If the interviews say the change moment is *someone competent present at the start* rather than *a reaction to something finished*, then what a volunteer supplies is not a response but company — and a charity recruiting volunteer mentors is an ordinary, well-understood model. Three threads pointing at one shape is enough to fix the direction; it is not enough to fix the form, which is why the form stays open.
 
-**What it costs, and none of it is small.** Volunteers working with young people means safeguarding, vetting, and a named responsible adult — the requirement that already blocks the 16–18 segment ([D-046](../log/decision-log.md)), now load-bearing for the *supply side* too. Registering anything requires adults; **the specific legal form and the minimum age of a trustee need checking rather than assuming.** Grant funding is its own distribution problem with its own long cycles, and it wants the same evidence a school does. And a charity can still fail the only way that matters here — by nobody encountering it.
+**What it costs, and none of it is small.** Volunteers working with young people means safeguarding, vetting, and a named responsible adult — the requirement that already blocks the 16–18 segment ([D-046](../log/decision-log.md)), now load-bearing for the *supply side* too, where it is harder: one adult can cover a cohort, and a volunteer pool is a recruitment pipeline with a vetting step in it. Registering anything requires adults; **the specific legal form and the minimum age of a trustee need checking rather than assuming.** Grant funding is its own distribution problem with its own long cycles, and it wants the same evidence a school does. And a charity fails the only way that matters here exactly as a company would — by nobody encountering it.
 
-**What it does not change:** the next step. Whether this ends up a charity, a company, or neither, it needs thirty interviews first, and none of the above is knowable before them.
+**What it does not buy is time.** Trustees are adults and a bank account is a bank account, so [D-058](../log/decision-log.md)'s 2029 stands unchanged. This decides who to eventually ask, not when.
 
-## Parked — money
+**What it does not change:** the next step. It needs thirty interviews first, and none of the above is knowable before them — including whether the volunteer supply is real, which is a question about strangers and not about legal forms. The funder conversation is **not** a step 0 item: it wants the evidence step 0 exists to produce.
 
-Two locks, and only one opens by itself. The founder cannot hold a processor account ([D-018](../log/decision-log.md)), which a birthday fixes. And **there is no unit of sale** — *one project to completion* was proposed after completion had already been deleted ([D-028](../log/decision-log.md), [D-050](../log/decision-log.md)), so the obvious thing to charge for does not exist in this product by design.
+## Parked — taking money at all
 
-**Unlocks when both are true**, not either — and the first is **2029**, not next year ([D-058](../log/decision-log.md)). Three years is long enough that nothing may be sequenced behind it, and long enough that [the charity question above](#being-rethought--is-this-a-charity) is the more useful one to answer.
+Two locks, and only one opens by itself. Nobody here can hold an account that receives money ([D-018](../log/decision-log.md), [D-058](../log/decision-log.md)), which a birthday fixes in **2029** — and [D-060](../log/decision-log.md) does not shorten it, because a charity needs adult trustees and a bank account exactly as a company needs a processor. And **there is no unit** — *one project to completion* was proposed after completion had already been deleted ([D-028](../log/decision-log.md), [D-050](../log/decision-log.md)), so the obvious thing to charge for does not exist in this product by design. That problem survives the change of form: a grant application asks what a pound buys, in the same words a customer would.
 
-Candidates, all unvalidated, and each has to answer *what exactly did the buyer get*:
+**Unlocks when both are true**, not either. Three years is long enough that nothing may be sequenced behind it.
 
-| Candidate | The problem with it |
+What [D-060](../log/decision-log.md) does change is which candidates are live. **The individual is out** — the user is not the payer, which strikes the first two rows below as consumer products and leaves them only as a note on why the principles pushed this way in the first place.
+
+| Candidate | Status, and the problem with it |
 |---|---|
-| **A bounded purchase** — pay once, for a thing with an end | Fits the principles best: it is a purchase, not a standing obligation. But it needs an end, and the product refuses to define one ([D-028](../log/decision-log.md)). Something else would have to bound it — an audience rung, a number of guaranteed responses, a facilitated week |
-| **Membership** | Rent, and rent is a recurring obligation in a product whose central claim is that nothing is owed ([D-042](../log/decision-log.md)). Not impossible, but it fights the thesis, and the churn data in demand §4 says subscriptions in this category retain badly anyway |
-| **Per-seat institutional** | The only one with a buyer who has a budget, and it is downstream of everything: schools want evidence, evidence needs users, users need a channel ([D-044](../log/decision-log.md)) |
-| **Facilitated premium** | Sells the thing that already does not scale (see below). Charge for it and the margin problem becomes the business model rather than a cost line |
+| **Grant or funder** | The live one under [D-060](../log/decision-log.md), and unexamined. Long cycles, and it wants the same evidence a school does — so it is downstream of users, who are downstream of a channel ([D-044](../log/decision-log.md)) |
+| **Per-seat institutional** | Still live, and compatible with a not-for-profit. Same dependency as above, plus a procurement path |
+| ~~**A bounded purchase**~~ — pay once, for a thing with an end | Struck as a consumer model. It fitted the principles best — a purchase, not a standing obligation — and still needed an end the product refuses to define ([D-028](../log/decision-log.md)). Kept visible because *bounded, not owed* is the shape any future funded place should take |
+| ~~**Membership**~~ | Struck. It was rent, and rent is a recurring obligation in a product whose central claim is that nothing is owed ([D-042](../log/decision-log.md)); the churn data in demand §4 said subscriptions in this category retain badly anyway |
+| **Facilitated premium** | Sells the thing that already does not scale. Under a not-for-profit this reappears as *funded facilitation* — someone pays for the hours a volunteer would otherwise donate — which is the same margin problem with a different name on it |
 
 **Kept ready:** one entitlement seam ([D-053](../log/decision-log.md)), and nothing else. No provider integration, no billing tables, no plan model until there is a plan.
 
@@ -72,12 +79,12 @@ Deferred wholesale ([D-033](../log/decision-log.md)). A social component at sign
 | Idea | Unlocks when |
 |---|---|
 | **Upper rungs of the audience ladder** — routing a finished thing to strangers who plausibly want it | Rung one demonstrably changes ship rate, and we can identify a fitting stranger without it feeling like spam |
-| **Payments, and the whole commercial layer** | The founder can hold a processor account ([D-018](../log/decision-log.md)). **And a unit of sale exists** — *one project to completion* is not available, since completion was deleted ([D-028](../log/decision-log.md), [D-050](../log/decision-log.md)). Both, not either |
+| **Taking money at all, in any form** | Someone can hold the account that receives it ([D-018](../log/decision-log.md), [D-058](../log/decision-log.md)) — 2029, and a charity's trustees are adults too ([D-060](../log/decision-log.md)). **And a fundable unit exists** — *one project to completion* is not available, since completion was deleted ([D-028](../log/decision-log.md), [D-050](../log/decision-log.md)). Both, not either |
 | **A native card, iOS first** | Installed web icons are demonstrably *not* being opened, and the missing tap is the reason ([D-059](../log/decision-log.md)). Costs a Mac, $99/year, and an adult-held Apple account — so 2029 unless someone else holds it ([D-058](../log/decision-log.md)). The sibling repo has costed this port in detail; its conclusion still applies — never port unverified behaviour to a second platform |
 | **Repeat projects** | 25% start something else within 14 days unprompted, **at a higher rate among users whose thing got a response**. The only mechanism the principles permit is the response itself ([D-042](../log/decision-log.md)) — a late one is shown as news with nothing attached (`FR-067`). If return doesn't track responses, there's no lever here, and that's worth finding out before building one |
 | **Artifacts that outlive the account** — export, stable URL, structured data | Users try to take the receipt somewhere we don't control. Low priority while the artifact is a by-product ([D-026](../log/decision-log.md)) |
 | **Handoff from existing blockers**, so a blocked app surfaces a mission | The idle moment proves to be how users actually enter, rather than a scheduled session |
-| **A full native phone app**, beyond the card | Measured work that people genuinely try to do on a phone and can't. The card ([D-052](../log/decision-log.md)) is deliberately not this: it holds the trigger, and the laptop does the work |
+| **A full native phone app**, beyond the home-screen surface | Measured work that people genuinely try to do on a phone and can't. The installed surface ([D-059](../log/decision-log.md)) is deliberately not this: it holds the trigger, and the laptop does the work |
 | **Facilitated cohorts** with human review | Facilitator minutes per active user are measured and bounded — the line between a product and an agency |
 | **Templates beyond the initial six** | The existing six show different ship rates, so we know what makes a template work |
 
@@ -96,4 +103,4 @@ Verified contribution records (needs someone who says they'd trust it) · employ
 - **AI that produces the user's deliverable** — most tempting to ship, most reliably destroys the value ([D-005](../log/decision-log.md))
 - **Promising happiness, income, or the removal of boredom** — the first two are unfalsifiable, the third is a lie ([D-022](../log/decision-log.md))
 - **A scheduled reminder of any kind** — a re-entry prompt is an obligation mechanic whatever its wording, and sanitising the copy is what hid it for four decisions ([D-049](../log/decision-log.md))
-- **Anything cumulative on the home-screen card** — a count seen without being chosen is a streak by another name ([D-049](../log/decision-log.md), `FR-054`)
+- **Anything cumulative on the home-screen surface** — a count seen without being chosen is a streak by another name ([D-049](../log/decision-log.md), `FR-054`)

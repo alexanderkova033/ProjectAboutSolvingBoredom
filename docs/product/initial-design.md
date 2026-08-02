@@ -27,7 +27,7 @@ Goals and non-goals are [requirements](requirements.md) §4; principles are §3 
 
 ### 3.1 Surfaces
 
-**Card** — the phone's home screen, one mission, no app opened. **Now** — the same mission on the laptop, with controls to start, swap, shrink, or flag a blocker. No selector. **Project** — what's being made, stages, things made. **Evidence** — what was made, what shipped, what came back. **Profile** — privacy, notifications, export, deletion. Administrators get **Cohort**. A **Crew** surface is specified but unscheduled ([D-033](../log/decision-log.md)).
+**Home screen** — an icon the user installs, opening straight onto one mission and nothing else ([D-059](../log/decision-log.md)). **Now** — the same mission on the laptop, with controls to start, swap, shrink, or flag a blocker. No selector. **Project** — what's being made, stages, things made. **Evidence** — what was made, what shipped, what came back. **Profile** — privacy, notifications, export, deletion. Administrators get **Cohort**. A **Crew** surface is specified but unscheduled ([D-033](../log/decision-log.md)).
 
 ### 3.2 Key flows
 
@@ -37,13 +37,17 @@ Goals and non-goals are [requirements](requirements.md) §4; principles are §3 
 
 **No scope screen and no date screen exist.** The 72-hour first ship keeps work small without anyone declaring a size; the absence of a deadline is the point, not an omission.
 
-**The loop.** One mission is already on screen. The card carries a title, an instruction, and one definition of done — but **no duration**, because telling someone a task takes twenty minutes gives them a reason to postpone it. The engine still records one and sizes the next mission from it; the user never sees the number, on any surface, including notifications ([D-048](../log/decision-log.md)). Start, swap, shrink, or say what's in the way. When it's done the next is right there. Stopping needs no action and produces no comment.
+**The loop.** One mission is already on screen. It carries a title, an instruction, and one definition of done — but **no duration**, because telling someone a task takes twenty minutes gives them a reason to postpone it. The engine still records one and sizes the next mission from it; the user never sees the number, on any surface, including notifications ([D-048](../log/decision-log.md)). Start, swap, shrink, or say what's in the way. When it's done the next is right there. Stopping needs no action and produces no comment.
 
-**The home-screen surface** ([D-049](../log/decision-log.md), [D-059](../log/decision-log.md)). An icon the user installs, opening straight onto the current mission — title and definition of done, and nothing else. **No count, total, streak, or elapsed time**: the weekly mirror is something the user goes and looks at, while this sits where they look fifty times a day without choosing to, and that is the exact condition under which a number stops being a record and becomes a demand. Opening it **starts**; swapping is a smaller, secondary target, because a surface whose cheapest gesture is *give me a different one* teaches swapping (`FR-056`). It draws from the cached template library, so it works with no network and no account, is never empty, and never shows an error (`FR-055`).
+**The home-screen surface** ([D-049](../log/decision-log.md), [D-059](../log/decision-log.md), [D-061](../log/decision-log.md)). An icon the user installs and puts on the first page, opening straight onto the current mission — title and definition of done, and nothing else. **No count, total, streak, or elapsed time**: the weekly mirror is something the user goes and looks at, while this sits where they look fifty times a day without choosing to, and that is the exact condition under which a number stops being a record and becomes a demand. Opening it **starts**; swapping is a smaller, secondary target, because a surface whose cheapest gesture is *give me a different one* teaches swapping (`FR-056`). It draws from the cached template library, so it works with no network and no account, is never empty, and never shows an error (`FR-055`).
 
 It is a **pull surface**, and that is the whole argument for it. **The user puts it there** — it is placed, not delivered, and dragging it off takes two seconds with nothing asking why. That is the difference from a notification, which arrives whether or not it was wanted. It cannot interrupt an open mission (`NFR-012`); it is there when the phone is picked up and does nothing when it isn't. That is the only shape of re-entry the principles permit — and it is a surface rather than a reason, so it removes an excuse and answers nothing about motivation.
 
-**Be honest about what was lost.** The intended surface was a live card showing the mission itself, with nothing to open — and the whole force of *one thing already on the screen* came from the word *already*. An icon is one tap short of that, and one tap is exactly the gap this product exists to close. Native is the only way to close it and native is unreachable ([D-059](../log/decision-log.md)). **Measure the cost rather than assuming it away:** if installs happen and openings don't, that tap is the reason, and it is the strongest argument that will ever exist for buying a Mac.
+**Be honest about what was lost — and about what wasn't** ([D-061](../log/decision-log.md)). The intended surface was a live card showing the mission itself, with nothing to open, and the whole force of *one thing already on the screen* came from the word *already*. **That does not survive.** An icon says *this exists*, never *do this*, so the decision a mission exists to remove sits back on the user until they tap, and native is the only way to close it ([D-059](../log/decision-log.md)).
+
+**What survives is placement.** An icon on the *first* home-screen page is in the visual field at unlock, without being looked for — which is the property [D-049](../log/decision-log.md) was actually buying, and choosing page one is a more deliberate act of placing than leaving it in an app drawer. So the install asks for it once, in plain words, with the reason, and never asks again (`FR-057`). It then competes for that page against applications engineered to be tapped, carrying no badge and no count, which means it wins on placement or not at all.
+
+**Measure the cost rather than assuming it away.** If installs happen and openings don't, two different things could be true — it was never on page one, or it was and nobody wanted it — and **the product cannot see which**, because it cannot see where its own icon sits. So the exit interview asks where they put it and whether they noticed it. Without that answer a dead icon is uninterpretable; with it, and if the answer is *page one, saw it, didn't open it*, the missing tap is the reason and it is the strongest argument that will ever exist for buying a Mac.
 
 **What makes the session pleasant** ([D-045](../log/decision-log.md)) — five mechanisms, each a consequence of something already decided:
 
@@ -145,7 +149,7 @@ Three data classes. **Private:** email, mood records, reflections, moderation re
 
 Moderation runs before publication — file-type restrictions, malware scanning, reporting, blocking, an audit trail, rate limits. Model output is constrained by prohibited categories, risk classification, schema validation, and prompt-injection resistance.
 
-**Nothing is scheduled** ([D-049](../log/decision-log.md)). The card is where a next mission appears, silently, and the only thing the product sends unbidden is a response that arrived (`FR-067`) — news, with nothing attached.
+**Nothing is scheduled** ([D-049](../log/decision-log.md)). The home-screen surface is where a next mission appears, silently, and the only thing the product sends unbidden is a response that arrived (`FR-067`) — news, with nothing attached.
 
 > Good: *Someone read the thing you sent on Tuesday and wrote back.*
 > Bad: *You are losing your streak.* / *Only 4 days left.* / *Your next step takes 15 minutes* — a duration, on the surface most likely to be read as a demand ([D-048](../log/decision-log.md)).
@@ -161,7 +165,7 @@ Safeguarding obligations, and why the minor segment is **blocked** rather than s
 | Network drops mid-submission | Idempotent; the attempt is recoverable |
 | A ship receives no response | Adaptation drops a rung to one with a guaranteed responder |
 | A first ship gets no response | Rung one's responder is a named person, not a pool. If unreachable, the ship is held rather than sent onward |
-| The card has no network, or no account yet | Draws from the local template library (`FR-055`). Never empty, never an error — an error on a home screen is worse than a stale mission |
+| The home-screen surface has no network, or no account yet | Draws from the local template library (`FR-055`). Never empty, never an error — an error on a home screen is worse than a stale mission |
 
 ### 4.5 Testing
 
@@ -204,10 +208,10 @@ What the SapGlance work still contributes is a rule rather than a codebase: its 
 ## 8. Open questions
 
 1. **Where does anyone encounter this?** No channel is validated and there's no search demand ([D-044](../log/decision-log.md)). Nothing else here matters if this has no answer.
-2. **Does a late response bring anyone back?** The only re-entry *reason* the principles permit, and a guess. The card ([D-049](../log/decision-log.md)) is a re-entry *surface* and does not answer this — it makes returning cheap and supplies no motive.
-3. **Does an installed icon get opened?** The live card was the point and iOS won't allow one ([D-059](../log/decision-log.md)). If people install and don't open, the missing tap is why — and that is the only argument that would ever justify the cost of going native.
+2. **Does a late response bring anyone back?** The only re-entry *reason* the principles permit, and a guess. The home-screen icon ([D-049](../log/decision-log.md), [D-061](../log/decision-log.md)) is a re-entry *surface* and does not answer this — it makes returning cheap and supplies no motive.
+3. **Does an installed icon get opened — and if it doesn't, was it ever on the first page?** Two failures look identical from inside the product and only one of them is about motive ([D-061](../log/decision-log.md)), so this is asked in the exit interview rather than measured. If it was placed, seen, and still not opened, the missing tap is why — and that is the only argument that would ever justify the cost of going native ([D-059](../log/decision-log.md)).
 4. How large must a first response be before it changes how someone sees themselves?
-5. Does reclaimed time sell, or does the finished thing sell — and what is the unit of sale, now that completion isn't one ([D-050](../log/decision-log.md))?
+5. Which of reclaimed time and the finished thing is legible to a funder — and what is the fundable unit, now that completion isn't one ([D-050](../log/decision-log.md), [D-060](../log/decision-log.md))?
 6. Which project category ships fastest while still feeling like the user's own — and which survive the third template criterion at all?
 7. Does anyone actually want a crew, or is it a barrier dressed as a feature?
 8. How much facilitation does an acceptable ship rate require?
