@@ -48,17 +48,17 @@ That's the wager. It's falsifiable, and the plan to falsify it is written down.
 
 ---
 
-## Current state — planning, pre-code
+## Current state — stopped
 
-**There is no software yet. This repository is a product thesis.**
+**This will not be built** ([D-062](docs/log/decision-log.md)). Everything above describes a product that does not exist and now won't. No software was ever written.
 
-*Freathe rhymes with teeth.* Whether that survives contact with ten strangers decides whether it keeps the name ([D-015](docs/log/decision-log.md)).
+It wasn't the market case that killed it — [demand](docs/product/demand.md) §8 was never run, so nothing here gets to be read as its result. It stopped on noticing what it was *for*. The project started after watching a video essay, from a real urge to make some contribution, and that urge was then handed to a personal statement to carry. A thing that has to be impressive before it's allowed to be real gets planned instead of made, and 62 decisions with nothing built is what that looks like from the inside. The documents ban exactly this mechanic four screens deep in the product ([D-024](docs/log/decision-log.md)) while it operated on the project from the outside the whole time.
 
-Written: the market case, the requirements, an initial design, and the build method. Next: a cohort run entirely by hand, with predictions committed to git *before* it starts. Then a first release, then reach, then institutional pilots.
+**What survives is the writing** ([D-063](docs/log/decision-log.md)). The strongest idea here never needed software to be true: *"I'm just lazy"* is the last link in the chain, and it's a **verdict rather than a cause** — the only link phrased as an identity, which is what makes it a stable loop rather than a bad week ([D-027](docs/log/decision-log.md)). That, the argument against blockers, and the rule that only the consequence you *can't already see* is worth showing anyone, are an essay. They were always an essay.
 
-Nobody has used this. Every number here is a hypothesis with a threshold attached, and [demand](docs/product/demand.md) §8 states what evidence would kill it.
+Nobody ever used this. Every number in these files is a hypothesis with a threshold attached, and not one threshold was tested.
 
-Five things aren't known, in order of how much damage each does:
+Five things were never found out, in order of how much damage each would have done:
 
 - **where anyone encounters this at all.** Nobody searches for it, so there's no channel to buy — only the places people describe the problem in their own words ([D-044](docs/log/decision-log.md));
 - whether anything brings a person back once the first thing is finished. Every conventional retention trick is banned here on purpose, which leaves one candidate: the response ([D-042](docs/log/decision-log.md)). what sits on the home screen is a *surface*, not a reason — put it on the first page and it's seen every unlock, which removes the excuse of having forgotten and supplies no motive whatsoever ([D-049](docs/log/decision-log.md), [D-061](docs/log/decision-log.md));
@@ -66,9 +66,9 @@ Five things aren't known, in order of how much damage each does:
 - how big that response has to be before it changes how someone sees themselves;
 - whether anyone funds it. That the user is not the payer is settled ([D-060](docs/log/decision-log.md)), which moves the question rather than answering it: a funder wants the same evidence a school does, on the same slow cycles, and there is still no fundable unit — completion was deliberately deleted and can't be the thing anyone buys ([D-050](docs/log/decision-log.md)).
 
-And three that can't be known yet, all downstream of the founder being 15: the first cohort runs unpaid, so nothing it produces is evidence anyone will fund this ([D-018](docs/log/decision-log.md)); it runs adults-only, because a minor can't be the responsible adult a minor cohort requires — which closes the one channel that came with real access ([D-046](docs/log/decision-log.md)); and every account that could receive money opens in 2029, including a charity's, since trustees are adults too ([D-058](docs/log/decision-log.md), [D-060](docs/log/decision-log.md)).
+And three that couldn't have been, all downstream of the founder being 15: the first cohort runs unpaid, so nothing it produces is evidence anyone will fund this ([D-018](docs/log/decision-log.md)); it runs adults-only, because a minor can't be the responsible adult a minor cohort requires — which closes the one channel that came with real access ([D-046](docs/log/decision-log.md)); and every account that could receive money opens in 2029, including a charity's, since trustees are adults too ([D-058](docs/log/decision-log.md), [D-060](docs/log/decision-log.md)).
 
-There is also nobody to dogfood it. The founder is below the product's own minimum age, so every claim here about how a session *feels* is reasoned rather than felt.
+There was also nobody to dogfood it. The founder is below the product's own minimum age, so every claim here about how a session *feels* is reasoned rather than felt — which, in the end, was true of the whole thing.
 
 ## The documents
 
