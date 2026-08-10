@@ -96,6 +96,12 @@ Reversed decisions are marked `Superseded`, never deleted — the wrong ones are
 
 ## Work log
 
+**10 August 2026 — Citations checked; the essay reaches draft 8.** No decision.
+
+Every source in the essay was verified against the journal record rather than against memory: Mikulincer 1986 and 1988, Diener & Dweck 1978 and 1980, Danckert & Elpidorou 2023, Tam & Inzlicht 2024. Volumes, issues, pages and the substance of each claim hold. One hedge survives and is now narrower: Bandura's four sources of efficacy information are confirmed, but *performance accomplishments are the most dependable* is taken from secondary summaries, and the paper itself still needs reading before anything is published. Two numbers were made exact — 1,223 participants, six of seven experiments preregistered.
+
+Worth recording why this mattered enough to spend an hour on. The essay's one section that leans on somebody else's evidence is also the only place it could embarrass itself, and this project spent 64 decisions insisting that a claim carries its cost with it. A citation nobody checked would be the last thing written here failing the standard of everything before it.
+
 **6 August 2026 — A correction, and the first thing anyone gets given.** D-064, and a draft essay in `essay/`.
 
 D-058 claimed nobody could dogfood this and therefore every statement here about how making something feels was reasoned rather than felt. Half of that was true. The other half was false while a folder of poems sat next to it saying otherwise — the bench and the phone, *what is even the purpose of trying*, going outside to stand in one place like a freak, *when the clock strikes Have*. Four of this project's load-bearing ideas, written first-hand, before the documents theorised them. They were not counted as evidence because they were not in a genre that looked like evidence. That is D-062's capture again, one floor down, and it went unnoticed twice.
