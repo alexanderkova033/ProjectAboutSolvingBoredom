@@ -2,13 +2,37 @@
 
 *Draft 14 — 20 August 2026*
 
-A man sits on a bench looking at his phone. Fancy cars. A streamer making sound. A classmate who won the lottery — *lucky bastard*. Some children breaking pottery. The finger flicks.
+> A man is sitting on a bench;  
+> and he is looking at the phone —  
+> he scrolls and sees:  
+> some fancy cars driving around,  
+> a streamer making sound,  
+> a classmate who won a lottery,  
+> "Huh, lucky bastard"  
+> some children breaking pottery  
+> and mocking their own mate,  
+> "Ah, this is not cool"  
+> the finger flicks.
+>
+> But the moon begins to rise,  
+> there's only redness in his eyes,  
+> so he goes home  
+> and crawls to bed  
+> and then gets up to see another day,  
+> he eats some artificial bread,  
+> then drives to work,  
+> it is New York —  
+> "talking is too expensive"  
+> and then the sun begins to set.
+>
+> A year goes by; it comes to him,  
+> but he winds up —  
+> no, he is not alone:  
+> no, he is with his phone.  
+> Who is he?  
+> Just a guy.
 
-The moon comes up. He goes home, crawls into bed, gets up to see another day. Artificial bread. Work.
-
-A year goes by. He is not alone. He is with his phone.
-
-That's a poem I wrote. I thought it was about a sad man in New York. It's a diagram.
+That's a poem I wrote. I called it *Weirdo*; it ends *just a guy*. I thought it was about a sad man in New York. It's a diagram.
 
 You didn't waste four hours last night. You spent them. You just don't have anything to show for it.
 
@@ -20,7 +44,7 @@ Then you say the thing. Usually not out loud.
 
 Four words, and they close the case.
 
-Laziness is not what happened to your evening. Something else did, and the sentence is what you say afterwards to stop having to look. This essay is about what actually happened, and what it would take to overturn the verdict.
+Laziness is not what happened to your evening. Something else did, and the sentence is what you say afterwards to stop having to look.
 
 I tried to fix all this with an app. It lasted three days, and by the end the app had become the thing the poem was about.
 
@@ -30,11 +54,9 @@ You never hear *I'm afraid to make a website*. You hear *I couldn't be bothered*
 
 Those aren't the same claim. One is about a feeling in a moment. The other is about what kind of person you are. People say the second while the first is what's happening, because the second costs nothing to say.
 
-And of everything here, it's the only part shaped like an identity.
-
 A bad evening is an event, and events don't predict anything. *I'm someone who doesn't do things* is a general fact, and general facts apply in advance. You're not explaining last night. You're explaining the next four hundred nights — and once you've done that, there's no reason left to test it.
 
-There is research that makes the distinction less imaginary than it sounds. In experiments going back to the seventies, people are given problems that can't be solved, then a solvable one afterwards. What predicts how badly they do on the second isn't only the failure — it's the explanation attached to it. Mikulincer ran this several ways in the eighties: when failure got blamed on something broad and lasting, the damage travelled to a task with nothing to do with the first. Narrow or temporary explanations mostly stayed put. Diener and Dweck found the same shape in children in 1978 — the ones who fell apart cited lack of ability, and the ones who didn't weren't more talented, they were busy on the problem instead of on themselves.
+In experiments going back to the seventies, people are given problems that can't be solved, then a solvable one afterwards. What predicts how badly they do on the second isn't only the failure — it's the explanation attached to it. Mikulincer ran this several ways in the eighties: when failure got blamed on something broad and lasting, the damage travelled to a task with nothing to do with the first. Narrow or temporary explanations mostly stayed put. Diener and Dweck found the same shape in children in 1978 — the ones who fell apart cited lack of ability, and the ones who didn't weren't more talented, they were busy on the problem instead of on themselves.
 
 These are lab tasks with planted explanations, so take the narrow claim: whether you file a bad night as an event or as a fact about yourself is not a neutral choice of words, and it keeps turning up in what people do next.
 
@@ -44,7 +66,7 @@ Walk back from it. You're bored. Consuming is easier than making, much easier, a
 
 Then you're bored again.
 
-That's the loop, and it's why *just try harder* is such a strange thing to say to someone standing inside it. So the rest of this goes after the two boxes nobody touches: what boredom actually is, and what would overturn the verdict.
+That's the loop, and it's why *just try harder* is such a strange thing to say to someone standing inside it. So the rest of this goes after the two parts nobody touches: what boredom actually is, and what would overturn the verdict.
 
 ## An alarm with no address on it
 
@@ -68,19 +90,17 @@ But removing is subtraction, and subtraction doesn't travel. You get an empty fi
 
 There's a version of the same advice that doesn't even need an app.
 
-> *"Get off your phone, you're wasting your life"*
-> *"Go outside, it is so nice there."*
+> *"Get off your phone, you're wasting your life"*  
+> *"Go outside, it is so nice there."*  
 > No.
 
 Everyone here is fighting for less. Less screen time, fewer hours, smaller numbers. Not one of them hands the time back as anything.
 
-And every one of them rests on the same assumption: that the phone is the thief, so taking it away returns the evening. I believed that hard enough to build on it for three days. It's wrong — not because phones are innocent, but because the phone is one thief of several, and mine turned out not to be a phone.
+And every one of them rests on the same assumption: that the phone is the thief, so taking it away returns the evening. I believed that hard enough to build on it for three days. It's wrong — not because phones are innocent, but because the phone is one thief of several.
 
 ## Discipline is the wrong tool
 
-The version we get sold has a shape, and the shape is the problem.
-
-It says: choose the destination first, then pay for it now. The grind, the forcing, the hours you don't want — on the promise that the destination shows up later.
+The version we get sold says: choose the destination first, then pay for it now. The grind, the forcing, the hours you don't want — on the promise that the destination shows up later.
 
 The consequence is at the front. The reward is a rumour.
 
@@ -88,25 +108,43 @@ That's a salary. Put in the hours at a rate somebody else set and cash out at th
 
 That's force aimed straight at what you actually want. Force needs a supply. Yours runs out, and it runs out on a Tuesday for no reason you can name, and then the whole thing collapses at once and you've got another entry for the pile.
 
-Turn it around. You don't get through a path in order to arrive at a success. You do the thing, and the success is what's left behind by having done it. The goal stops causing everything and becomes the residue — far easier to run, for a reason that has nothing to do with willpower. A consequence doesn't need managing. It arrives on its own, and only asks that you keep doing the thing.
-
 So stop taking the salary and run the business.
 
-Which is the first page of this essay again. You didn't waste four hours last night, you spent them — every evening is spending, and the only question is what it bought. Four hours bought a feeling that stopped when you put the phone down. The same four hours buys a bad first draft that is still there in the morning.
+Which is where this started. You didn't waste four hours last night, you spent them — every evening is spending, and the only question is what it bought. Four hours bought a feeling that stopped when you put the phone down. The same four hours buys a bad first draft that is still there in the morning.
 
-That's what a business does with money. It spends to grow, and the spending isn't a cost it tolerates on the way to somewhere better — it *is* the mechanism. What you put into a thing is what gets bigger. Nothing grows that you don't spend on, and nothing you spend on is guaranteed to come back.
+That's what a business does with money. It spends to grow, and the spending isn't a cost it tolerates on the way to somewhere better — it *is* the mechanism. Nothing grows that you don't spend on, and nothing you spend on is guaranteed to come back. You don't get through a path in order to arrive at a success; you do the thing, and the success is what's left behind.
 
-The more you spend the bigger you grow, and the harder you fall. That's the deal and it's a real one. It's also the good half. Nobody has ever described a salary as exciting.
+The more you spend the bigger you grow, and the harder you fall. That's the deal, and it's the good half. Nobody has ever described a salary as exciting.
 
 So mind your own fucking business. Both ways round: it is yours, and nobody else is coming to run it.
 
-Now the objection, because it's the one everybody reaches for. What about work nobody wants to do? Exams. The essay due Friday. Surely that's what discipline is for.
+There's a poem I wrote about an office after the sun has gone down. It's called *Unsuccessful*.
 
-That work does get done, and I'm not going to pretend otherwise. But look at what does it. A habit, which runs without deciding. A deadline somebody else set. A library you can't scroll in, a friend expecting you at four. And the consequence becoming real — not as a threat someone is holding over you, but as something you can see clearly enough that not revising becomes the strange option. That's August turning up early, in your head.
+> So, choices are circling like flies —  
+> they bump into Successful highs:  
+> these highs make you feel undone,  
+> but bring a pound to this working man;  
+> The Discipline starts flowing in  
+> the callused veins: it makes people mean,  
+> rather thin, and even bluntly mad,  
+> though fat with money — can't be bad.
 
-None of those is force. Habits and structures are what you build so you don't have to spend willpower; the consequence landing changes what you want rather than overriding it. So the thing I'm calling the wrong tool is narrower than the whole word *discipline*. It's force aimed at a distant reward and applied now, on the promise that it pays later. That's the version with a supply, and supplies run out.
+Capital D. It arrives *in the veins*, from outside, and what it pays out is a pound. Then the poem finishes:
 
-There's still a distinction worth being exact about, because there's a trapdoor here. *I want to have written a story* is a want for a result. *I want to write* is a want for the activity itself — already present, already yours, and diverted somewhere in the gap between arriving and acting.
+> For whilst I'm sitting on this chair,  
+> I know what I can never say is fair:  
+> I'm tired of these bloody rolling hours.  
+> So, maybe — I shall buy her flowers.
+
+Not a better wage. Flowers — money spent on something with no return in it at all. The escape from a salary was never a bigger one.
+
+Now the objection. What about work nobody wants to do? Exams. The essay due Friday. Surely that's what discipline is for.
+
+That work does get done, and I'm not going to pretend otherwise. But look at what does it. A habit, which runs without deciding. A deadline somebody else set. A library you can't scroll in, a friend expecting you at four. And the consequence becoming real — not as a threat someone is holding over you, but as something you can see clearly enough that not revising becomes the strange option.
+
+None of those is force. Habits and structures are what you build so you don't have to spend willpower; the consequence landing changes what you want rather than overriding it. The wrong tool is narrower than the whole word *discipline* — it's force aimed at a distant reward and applied now, on the promise that it pays later.
+
+There's a trapdoor here. *I want to have written a story* is a want for a result. *I want to write* is a want for the activity itself — already present, already yours, and diverted somewhere in the gap between arriving and acting.
 
 *I want to write. It's nine o'clock. I don't write.*
 
@@ -116,19 +154,25 @@ So the question changes. It stops being *how do I force myself towards what I wa
 
 I wrote this before I understood it:
 
-> Now I have become the Will:
+> Now I have become the Will:  
+> I want to become this,  
+> I want to achieve that.
 >
-> I will remember what I wanted
-> staring at the mirror in my bathroom —
-> ticking off stories I had written
-> on my forehead,
+> I will remember what I wanted  
+> staring at the mirror in my bathroom —  
+> ticking off stories I had written  
+> on my forehead,  
 > when the clock strikes Have.
+>
+> In the slipping world  
+> reflected in the mirror of my eyes —  
+> a life of dreams
+>
+> Will Have escaped my grip.
 
-Will and Have. Two tenses, neither of them now. *I will* is the countdown, the deadline, the plan. *I have* is the badge, the certificate, the portfolio. Both pull you out of the only place anything gets made.
+Two tenses, neither of them now. *I will* is the countdown, the deadline, the plan. *I have* is the badge, the certificate, the portfolio. Both pull you out of the only place anything gets made.
 
-And what you have achieved keeps becoming ordinary. Having done it doesn't.
-
-There's a hard edge here and I don't want to soften it. You are free to do whatever you want. You are not free of the consequences. Nothing is owed and nothing is required, but the evenings still went somewhere, and something is still true at the end of the week.
+You are free to do whatever you want. You are not free of the consequences. Nothing is owed and nothing is required, but the evenings still went somewhere, and something is still true at the end of the week.
 
 ## A verdict needs evidence
 
@@ -144,15 +188,13 @@ So the verdict doesn't merely survive counter-evidence. It processes it. You mak
 
 Which means evidence alone isn't the whole problem.
 
-Maybe you have to get comfortable enough to make yourself uncomfortable enough with the person you say you are to destroy him.
+Maybe you have to be comfortable enough to make yourself uncomfortable with the person you say you are — uncomfortable enough to destroy him.
 
 Not the person. The verdict.
 
 *I'm lazy. I'm not someone who does things. That's just me.*
 
 A bad identity is comfortable precisely because it has already answered the question. If laziness is simply what you are, tonight needs no explanation and tomorrow needs no experiment. Overturn it and the question opens again, and you have to find out what you do instead.
-
-So the order matters: enough security to tolerate being wrong about yourself, then enough discomfort to put the verdict on trial, then enough evidence to kill it.
 
 Which is why one good night overturns nothing, and why the only advice I trust here is so unglamorous. Not *make something impressive*. Make something small, and then do it again, because a single evening is easy to dismiss and a count is not. You can argue with a good Tuesday. Seven of them, written down, is more work to explain away than to accept.
 
@@ -188,7 +230,7 @@ The capture was the fault.
 
 ## Capture
 
-What I mean by the word, in one sentence: capture is when something takes the urge to make and settles it, so the urge goes quiet and nothing gets made.
+Capture is when something takes the urge to make and settles it, so the urge goes quiet and nothing gets made.
 
 The urge is what's capturable, because wanting to do something you haven't done yet is unresolved, and unresolved is uncomfortable, and anything that resolves it will do.
 
@@ -200,29 +242,23 @@ The credential resolves it by promising the thing will matter later, once it's i
 
 Planning resolves it with the feeling of progress — the hardest of the four to catch, because from the inside it is indistinguishable from work.
 
-Four routes, one destination. The tension goes. The thing doesn't get made. This is a category I've drawn, not something anyone has measured. I've been down one of these routes and can show you the record; the rest is a lens I'm offering.
+Four routes, one destination. This is a category I've drawn, not something anyone has measured. I've been down one of these routes and can show you the record; the rest is a lens I'm offering.
 
 Which means I had the loop wrong the first time:
 
 boredom → scrolling → nothing made → no evidence → I'm just lazy
 
-One box changes, and one gap opens.
+Scrolling becomes capture, because scrolling is one route of four. The harder part I only noticed once the definition was written down: capture needs an urge to work on, and boredom isn't one. Boredom is only the signal that this isn't working.
 
-The box is easy. Scrolling becomes capture, because scrolling is one route of four.
-
-The gap is harder, and I only noticed it once the definition was written down. Capture needs an urge to work on — and boredom isn't one. Boredom is only the signal that this isn't working. So the two don't sit next to each other as neatly as I'd drawn them.
-
-What boredom does is open a space, and what fills the space isn't fixed. Sometimes an urge to make something forms there. Sometimes nothing does, and it was never going to be that kind of evening. You can't tell in advance which one you're in. So the feed's real damage isn't only that it settles an urge you had — it's that it closes the space before you find out whether you had one.
+What boredom does is open a space, and what fills it isn't fixed. Sometimes an urge to make something forms there. Sometimes nothing does, and it was never going to be that kind of evening. You can't tell in advance which one you're in. So the feed's real damage isn't only that it settles an urge you had — it's that it closes the space before you find out whether you had one.
 
 boredom → an open evening → capture → nothing made → no evidence → I'm just lazy
-
-That's the honest version. Capture only has something to grip once the space has produced something. When it hasn't, the feed still takes the evening; it just takes it more quietly, and leaves you with even less to point at.
 
 And the credential route is worth separating from the others, because it isn't a substitution. It's a conversion. *I want to make this* becomes *I want to have made something impressive*, and the urge doesn't die — it moves out of doing and into having.
 
 Which is the poem. Will and Have. I had written the diagnosis before I had the diagnosis.
 
-So consumption isn't the problem by itself. Capture is. Sometimes consumption does the capturing — the video-switching research is a good picture of exactly that — which is why blocking an app was only ever going to cover one route of four.
+So consumption isn't the problem by itself. Capture is. Sometimes consumption does the capturing — the video-switching research is a good picture of exactly that — which is why blocking an app was only ever going to cover one route.
 
 Mine wasn't even a phone.
 
@@ -232,11 +268,11 @@ Two more things from that folder, because both are the same shape.
 
 I wrote in the project's own log that nobody involved could use the thing, and that everything I'd said about how making something feels was reasoned rather than felt. That was false, and the disproof was three files away. The man on the bench. A poem ending *what is even the purpose of trying*. Another about going outside to stand in one place like a freak, breathing. I had the felt thing the whole time and wrote a market thesis instead, because a market thesis looked serious and a poem didn't. Capture again, one floor down.
 
-And I thought I was doing science — thresholds fixed in advance, a written statement of what would kill the idea, a rule that I write down what I expected before running anything so I couldn't rationalise the result afterwards. That was sincere, and it wasn't wasted. But the apparatus I'd borrowed could only tell me whether an idea was wrong. Art asks a different question — whether something lands — and that one you can only answer by handing it to somebody. I spent three days preparing and handed over nothing.
+And I thought I was doing science — thresholds fixed in advance, a written statement of what would kill the idea. That was sincere, and it wasn't wasted. But the apparatus I'd borrowed could only tell me whether an idea was wrong. Art asks whether something lands, and that you can only answer by handing it to somebody. I spent three days preparing and handed over nothing.
 
 This is the first thing anyone has actually been given.
 
-So: boredom doesn't go away when you stop scrolling. It comes back undiluted, and it's unpleasant, and I won't pretend otherwise. Anyone promising you the removal of that feeling is selling something.
+Boredom doesn't go away when you stop scrolling. It comes back undiluted, and it's unpleasant, and I won't pretend otherwise. Anyone promising you the removal of that feeling is selling something.
 
 But it isn't a fault. It's an alarm that's been intercepted for years and has finally got through, and all it says is *not this*.
 
