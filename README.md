@@ -56,6 +56,8 @@ It wasn't the market case that killed it — [demand](docs/product/demand.md) §
 
 **What survives is the writing** ([D-063](docs/log/decision-log.md)). The strongest idea here never needed software to be true: *"I'm just lazy"* is the last link in the chain, and it's a **verdict rather than a cause** — the only link phrased as an identity, which is what makes it a stable loop rather than a bad week ([D-027](docs/log/decision-log.md)). That, the argument against blockers, and the rule that only the consequence you *can't already see* is worth showing anyone, are an essay. They were always an essay.
 
+**The essay is [*"I'm just lazy" is a verdict, not a cause*](essay/im-just-lazy.md)** — the only finished thing this project produced, and the only one anybody else receives.
+
 Nobody ever used this. Every number in these files is a hypothesis with a threshold attached, and not one threshold was tested.
 
 Five things were never found out, in order of how much damage each would have done:
