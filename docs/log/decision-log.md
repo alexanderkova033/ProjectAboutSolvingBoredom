@@ -96,6 +96,20 @@ Reversed decisions are marked `Superseded`, never deleted — the wrong ones are
 
 ## Work log
 
+**20 August 2026 — The essay reaches draft 14, and three of its facts were wrong about this repository.** No decision.
+
+The discipline section gains the argument it was missing. Force applied now against a distant payout is a **salary** — hours at a rate somebody else set, cashed out at the end of the month — except that discipline runs that arrangement with nobody on the other end of it, so the payout is issued to yourself on credit out of a fund you haven't got. What replaces it is a business: **spending is the mechanism, not the cost**, what you put into a thing is what grows, and the more you spend the harder the fall. That connects to the essay's own first page — *you didn't waste four hours, you spent them* — which had been sitting there unarmed since draft 1. [D-042](decision-log.md) is unchanged and now has an image rather than only a rule.
+
+Three corrections, all of them the essay misdescribing this repository, and all three had survived since draft 8:
+
+- **Eighty-seven numbered requirements.** There are **75** live `FR-`/`NFR-` rows in [requirements](../product/requirements.md) §7 and §12, and 85 unique identifiers if the five retired and the five deferred are counted. Eighty-seven was never either number.
+- **Sixty-four logged decisions.** True of the log today and false of the project it described: [D-063](decision-log.md) and [D-064](decision-log.md) were written *after* the stop, so the count at the moment of stopping was **62** — which is what [D-062](decision-log.md) and the README have said all along. The essay now says 62 in both places.
+- **"Predictions written down in advance so I couldn't lie to myself afterwards."** The thresholds were committed in advance and are real ([demand](../product/demand.md) §8). The pre-registered predictions were **a rule, never an act** — [D-020](decision-log.md) requires them, demand §8 says *lock predictions first*, and [the BMAD path](../method/bmad-path.md) §3 still lists it as an unrun step-0 item. No such file was ever committed, because the cohort it was for never ran. The essay now claims the rule and not the deed.
+
+One thing was checked and left alone. Draft 13's rendering of Tam & Inzlicht — *less satisfying, less engaging, less meaningful* — is closer to the published summary than the 10 August entry below, which said *attention*; the APA and EurekAlert releases both give **satisfying, engaging and meaningful**. Volume, issue and pages verified: JEP: General 153(10), 2409–2426.
+
+And one contradiction closed rather than corrected. The essay opened by saying it spent three days *building* an app and landed, four sections later, on **Nothing built** — which is a reader discovering they were misled rather than a point being made. Both the opening line and the section heading now say *spent three days on an app*, which is true, gives nothing away, and leaves the reveal intact.
+
 **10 August 2026 — Citations checked; the essay reaches draft 8.** No decision.
 
 Every source in the essay was verified against the journal record rather than against memory: Mikulincer 1986 and 1988, Diener & Dweck 1978 and 1980, Danckert & Elpidorou 2023, Tam & Inzlicht 2024. Volumes, issues, pages and the substance of each claim hold. One hedge survives and is now narrower: Bandura's four sources of efficacy information are confirmed, but *performance accomplishments are the most dependable* is taken from secondary summaries, and the paper itself still needs reading before anything is published. Two numbers were made exact — 1,223 participants, six of seven experiments preregistered.
