@@ -1,38 +1,6 @@
 # "I'm just lazy" is a verdict, not a cause
 
-*Draft 14 — 20 August 2026*
-
-> A man is sitting on a bench;  
-> and he is looking at the phone —  
-> he scrolls and sees:  
-> some fancy cars driving around,  
-> a streamer making sound,  
-> a classmate who won a lottery,  
-> "Huh, lucky bastard"  
-> some children breaking pottery  
-> and mocking their own mate,  
-> "Ah, this is not cool"  
-> the finger flicks.
->
-> But the moon begins to rise,  
-> there's only redness in his eyes,  
-> so he goes home  
-> and crawls to bed  
-> and then gets up to see another day,  
-> he eats some artificial bread,  
-> then drives to work,  
-> it is New York —  
-> "talking is too expensive"  
-> and then the sun begins to set.
->
-> A year goes by; it comes to him,  
-> but he winds up —  
-> no, he is not alone:  
-> no, he is with his phone.  
-> Who is he?  
-> Just a guy.
-
-That's a poem I wrote. I called it *Weirdo*; it ends *just a guy*. I thought it was about a sad man in New York. It's a diagram.
+*Draft 15 — 10 September 2026*
 
 You didn't waste four hours last night. You spent them. You just don't have anything to show for it.
 
@@ -46,7 +14,7 @@ Four words, and they close the case.
 
 Laziness is not what happened to your evening. Something else did, and the sentence is what you say afterwards to stop having to look.
 
-I tried to fix all this with an app. It lasted three days, and by the end the app had become the thing the poem was about.
+I tried to fix all this with an app. It lasted three days, and by the end the app had become the thing it was built to fix.
 
 ## Nobody says they're afraid
 
@@ -88,11 +56,7 @@ Everyone who tries to fix this goes after the same link. Block the app. Grey the
 
 But removing is subtraction, and subtraction doesn't travel. You get an empty fifteen minutes and the same boredom with nothing to put in it. Then you bypass it, not because you're weak, but because it's Thursday and the only thing between you and relief is a button.
 
-There's a version of the same advice that doesn't even need an app.
-
-> *"Get off your phone, you're wasting your life"*  
-> *"Go outside, it is so nice there."*  
-> No.
+There's a version of the same advice that doesn't even need an app. *Get off your phone, you're wasting your life. Go outside, it's so nice there.*
 
 Everyone here is fighting for less. Less screen time, fewer hours, smaller numbers. Not one of them hands the time back as anything.
 
@@ -117,32 +81,6 @@ That's what a business does with money. It spends to grow, and the spending isn'
 The more you spend the bigger you grow, and the harder you fall. That's the deal, and it's the good half. Nobody has ever described a salary as exciting.
 
 So mind your own fucking business. Both ways round: it is yours, and nobody else is coming to run it.
-
-There's a poem I wrote about an office after the sun has gone down. It's called *Unsuccessful*.
-
-> So, choices are circling like flies —  
-> they bump into Successful highs:  
-> these highs make you feel undone,  
-> but bring a pound to this working man;  
-> The Discipline starts flowing in  
-> the callused veins: it makes people mean,  
-> rather thin, and even bluntly mad,  
-> though fat with money — can't be bad.
-
-Capital D. It arrives *in the veins*, from outside, and what it pays out is a pound. Then the poem finishes:
-
-> For whilst I'm sitting on this chair,  
-> I know what I can never say is fair:  
-> I'm tired of these bloody rolling hours.  
-> So, maybe — I shall buy her flowers.
-
-Not a better wage. Flowers — money spent on something with no return in it at all. The escape from a salary was never a bigger one.
-
-Now the objection. What about work nobody wants to do? Exams. The essay due Friday. Surely that's what discipline is for.
-
-That work does get done, and I'm not going to pretend otherwise. But look at what does it. A habit, which runs without deciding. A deadline somebody else set. A library you can't scroll in, a friend expecting you at four. And the consequence becoming real — not as a threat someone is holding over you, but as something you can see clearly enough that not revising becomes the strange option.
-
-None of those is force. Habits and structures are what you build so you don't have to spend willpower; the consequence landing changes what you want rather than overriding it. The wrong tool is narrower than the whole word *discipline* — it's force aimed at a distant reward and applied now, on the promise that it pays later.
 
 There's a trapdoor here. *I want to have written a story* is a want for a result. *I want to write* is a want for the activity itself — already present, already yours, and diverted somewhere in the gap between arriving and acting.
 
@@ -264,11 +202,7 @@ Mine wasn't even a phone.
 
 ## Not this
 
-Two more things from that folder, because both are the same shape.
-
-I wrote in the project's own log that nobody involved could use the thing, and that everything I'd said about how making something feels was reasoned rather than felt. That was false, and the disproof was three files away. The man on the bench. A poem ending *what is even the purpose of trying*. Another about going outside to stand in one place like a freak, breathing. I had the felt thing the whole time and wrote a market thesis instead, because a market thesis looked serious and a poem didn't. Capture again, one floor down.
-
-And I thought I was doing science — thresholds fixed in advance, a written statement of what would kill the idea. That was sincere, and it wasn't wasted. But the apparatus I'd borrowed could only tell me whether an idea was wrong. Art asks whether something lands, and that you can only answer by handing it to somebody. I spent three days preparing and handed over nothing.
+I thought I was doing science — thresholds fixed in advance, a written statement of what would kill the idea. That was sincere, and it wasn't wasted. But the apparatus I'd borrowed could only tell me whether an idea was wrong. Art asks whether something lands, and that you can only answer by handing it to somebody. I spent three days preparing and handed over nothing.
 
 This is the first thing anyone has actually been given.
 
