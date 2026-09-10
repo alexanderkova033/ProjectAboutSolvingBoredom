@@ -50,6 +50,8 @@ It tells you the current activity isn't working. It doesn't tell you what would.
 
 So *more* almost never helps. Across seven experiments in 2024, Tam and Inzlicht found that people expected skipping between videos to relieve their boredom, and it did the opposite — more bored, and the whole thing less satisfying, less engaging, less meaningful. Their explanation is the part worth stealing: switching stops you staying anywhere long enough to engage with what you're watching.
 
+Tasteless, compelling.
+
 So the alarm is real and it goes off on time. The apps just get there first — not because they're evil, but because they're the nearest thing to hand when it rings. You never find out what you'd have done if it had gone unanswered. The feed decides before you do.
 
 Everyone who tries to fix this goes after the same link. Block the app. Grey the screen. Lock yourself out for two hours. They pick that link because it's the cheapest to cut — you don't have to build anything to remove something.
@@ -133,6 +135,12 @@ Not the person. The verdict.
 *I'm lazy. I'm not someone who does things. That's just me.*
 
 A bad identity is comfortable precisely because it has already answered the question. If laziness is simply what you are, tonight needs no explanation and tomorrow needs no experiment. Overturn it and the question opens again, and you have to find out what you do instead.
+
+I wrote this more recently:
+
+> I have given up on giving up now,  
+> though I still can't let go of that cave  
+> I used to sleep at.
 
 Which is why one good night overturns nothing, and why the only advice I trust here is so unglamorous. Not *make something impressive*. Make something small, and then do it again, because a single evening is easy to dismiss and a count is not. You can argue with a good Tuesday. Seven of them, written down, is more work to explain away than to accept.
 
